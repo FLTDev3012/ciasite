@@ -1,0 +1,18 @@
+.newnav-container {
+  padding: 0 1rem;
+  height: 6.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $gris;
+  border-bottom: 1px solid #414143;
+}
+
+.newnav-container a {
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
