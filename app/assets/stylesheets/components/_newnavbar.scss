@@ -9,10 +9,34 @@
   border-bottom: 1px solid #414143;
 }
 
+.newnav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.newnav-logo p {
+  margin-bottom: 0;
+  line-height: 1.2rem;
+}
+
+.nav-logo-img {
+  content: "";
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  background-color: $gris;
+  border: 1px solid #fff;
+  margin-right: 1rem;
+}
+
 .newnav-container a {
   color: #fff;
   font-weight: 900;
   font-size: 1.3rem;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
+}
+
+.newnav-list-center a, .newnav-list-end a{
+  margin: 0 1rem;
 }
