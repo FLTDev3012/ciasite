@@ -1,6 +1,8 @@
 // Specific CSS for your home-page
 .home-container {
   min-height: 500vh;
+  border-right: 1px solid #414143;
+  border-left: 1px solid #414143;
 }
 
 .home-main-black-container {
@@ -8,11 +10,25 @@
   height: 100vh;
 }
 
+.imagevague-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.imagevague {
+  height: 100%;
+  width: 100%;
+
+}
+
+
 .home-main-black-content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   background-color: $gris;
@@ -22,14 +38,14 @@
 
 .home-content-trait {
   width: 80%;
-  border-left: 1px solid green;
+  border-left: 1px solid #414143;
   display: flex;
 }
 
 .home-trait {
   width: 25%;
   height: 100%;
-  border-right: 1px solid purple;
+  border-right: 1px solid #414143;
 }
 
 .home-container-text-pic {
@@ -39,28 +55,55 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #993b3b1b;
+  // background-color: #993b3b1b;
 }
 
 .home-content-text-pic {
   height: 100%;
   width: 80%;
-  background-color: rgba(0, 128, 0, 0.12);
+  // background-color: rgba(0, 128, 0, 0.12);
   content: "";
   display: flex;
+  padding-top: 100px;
 }
 
 .home-content-text {
   height: 100%;
   width: 50%;
   content: "";
-  background-color: rgba(0, 255, 255, 0.252);
+  // background-color: rgba(0, 255, 255, 0.252);
 }
+
+.home-content-text h1 {
+  font-size: 4rem;
+  color: #fff;
+  font-family: "Outfit", sans-serif;
+}
+
+.home-content-text p {
+  font-size: 2rem;
+  color: #fff;
+  font-family: "Lora", serif;
+}
+
+.home-content-text .test {
+  font-size: 1rem;
+  color: #fff;
+  font-family: "Hind Madurai", sans-serif;
+}
+
 .home-content-pic {
   height: 100%;
   width: 50%;
   content: "";
-  background-color: rgba(0, 255, 106, 0.223);
+  // background-color: rgba(0, 255, 106, 0.223);
+}
+
+.home-main-pic {
+  content: "";
+  width: 100%;
+  height: 400px;
+  background-color: aqua;
 }
 
 .home-div-one {
