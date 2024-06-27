@@ -38,14 +38,16 @@
 
 .home-content-trait {
   width: 80%;
-  border-left: 1px solid #414143;
   display: flex;
+}
+
+.trait-un {
+  border-left: 1px solid #333335;
 }
 
 .home-trait {
   width: 25%;
   height: 100%;
-  border-right: 1px solid #414143;
 }
 
 .home-container-text-pic {
@@ -102,7 +104,7 @@
 .home-main-pic {
   content: "";
   width: 100%;
-  height: 400px;
+  height: 350px;
   background-color: rgba(0, 255, 255, 0.318);
 }
 
