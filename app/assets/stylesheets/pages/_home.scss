@@ -1,31 +1,19 @@
-// Specific CSS for your home-page
 .home-container {
   min-height: 500vh;
   border-right: 1px solid #414143;
   border-left: 1px solid #414143;
 }
 
-.home-main-black-container {
+// first----------------------------------------------------------------
+
+.home-first-div-container {
   position: relative;
   height: 100vh;
 }
 
-.imagevague-container {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 80%;
-  width: 100%;
-}
+// first----------------------------------------------------------------
 
-.imagevague {
-  height: 100%;
-  width: 100%;
-
-}
-
-
-.home-main-black-content {
+.home-first-div-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -36,19 +24,42 @@
   justify-content: center;
 }
 
+// first----------------------------------------------------------------
+
+// img vagues
+.imagevague-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 80%;
+  width: 100%;
+}
+.imagevague {
+  height: 100%;
+  width: 100%;
+}
+
+// first----------------------------------------------------------------
+
+// trait vertical
+
 .home-content-trait {
   width: 80%;
   display: flex;
-}
-
-.trait-un {
-  border-left: 1px solid #333335;
 }
 
 .home-trait {
   width: 25%;
   height: 100%;
 }
+
+.trait-un {
+  border-left: 1px solid #333335;
+}
+
+// first----------------------------------------------------------------
+
+// text and pic first div
 
 .home-container-text-pic {
   position: absolute;
@@ -68,6 +79,8 @@
   display: flex;
   padding-top: 100px;
 }
+
+// text
 
 .home-content-text {
   height: 100%;
@@ -94,11 +107,13 @@
   font-family: "Hind Madurai", sans-serif;
 }
 
+
+// pic
+
 .home-content-pic {
   height: 100%;
   width: 50%;
   content: "";
-  // background-color: rgba(0, 255, 106, 0.223);
 }
 
 .home-main-pic {
@@ -108,23 +123,12 @@
   background-color: rgba(0, 255, 255, 0.318);
 }
 
-.home-div-one {
-  min-height: 100vh;
-  background-color: $gris;
-  border-top: 1px solid red;
-}
 
-.home-div-one {
-  min-height: 100vh;
-  background-color: $gris;
-}
+
+
+// seconde----------------------------------------------------------------
 
 .home-div-two {
   min-height: 65vh;
   background-color: #fff;
-}
-
-.home-div-three {
-  min-height: 100vh;
-  background-color: $gris;
 }
