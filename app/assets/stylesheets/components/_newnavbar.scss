@@ -1,16 +1,17 @@
+.newnav-gray-container {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
 .newnav-container {
   padding: 0 1rem;
   height: 6.5rem;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: $gris;
   border-bottom: 2px solid #2b2b2d;
-  border-left: 1px solid #414143;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
   margin-left: 1px;
 }
 

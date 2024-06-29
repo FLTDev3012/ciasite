@@ -1,5 +1,13 @@
 body {
   background: #161618;
+  width: 100vw;
+}
+
+.home-over-nav {
+  height: 6.2rem;
+  width: 100%;
+  background: #161618;
+  border-left: 1px solid #414143;
 }
 
 .home-red-band {
@@ -9,7 +17,6 @@ body {
 }
 
 .home-container {
-  min-height: 500vh;
   border-right: 1px solid #414143;
   border-left: 1px solid #414143;
 }
