@@ -42,9 +42,9 @@ body {
 // first----------------------------------------------------------------
 
 .home-first-div-content {
-  position: absolute;
-  top: 0;
-  left: 0;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
   height: 100%;
   width: 100%;
   background-color: $gris;
@@ -74,6 +74,7 @@ body {
 .home-content-trait {
   width: 80%;
   display: flex;
+  border-right: 1px solid #333335;
 }
 
 .home-trait {
@@ -201,4 +202,117 @@ body {
   min-height: 65vh;
   background-color: #fff;
   transform: translate(0, -1px);
+}
+
+
+// seconde----------------------------------------------------------------
+
+.home-seconde-div-container {
+  position: relative;
+  height: 100vh;
+  // box-shadow: 0 0 0 2px rgba(226,26,65,.35),0 0 3px 5px rgba(226,26,65,.35);
+  outline: 2px dotted transparent;
+  outline-offset: 2px;
+  box-shadow:
+    0 -2px 0 2px rgba(226, 26, 65, .35),    /* haut */
+    2px 0 0 2px rgba(226, 26, 65, .35),     /* droite */
+    -2px 0 0 2px rgba(226, 26, 65, .35),    /* gauche */
+    0 0 3px 5px rgba(226, 26, 65, .35) inset; /* flou interne pour le contour */
+}
+
+// seconde----------------------------------------------------------------
+
+.home-seconde-div-content {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+// troisieme----------------------------------------------------------------
+
+.home-troisieme-div-container {
+  position: relative;
+  height: 100vh;
+  // box-shadow: 0 0 0 2px rgba(226,26,65,.35),0 0 3px 5px rgba(226,26,65,.35);
+  outline: 2px dotted transparent;
+  outline-offset: 2px;
+  box-shadow:
+    0 -2px 0 2px rgba(226, 26, 65, .35),    /* haut */
+    2px 0 0 2px rgba(226, 26, 65, .35),     /* droite */
+    -2px 0 0 2px rgba(226, 26, 65, .35),    /* gauche */
+    0 0 3px 5px rgba(226, 26, 65, .35) inset; /* flou interne pour le contour */
+}
+
+// troisieme----------------------------------------------------------------
+
+.home-troisieme-div-content {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $gris;
+  display: flex;
+  justify-content: center;
+}
+
+// quatrieme----------------------------------------------------------------
+
+.home-quatrieme-div-container {
+  position: relative;
+  height: 100vh;
+  // box-shadow: 0 0 0 2px rgba(226,26,65,.35),0 0 3px 5px rgba(226,26,65,.35);
+  outline: 2px dotted transparent;
+  outline-offset: 2px;
+  box-shadow:
+    0 -2px 0 2px rgba(226, 26, 65, .35),    /* haut */
+    2px 0 0 2px rgba(226, 26, 65, .35),     /* droite */
+    -2px 0 0 2px rgba(226, 26, 65, .35),    /* gauche */
+    0 0 3px 5px rgba(226, 26, 65, .35) inset; /* flou interne pour le contour */
+}
+
+// quatrieme----------------------------------------------------------------
+
+.home-quatrieme-div-content {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+// cinq----------------------------------------------------------------
+
+.home-cinq-div-container {
+  position: relative;
+  height: 100vh;
+  // box-shadow: 0 0 0 2px rgba(226,26,65,.35),0 0 3px 5px rgba(226,26,65,.35);
+  outline: 2px dotted transparent;
+  outline-offset: 2px;
+  box-shadow:
+    0 -2px 0 2px rgba(226, 26, 65, .35),    /* haut */
+    2px 0 0 2px rgba(226, 26, 65, .35),     /* droite */
+    -2px 0 0 2px rgba(226, 26, 65, .35),    /* gauche */
+    0 0 3px 5px rgba(226, 26, 65, .35) inset; /* flou interne pour le contour */
+}
+
+// cinq----------------------------------------------------------------
+
+.home-cinq-div-content {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $gris;
+  display: flex;
+  justify-content: center;
 }
