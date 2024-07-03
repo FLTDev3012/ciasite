@@ -174,7 +174,6 @@ body {
   padding-right: 3.75rem;
   text-align: center;
   // transition: all .4s;
-  width: auto;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.2rem;
@@ -184,8 +183,14 @@ body {
   position: relative;
 }
 
-.btn-rouge:hover {
-  // padding-left: 1.875rem;
+.btn-rouge p {
+  transition: all .4s;
+  margin-bottom: 0px;
+}
+
+.btn-rouge:hover p {
+  transform: translateX(-1.875rem);
+  transition: all .4s;
 }
 
 
@@ -196,7 +201,7 @@ body {
   right: 0;
   width: 3.75rem;
   height: 100%;
-  background: #60e21a;
+  background: #161618;
   z-index: 10;
   transition: all .4s;
   transform: translateX(3.75rem);
