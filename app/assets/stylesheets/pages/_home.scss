@@ -195,7 +195,8 @@ body {
 
 
 .btn-rouge::after {
-  content: "";
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
   position: absolute;
   top: 0;
   right: 0;
