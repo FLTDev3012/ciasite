@@ -1,0 +1,77 @@
+// seconde----------------------------------------------------------------
+
+.home-seconde-div-container {
+  position: relative;
+  height: 65vh;
+  // box-shadow: 0 0 0 2px rgba(226,26,65,.35),0 0 3px 5px rgba(226,26,65,.35);
+  outline: 2px dotted transparent;
+  outline-offset: 2px;
+  z-index: 10;
+  // box-shadow:
+  //   0 -2px 0 2px rgba(226, 26, 65, .35),    /* haut */
+  //   2px 0 0 2px rgba(226, 26, 65, .35),     /* droite */
+  //   -2px 0 0 2px rgba(226, 26, 65, .35),    /* gauche */
+  //   0 0 3px 5px rgba(226, 26, 65, .35) inset; /* flou interne pour le contour */
+}
+
+// seconde----------------------------------------------------------------
+
+.home-seconde-div-content {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  //padding-bottom: 7.5rem;
+  //padding-top: 7.5rem;
+}
+
+// ---------
+
+.home-seconde-content-little {
+  width: 80%;
+  background-color: purple;
+  display: flex;
+}
+
+// --------
+
+.home-seconde-gauche {
+  width: 50%;
+  height: 100%;
+  padding-top: 7.5rem;
+  padding-left: 15px;
+}
+
+.home-seconde-gauche h2 {
+  font-family: "Spectral", serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding: 1.875rem 0;
+  margin: 0;
+}
+
+.home-seconde-gauche .home-seconde-logo {
+  content: "";
+  height: 95px;
+  width: 95px;
+  background-color: #555;
+}
+
+.home-seconde-centre {
+  width: 1px;
+  height: 100%;
+  background-color: #555;
+}
+
+.home-seconde-droite {
+  width: 50%;
+  height: 100%;
+  // border-left: 1px solid #242426;
+  // border-left: 1px solid #555;
+
+}
