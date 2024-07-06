@@ -33,7 +33,7 @@
 
 .home-seconde-content-little {
   width: 80%;
-  background-color: purple;
+  background-color: rgb(255, 255, 255);
   display: flex;
 }
 
@@ -71,7 +71,44 @@
 .home-seconde-droite {
   width: 50%;
   height: 100%;
+  padding-top: 7.5rem;
+  padding-left: 15px;
   // border-left: 1px solid #242426;
   // border-left: 1px solid #555;
+}
 
+.home-seconde-droite-link-container {
+  position: relative;
+  width:fit-content;
+  border-bottom: 1px solid #e21a41;
+
+}
+
+.home-seconde-droite a {
+  text-decoration: none;
+  position: relative;
+  z-index: 10;
+  transition: all 0.3s linear;
+  transition-delay: 0.2s;
+}
+
+.home-seconde-droite-link-hover-red {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #e21a41;
+  transition: all 0.3s linear;
+}
+
+.home-seconde-droite-link-container:hover .home-seconde-droite-link-hover-red {
+  width: 100%;
+  transition: all 0.3s linear;
+}
+
+.home-seconde-droite-link-container:hover a {
+  color: #fff;
+  transition: all 0.3s linear;
+  transition-delay: 0.2s;
 }
