@@ -295,33 +295,7 @@ body {
 
 
 
-// troisieme----------------------------------------------------------------
 
-.home-troisieme-div-container {
-  position: relative;
-  height: 100vh;
-  // box-shadow: 0 0 0 2px rgba(226,26,65,.35),0 0 3px 5px rgba(226,26,65,.35);
-  outline: 2px dotted transparent;
-  outline-offset: 2px;
-  box-shadow:
-    0 -2px 0 2px rgba(226, 26, 65, .35),    /* haut */
-    2px 0 0 2px rgba(226, 26, 65, .35),     /* droite */
-    -2px 0 0 2px rgba(226, 26, 65, .35),    /* gauche */
-    0 0 3px 5px rgba(226, 26, 65, .35) inset; /* flou interne pour le contour */
-}
-
-// troisieme----------------------------------------------------------------
-
-.home-troisieme-div-content {
-  // position: absolute;
-  // top: 0;
-  // left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: $gris;
-  display: flex;
-  justify-content: center;
-}
 
 // quatrieme----------------------------------------------------------------
 

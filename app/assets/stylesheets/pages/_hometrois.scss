@@ -1,0 +1,104 @@
+// troisieme----------------------------------------------------------------
+
+.home-troisieme-div-container {
+  position: relative;
+  height: calc(100vh - 6.5rem + 1px);
+  // box-shadow: 0 0 0 2px rgba(226,26,65,.35),0 0 3px 5px rgba(226,26,65,.35);
+  outline: 2px dotted transparent;
+  outline-offset: 2px;
+  box-shadow:
+    0 -2px 0 2px rgba(226, 26, 65, .35),    /* haut */
+    2px 0 0 2px rgba(226, 26, 65, .35),     /* droite */
+    -2px 0 0 2px rgba(226, 26, 65, .35),    /* gauche */
+    0 0 3px 5px rgba(226, 26, 65, .35) inset; /* flou interne pour le contour */
+}
+
+// troisieme----------------------------------------------------------------
+
+.home-troisieme-div-content {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $gris;
+  display: flex;
+  justify-content: center;
+}
+
+.home-trois-container {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-trois-gauche {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.home-trois-gauche-logo {
+  content: "";
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+  background-color: #152b76;
+}
+
+.home-trois-droite {
+  width: 50%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 15px;
+}
+
+.home-trois-droite-content {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  //justify-content: center;
+  margin-top: 7.5rem;
+}
+
+
+.home-trois-droite p , .home-trois-droite h2 {
+  color: #fff;
+}
+
+.home-trois-droite h2 {
+  font-family: "Spectral", serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding: 1.875rem 0;
+  margin: 0;
+}
+
+.home-trois-droite .text-little-light {
+  font-weight: 200;
+}
+
+.home-trois-droite-content a {
+  text-decoration: none;
+  border: solid 1px #bebebf;
+  padding: 0.5rem 1rem;
+  width:fit-content;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1rem;
+  transition: color .3s ease-out;
+}
+
+.home-trois-droite-content a:hover {
+  border-color: #e21a41;
+  box-shadow: inset 0 -5px 0 #e21a41;
+  transition: color .3s ease-out;
+}
