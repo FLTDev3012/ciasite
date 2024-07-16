@@ -48,6 +48,7 @@
   height: 100%;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 1.875rem;
 }
 
 .home-quatre-article {
@@ -159,4 +160,38 @@
 .home-quatre-article-link:hover .home-quatre-link-arrow a {
   transform: rotate(0deg);
   transition: all .2s linear;
+}
+
+.home-quatre-link {
+  margin-top: 2.8125rem;
+  // border: .0625rem solid #000;
+  width: fit-content;
+  // padding: .8125rem .9375rem;
+  margin-left: 15px;
+}
+
+.home-quatre-link a {
+  padding: .8125rem .9375rem;
+  border: .0625rem solid #bebebf;
+  font-size: 1.35rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  letter-spacing: 1px;
+
+
+
+
+  /* Combine font-family, font-size, and line-height into one shorthand property */
+  font-family: 'GT America Trial', sans-serif;
+
+  /* Optional: If you want a specific font size, include it here */
+  /* font-size: 0.875rem; */
+
+  /* Optional: If you want to ensure line-height is consistent with font-size */
+  /* line-height: 1.45; */
+
+
+
 }
