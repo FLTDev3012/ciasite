@@ -2,7 +2,8 @@
 
 .home-cinq-div-container {
   position: relative;
-  height: 100vh;
+  height: 60vh;
+
   // box-shadow: 0 0 0 2px rgba(226,26,65,.35),0 0 3px 5px rgba(226,26,65,.35);
   outline: 2px dotted transparent;
   outline-offset: 2px;
@@ -28,11 +29,12 @@
 
 .home-cinq-container {
   position: absolute;
-  height: 100%;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 7.5rem 0;
+
 }
 
 .home-cinq-gauche-grand {
@@ -49,7 +51,6 @@
   content: "";
   width: 80%;
   height: 100%;
-  background: #be3a7a;
 }
 
 
@@ -58,18 +59,26 @@
   font-style: italic;
   font-weight: 600;
   font-size: 2.5rem;
-  padding: 1.875rem 0;
-  margin: 0;
+  // padding: 1.875rem 0;
+  margin-bottom: 1.875rem;
   color: #fff;
+  margin-left: 15px;
+
 }
 
 .home-cinq-gauche-petit p {
   font-weight: 200;
   color: #fff;
   font-size: 1.07rem;
-  margin-top: 1.875rem !important;
+  margin-bottom: 1.875rem;
   font-family: 'GT America Trial', sans-serif;
   letter-spacing: 0.6px;
+  margin-left: 15px;
+
+}
+
+.home-cinq-gauche-petit .home-trois-droite-link-container {
+  margin-left: 15px;
 }
 
 .home-cinq-gauche-petit a {
@@ -81,7 +90,6 @@
   letter-spacing: 1px;
   font-family: 'GT America Trial', sans-serif;
 }
-
 
 .home-cinq-droite {
   content: "";
