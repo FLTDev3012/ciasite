@@ -4,13 +4,13 @@
   position: relative;
   height: calc(100vh - 6.5rem + 1px);
   // box-shadow: 0 0 0 2px rgba(226,26,65,.35),0 0 3px 5px rgba(226,26,65,.35);
-  outline: 2px dotted transparent;
-  outline-offset: 2px;
-  box-shadow:
-    0 -2px 0 2px rgba(226, 26, 65, .35),    /* haut */
-    2px 0 0 2px rgba(226, 26, 65, .35),     /* droite */
-    -2px 0 0 2px rgba(226, 26, 65, .35),    /* gauche */
-    0 0 3px 5px rgba(226, 26, 65, .35) inset; /* flou interne pour le contour */
+  // outline: 2px dotted transparent;
+  // outline-offset: 2px;
+  // box-shadow:
+  //   0 -2px 0 2px rgba(226, 26, 65, .35),    /* haut */
+  //   2px 0 0 2px rgba(226, 26, 65, .35),     /* droite */
+  //   -2px 0 0 2px rgba(226, 26, 65, .35),    /* gauche */
+  //   0 0 3px 5px rgba(226, 26, 65, .35) inset; /* flou interne pour le contour */
 }
 
 // troisieme----------------------------------------------------------------

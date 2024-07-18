@@ -11,16 +11,13 @@ body {
   border-left: 1px solid #414143;
 }
 
-.home-red-band {
-  box-shadow: 0 0 0 2px rgba(226,26,65,.35),0 0 3px 5px rgba(226,26,65,.35);
-  outline: 2px dotted transparent;
-  outline-offset: 2px;
-  position: relative;
-}
+
 
 .home-container {
-  border-right: 1px solid #414143;
-  border-left: 1px solid #414143;
+  // border-right: 1px solid #414143;
+  // border-left: 1px solid #414143;
+  box-shadow: 0 -2px 0 2px rgba(226, 26, 65, 0.35), 2px 0 0 2px rgba(226, 26, 65, 0.35), -2px 0 0 2px rgba(226, 26, 65, 0.35), 0 0 3px 5px rgba(226, 26, 65, 0.35) inset;
+  margin: 1px;
 }
 
 
@@ -30,13 +27,13 @@ body {
   position: relative;
   height: 100vh;
   // box-shadow: 0 0 0 2px rgba(226,26,65,.35),0 0 3px 5px rgba(226,26,65,.35);
-  outline: 2px dotted transparent;
-  outline-offset: 2px;
-  box-shadow:
-    0 -2px 0 2px rgba(226, 26, 65, .35),    /* haut */
-    2px 0 0 2px rgba(226, 26, 65, .35),     /* droite */
-    -2px 0 0 2px rgba(226, 26, 65, .35),    /* gauche */
-    0 0 3px 5px rgba(226, 26, 65, .35) inset; /* flou interne pour le contour */
+  // outline: 2px dotted transparent;
+  // outline-offset: 2px;
+  // box-shadow:
+  //   0 -2px 0 2px rgba(226, 26, 65, .35),    /* haut */
+  //   2px 0 0 2px rgba(226, 26, 65, .35),     /* droite */
+  //   -2px 0 0 2px rgba(226, 26, 65, .35),    /* gauche */
+  //   0 0 3px 5px rgba(226, 26, 65, .35) inset; /* flou interne pour le contour */
 }
 
 // first----------------------------------------------------------------
