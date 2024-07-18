@@ -1,0 +1,15 @@
+// ligne vertical
+
+//container
+.home-content-ligne {
+  width: 80%;
+  display: flex;
+  border-right: 1px solid #333335;
+}
+
+// ligne
+.home-ligne {
+  width: 25%;
+  height: 100%;
+  border-left: 1px solid #333335;
+}
