@@ -53,8 +53,12 @@
   height: 100%;
 }
 
+.home-cinq-gauche-text {
+  width: 75%;
+}
 
-.home-cinq-gauche-petit h2 {
+
+.home-cinq-gauche-text h2 {
   font-family: "Spectral", serif;
   font-style: italic;
   font-weight: 600;
@@ -66,7 +70,7 @@
 
 }
 
-.home-cinq-gauche-petit p {
+.home-cinq-gauche-text p {
   font-weight: 200;
   color: #fff;
   font-size: 1.07rem;
@@ -77,11 +81,11 @@
 
 }
 
-.home-cinq-gauche-petit .home-trois-droite-link-container {
+.home-cinq-gauche-text .home-trois-droite-link-container {
   margin-left: 15px;
 }
 
-.home-cinq-gauche-petit a {
+.home-cinq-gauche-text a {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
@@ -96,4 +100,14 @@
   width: 50%;
   height: 100%;
   background: #a83abe;
+}
+
+.home-cinq-droite-pic {
+  content: "";
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
 }
