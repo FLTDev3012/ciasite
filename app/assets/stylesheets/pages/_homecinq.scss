@@ -1,0 +1,91 @@
+// cinq----------------------------------------------------------------
+
+.home-cinq-div-container {
+  position: relative;
+  height: 100vh;
+  // box-shadow: 0 0 0 2px rgba(226,26,65,.35),0 0 3px 5px rgba(226,26,65,.35);
+  outline: 2px dotted transparent;
+  outline-offset: 2px;
+  box-shadow:
+    0 -2px 0 2px rgba(226, 26, 65, .35),    /* haut */
+    2px 0 0 2px rgba(226, 26, 65, .35),     /* droite */
+    -2px 0 0 2px rgba(226, 26, 65, .35),    /* gauche */
+    0 0 3px 5px rgba(226, 26, 65, .35) inset; /* flou interne pour le contour */
+}
+
+// cinq----------------------------------------------------------------
+
+.home-cinq-div-content {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $gris;
+  display: flex;
+  justify-content: center;
+}
+
+.home-cinq-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-cinq-gauche-grand {
+  content: "";
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+
+
+.home-cinq-gauche-petit {
+  content: "";
+  width: 80%;
+  height: 100%;
+  background: #be3a7a;
+}
+
+
+.home-cinq-gauche-petit h2 {
+  font-family: "Spectral", serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding: 1.875rem 0;
+  margin: 0;
+  color: #fff;
+}
+
+.home-cinq-gauche-petit p {
+  font-weight: 200;
+  color: #fff;
+  font-size: 1.07rem;
+  margin-top: 1.875rem !important;
+  font-family: 'GT America Trial', sans-serif;
+  letter-spacing: 0.6px;
+}
+
+.home-cinq-gauche-petit a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: 'GT America Trial', sans-serif;
+}
+
+
+.home-cinq-droite {
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: #a83abe;
+}
