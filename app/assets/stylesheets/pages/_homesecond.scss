@@ -2,6 +2,7 @@
 
 .home-seconde-div-container {
   position: relative;
+  color: #000;
   height: 64vh;
   // box-shadow: 0 0 0 2px rgba(226,26,65,.35),0 0 3px 5px rgba(226,26,65,.35);
   outline: 2px dotted transparent;
@@ -17,19 +18,12 @@
 // seconde----------------------------------------------------------------
 
 .home-seconde-div-content {
-  // position: absolute;
-  // top: 0;
-  // left: 0;
   height: 100%;
   width: 100%;
   background-color: #fff;
   display: flex;
   justify-content: center;
-  //padding-bottom: 7.5rem;
-  //padding-top: 7.5rem;
 }
-
-// ---------
 
 .home-seconde-content-little {
   width: 80%;
@@ -46,15 +40,6 @@
   padding-left: 15px;
 }
 
-.home-seconde-gauche h2 {
-  font-family: "Spectral", serif;
-  font-style: italic;
-  font-weight: 600;
-  font-size: 2.5rem;
-  padding: 1.875rem 0;
-  margin: 0;
-}
-
 .home-seconde-gauche .home-seconde-logo {
   content: "";
   height: 95px;
@@ -62,12 +47,16 @@
   background-color: #555;
 }
 
+
+// ligne central
 .home-seconde-centre {
   width: 1px;
   height: 100%;
   background-color: #555;
 }
 
+
+// div right
 .home-seconde-droite {
   width: 50%;
   height: 100%;
@@ -81,10 +70,10 @@
   position: relative;
   width:fit-content;
   border-bottom: 1px solid #e21a41;
-
 }
 
 .home-seconde-droite a {
+  color: #000;
   text-decoration: none;
   position: relative;
   z-index: 10;

@@ -34,14 +34,6 @@
   margin-bottom: 3.75rem;
 }
 
-.home-quatre-title h2 {
-  font-family: "Spectral", serif;
-  font-style: italic;
-  font-weight: 600;
-  font-size: 2.5rem;
-  padding: 1.875rem 0;
-  margin: 0;
-}
 
 .home-quatre-article-container {
   width: 100%;
@@ -79,14 +71,6 @@
   background-color: #ffffff;
   padding: 1.875rem 1.875rem 2.8125rem;
   flex-grow: 1;
-}
-
-.home-quatre-article-title h2 {
-  font-family: "Spectral", serif;
-  font-weight: 600;
-  font-size: 2rem;
-  margin: 0;
-  line-height: 32px;
 }
 
 .clear-h2 {
@@ -128,18 +112,7 @@
 
 
 .home-quatre-link-text a {
-  font-family: 'GT America Trial', sans-serif;
-  display: flex;
-  font-size: 1.35rem;
-  justify-content: flex-end;
-  line-height: 1rem;
-  margin: 0;
-  padding: 1.375rem .9375rem;
   text-decoration: none;
-  color: #111;
-  font-weight: 800;
-  letter-spacing: .5px;
-  // transform: scaleX(1.5);
 }
 
 .home-quatre-link-arrow {
