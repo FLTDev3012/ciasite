@@ -17,6 +17,7 @@
   border-bottom: 2px solid #2b2b2d;
   margin-left: 1px;
   padding-top: 0.895rem;
+  position: relative;
 }
 
 // lien en general
@@ -35,6 +36,14 @@
   align-items: center;
 }
 
+.newnav-logo:hover .nav-logo-img {
+  box-shadow: 0 0 0 2px rgba(226,26,65,.35),0 0 3px 5px rgba(226,26,65,.35);
+  outline: 2px dotted transparent;
+  outline-offset: 2px;
+  border: .0625rem solid #e21a41;
+  transition: all .3s ease-in-out;
+}
+
 // img
 .nav-logo-img {
   height: 3.875rem;
@@ -43,6 +52,7 @@
   background-color: #161618;
   margin-right: 1rem;
   margin-left: 0px;
+  transition: all .3s ease-in-out;
 }
 
 // text
@@ -58,22 +68,29 @@
 // centre ----------------------------------------------------------------
 
 .newnav-list-center {
-  transform: scale(1, 0.9) !important;
+  position: relative;
+  transform: scale(1, 0.9);
 }
 
 .newnav-list-center a {
   margin: 0 .7rem;
   font-size: 1.2rem;
   font-weight: 700;
+  transition: all .1s ease-out;
 }
 
-// gauche ----------------------------------------------------------------
+.newnav-list-center a:hover {
+  box-shadow: 0px 4px 0px #e21a41;
+  transform: translateY(-4px);
+  transition: all .1s ease-out;
+}
+
+// droite ----------------------------------------------------------------
 
 .newnav-list-end-container {
   border: .0625rem solid #fff;
   padding: .9375rem 1.875rem;
-  transition: all .1s ease-in-out;
-
+  transition: all .3s ease-in-out;
 }
 
 .newnav-list-end-container:hover {
@@ -81,28 +98,18 @@
   outline: 2px dotted transparent;
   outline-offset: 2px;
   border: .0625rem solid #e21a41;
-  transition: all .1s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .newnav-list-end-container:hover .newnav-list-end {
-  animation: tremblement .9s ease-in-out;
+  transform: translateY(-.1rem) scale(1, 0.75);
+  transition: all .3s ease-in-out;
 }
 
-@keyframes tremblement {
-  0% {
-    transform: translateY(0) scale(1, 0.75);
-  }
-  50% {
-    transform: translateY(-.1rem) scale(1, 0.75);
-  }
-  100% {
-    transform: translateY(0) scale(1, 0.75);
-  }
-
-}
 
 .newnav-list-end {
   transform: scale(1, 0.75);
+  transition: all .3s ease-in-out;
 }
 
 .newnav-list-end a{
