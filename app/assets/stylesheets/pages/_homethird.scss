@@ -73,6 +73,12 @@
   color: #fff;
 }
 
+.home-trois-droite p {
+  color: #fff;
+  margin-bottom: 1.875rem;
+  margin-top: 0!important;
+}
+
 .home-trois-droite-link-container {
   position: relative;
   width: fit-content;
@@ -109,4 +115,12 @@
 
 .home-trois-droite-content a:hover {
   border-color: #e21a41;
+}
+
+.teston {
+  width: 100%;
+  height: 100px;
+  background-color: #e21a41;
+  content: "";
+  margin: 30px;
 }
