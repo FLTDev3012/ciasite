@@ -24,6 +24,7 @@
   background-color: $gris;
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid #333335;
 }
 
 .home-trois-container {
@@ -118,24 +119,19 @@
 }
 // ------------------ services ----------------------
 
-.home-troisieme-services-div-container {
-  position: relative;
-  height: calc(100vh - 6.5rem + 1px);
-}
+
 
 .home-troisieme-services-div-content {
-  // position: absolute;
-  // top: 0;
-  // left: 0;
+  position: relative;
   height: 100%;
   width: 100%;
   background-color: $gris;
   display: flex;
   justify-content: center;
+  padding: 7.5rem 0rem;
 }
 
 .home-trois-services-container {
-  position: absolute;
   height: 100%;
   width: 80%;
   display: flex;
@@ -144,10 +140,13 @@
 
 .services-container {
   width: 100%;
-  height: 100px;
+  height: fit-content;
   display: flex;
   margin: 0 15px;
   justify-content: space-between;
+  // box-shadow: 0 0 0 2px rgba(226, 26, 65, 0.35), 0 0 3px 5px rgba(226, 26, 65, 0.35);
+  // outline: 2px dotted transparent;
+  // outline-offset: 2px;
 }
 
 .one-service-container {
@@ -158,17 +157,15 @@
   align-items: center;
   margin: 0;
   background-color: #161618;
-  border: 1px solid #fff;
+  border: 1px solid var(--tab-color);
 }
 
 
 .one-service-container h3 {
-  font-family: "Spectral", serif;
-  font-style: italic;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 1.875rem 0;
-  box-shadow: 0px 4px 0px #e21a41;
+  // box-shadow: 0px 4px 0px #e21a41;
   height: fit-content;
   color: #fff;
 }
@@ -176,9 +173,31 @@
 .one-service-container p {
 
   color: #fff;
-  border-top: 1px solid #fff;
+  border-top: 1px solid var(--tab-color);
   width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 0;
+  padding: 5px 0px;
+}
+
+.one-service-container p:nth-child(1n) {
+  background-color: #161618;
+}
+
+.one-service-container p:nth-child(2n) {
+  background-color: #242424;
+}
+
+.criteras p {
+  display: flex;
+  justify-content: start;
+  padding: 5px 0px 5px 15px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+
+:root {
+  --tab-color: #5c5c5e;
 }
