@@ -1,0 +1,79 @@
+.pass-nav {
+  height: 6.5rem;
+  width: 100%;
+  background-color: #7e2929;
+  content: "";
+}
+
+.ns-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.ns-content {
+  height: 100%;
+  width: 80%
+}
+
+.ns-first {
+  height: calc(100vh - 6.5rem);
+  width: 100%;
+  display: flex;
+
+  position: relative;
+}
+
+.ns-first-gauche {
+  height: 100%;
+  width: 50%;
+  background-color: #161618;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ns-first-droite {
+  height: 100%;
+  width: 50%;
+  background-color: #161618;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ns-first p {
+  color: #fff;
+}
+
+
+// supp
+
+.blop {
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  content: "";
+}
+
+.ns-traits-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  content: "";
+}
+
+.ns-trait {
+  height: 100%;
+  width: 1px;
+  background-color: #333335;
+  content: "";
+}
