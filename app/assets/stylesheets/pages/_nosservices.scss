@@ -1,14 +1,36 @@
 .pass-nav {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.block-noir {
   height: 6.5rem;
+  width: 100%;
+  background-color: #0f9643;
+  content: "";
+  position: relative;
+  z-index: 10000;
+}
+
+.block-rouge {
+  height: calc(100vh + 6.5rem);
   width: 100%;
   background-color: #7e2929;
   content: "";
 }
 
+
+
 .ns-container {
   width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 10;
+  background-color: #161618;
+  margin-left: 1px;
 }
 
 
@@ -34,7 +56,8 @@
 }
 
 .ns-first .link-ligne-rouge-container {
-  margin-top: 1rem;
+  margin-top: 1.875rem;
+
 }
 
 .ns-first-gauche {
