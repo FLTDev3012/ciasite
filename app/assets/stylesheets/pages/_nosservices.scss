@@ -1,8 +1,15 @@
 .pass-nav {
-  height: 100%;
   width: 100%;
+  height: 100%;
+  // position: sticky;
   position: relative;
   z-index: 1;
+}
+
+.colleputain {
+  position: sticky;
+  bottom: 0;
+  z-index: 2;
 }
 
 .block-noir {
@@ -19,6 +26,8 @@
   width: 100%;
   background-color: #7e2929;
   content: "";
+  // position: sticky;
+  // top: 6.5rem;
 }
 
 
