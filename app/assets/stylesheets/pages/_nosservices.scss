@@ -1,51 +1,79 @@
 .pass-nav {
-  width: 100%;
   height: 100%;
   // position: sticky;
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+// background
+
+.pass-nav-block-noir {
+  height: calc(6.5rem - 5px);
+  width: 100%;
+  background-color: #161618;
+  content: "";
 }
 
 .colleputain {
   position: sticky;
   bottom: 0;
   z-index: 2;
+  height: 100%;
 }
 
-.block-noir {
-  height: 6.5rem;
-  width: 100%;
+.block-noir-ligne {
+  height: calc(6.5rem - 5px);
+  width: 1px;
   background-color: #0f9643;
   content: "";
   position: relative;
   z-index: 10000;
 }
 
-.block-rouge {
-  height: calc(100vh + 6.5rem);
-  width: 100%;
-  background-color: #7e2929;
+.block-rouge-ligne {
+  height: 100%;
+  width: 1px;
+  background-color: #8c182f;
   content: "";
   // position: sticky;
   // top: 6.5rem;
 }
 
-
+.ns-page-container {
+  position: relative;
+  height: fit-content;
+}
 
 .ns-container {
-  width: 100%;
   display: flex;
   justify-content: center;
   position: relative;
   z-index: 10;
   background-color: #161618;
   margin-left: 1px;
+  border-top: #aa1935 1px solid;
 }
 
 
 .ns-content {
   height: 100%;
-  width: 80%
+  width: 80%;
+
+}
+
+.ns-content::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #aa1935;
+  filter: blur(2px);
+  z-index: -1;
 }
 
 .ns-first {
@@ -58,6 +86,8 @@
 
   position: relative;
 }
+
+
 
 .ns-first a {
   color: #fff;
@@ -116,15 +146,6 @@
 }
 
 
-// supp
-
-.blop {
-  height: 100vh;
-  width: 100%;
-  background-color: #fff;
-  content: "";
-}
-
 .ns-traits-container {
   position: absolute;
   top: 0;
@@ -141,4 +162,88 @@
   width: 1px;
   background-color: #333335;
   content: "";
+}
+
+// ------------------ services ----------------------
+
+
+
+.home-troisieme-services-div-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: $gris;
+  display: flex;
+  justify-content: center;
+  padding: 7.5rem 0rem;
+  z-index: 10;
+}
+
+
+
+.home-trois-services-container {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  margin: 0 15px;
+  justify-content: space-between;
+  // box-shadow: 0 0 0 2px rgba(226, 26, 65, 0.35), 0 0 3px 5px rgba(226, 26, 65, 0.35);
+  // outline: 2px dotted transparent;
+  // outline-offset: 2px;
+}
+
+.one-service-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  background-color: #161618;
+  border: 1px solid var(--tab-color);
+}
+
+
+.one-service-container h3 {
+  font-weight: 600;
+  font-size: .9rem;
+  margin: 1.875rem 0;
+  // box-shadow: 0px 4px 0px #e21a41;
+  height: fit-content;
+  color: #fff;
+}
+
+.one-service-container p {
+
+  color: #fff;
+  border-top: 1px solid var(--tab-color);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: 5px 0px;
+  font-size: .8rem;
+}
+
+.one-service-container p:nth-child(1n) {
+  background-color: #161618;
+}
+
+.one-service-container p:nth-child(2n) {
+  background-color: #242424;
+}
+
+.criteras p {
+  display: flex;
+  justify-content: start;
+  padding: 5px 0px 5px 15px;
+  font-style: italic;
+  font-weight: 500;
 }
