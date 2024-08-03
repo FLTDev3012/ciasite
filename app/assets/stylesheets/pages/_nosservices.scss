@@ -25,9 +25,9 @@
 }
 
 .block-noir-ligne {
-  height: calc(6.5rem - 5px);
+  height: calc(6.5rem - 7px);
   width: 1px;
-  background-color: #0f9643;
+  background-color: #414143;
   content: "";
   position: relative;
   z-index: 10000;
@@ -162,7 +162,21 @@
   width: 1px;
   background-color: #333335;
   content: "";
+  position: relative;
 }
+
+.ns-fade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 10%;
+  width: 100%;
+  background: linear-gradient( #333335 0%, #161618 100%);
+  content: "";
+  z-index: 1;
+}
+
+
 
 // ------------------ services ----------------------
 

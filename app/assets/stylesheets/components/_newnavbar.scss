@@ -36,18 +36,19 @@
   align-items: center;
 }
 
-.newnav-logo:hover .nav-logo-img {
-  box-shadow: 0 0 0 2px rgba(226,26,65,.35),0 0 3px 5px rgba(226,26,65,.35);
-  outline: 2px dotted transparent;
-  outline-offset: 2px;
-  border: .0625rem solid #e21a41;
-  transition: all .3s ease-in-out;
-}
+// .newnav-logo:hover .nav-logo-img {
+//   box-shadow: 0 0 0 2px rgba(226,26,65,.35),0 0 3px 5px rgba(226,26,65,.35);
+//   outline: 2px dotted transparent;
+//   outline-offset: 2px;
+//   border: .0625rem solid #e21a41;
+//   transition: all .3s ease-in-out;
+// }
 
 // img
 .nav-logo-img {
   height: 3.875rem;
-  width: 3.875rem;
+  // width: 3.875rem;
+  width: auto;
   border-radius: 50%;
   background-color: #161618;
   margin-right: 1rem;
