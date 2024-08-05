@@ -232,6 +232,7 @@
   // box-shadow: 0px 4px 0px #e21a41;
   height: fit-content;
   color: #fff;
+  display: block ruby;
 }
 
 .one-service-container p {
@@ -246,9 +247,9 @@
   font-size: .8rem;
 }
 
-.one-service-container p:nth-child(1n) {
-  background-color: #161618;
-}
+// .one-service-container p:nth-child(1n) {
+//   background-color: #161618;
+// }
 
 .one-service-container p:nth-child(2n) {
   background-color: #242424;
@@ -260,7 +261,21 @@
   padding: 5px 0px 5px 15px;
   font-style: italic;
   font-weight: 500;
+  display: block ruby;
 }
+
+.type-site:hover {
+  background-color: #22cd83;
+}
+
+.type-site:hover .one-service-container p:nth-child(1n) {
+  background-color: none !important;
+}
+
+.type-site:hover .one-service-container p:nth-child(2n) {
+  background-color: none !important;
+}
+
 
 //----------------------------------------------------------------
 
