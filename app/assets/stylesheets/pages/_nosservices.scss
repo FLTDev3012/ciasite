@@ -242,9 +242,11 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 0;
   padding: 5px 0px;
   font-size: .8rem;
+  min-height: 2rem;
 }
 
 // .one-service-container p:nth-child(1n) {
@@ -264,17 +266,6 @@
   display: block ruby;
 }
 
-.type-site:hover {
-  background-color: #22cd83;
-}
-
-.type-site:hover .one-service-container p:nth-child(1n) {
-  background-color: none !important;
-}
-
-.type-site:hover .one-service-container p:nth-child(2n) {
-  background-color: none !important;
-}
 
 
 //----------------------------------------------------------------
