@@ -14,3 +14,13 @@
   height: fit-content;
   margin-bottom: 50px;
 }
+
+.la-ligne-rouge {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 1px;
+  content: "";
+  background-color: red;
+
+}
