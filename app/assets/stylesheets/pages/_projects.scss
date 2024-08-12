@@ -1,3 +1,16 @@
 .projects-grid {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(352px, 1fr));
+  // gap: 10px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 1.875rem;
+}
+
+
+.projects-grid .home-quatre-article {
+  width: 352px;
+  height: fit-content;
+  margin-bottom: 50px;
 }
