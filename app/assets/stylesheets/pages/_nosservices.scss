@@ -228,6 +228,12 @@
   z-index: 1;
 }
 
+//----------------------------------------------------------------
+
+.ns-site-vitrine h1 {
+  color: #fff;
+}
+
 
 
 // ------------------ services tableau  ----------------------
@@ -322,18 +328,3 @@
 
 
 //----------------------------------------------------------------
-
-.ns-js-container {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  background-color: #aa193641;
-}
-
-.ns-js-content {
-  width: 80%;
-  padding: 7.5rem 0;
-  background-color: #152c7641;
-}
