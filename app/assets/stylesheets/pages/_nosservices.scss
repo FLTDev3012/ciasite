@@ -57,6 +57,58 @@
   border-top: #aa1935 1px solid;
 }
 
+.ns-fist-arrow-container {
+  position: absolute;
+  z-index: 10;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ns-fist-arrow-container i {
+  font-size: 2rem;
+  animation: fallAndBounce 6s ease-in-out infinite;
+}
+
+@keyframes fallAndBounce {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-50px);
+    /* Chute */
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: translateY(0px);
+    /* Premier rebond */
+    animation-timing-function: ease-out;
+  }
+  23% {
+    transform: translateY(-25px);
+    /* Deuxième rebond */
+    animation-timing-function: ease-in;
+  }
+  29% {
+    transform: translateY(0px);
+    /* Petit rebond */
+    animation-timing-function: ease-out;
+  }
+  36% {
+    transform: translateY(-7px);
+    /* Petit rebond */
+    animation-timing-function: ease-out;
+  }
+  40% {
+    transform: translateY(0);
+    /* Retour à la position initiale */
+  }
+  100% {
+    transform: translateY(0);
+    /* Pause de 4 secondes */
+  }
+}
+
 
 .ns-content {
   height: 100%;
