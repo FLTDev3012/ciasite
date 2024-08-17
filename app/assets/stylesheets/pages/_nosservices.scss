@@ -345,15 +345,16 @@
 .ns-carrou-content {
   width: 80%;
   display: flex;
-  border: 1px solid #8e8e8e;
+  // border: 1px solid #8e8e8e;
   color: #fff;
 }
 
 .ns-carrou-gauche {
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 
 .ns-carrou-gauche h3 {
@@ -368,7 +369,13 @@
 }
 
 .ns-carrou-droite {
-  width: 50%;
+  width: 40%;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.6px);
+  -webkit-backdrop-filter: blur(4.6px);
+  border: 1px solid rgba(255, 255, 255, 0.42);
 }
 
 .ns-carrou-droite h3 {
