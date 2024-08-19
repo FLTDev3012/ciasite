@@ -7,7 +7,6 @@
 
 .test-container {
   content: "";
-  height: 400px;
   width: 100%;
   padding: 10px;
   display: flex;
@@ -19,20 +18,23 @@
 .test-content {
 
   content: "";
-  height: 400px;
   width: 80%;
+  height: fit-content;
   display: flex;
   align-items: center;
   background-color: rgb(255, 255, 255);
+  padding: 50px;
+  position: relative;
 }
 
 .test-gauche {
   content: "";
-  height: 75%;
+  height: 100%;
   width: 35%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-right: 2px solid #cacaca;
 
 }
 
@@ -115,12 +117,7 @@
 
 
 
-.test-milieu {
-  background-color: #eee;;
-  content: "";
-  height: 75%;
-  width: 2px;
-}
+
 
 .test-droite {
   content: "";
@@ -129,4 +126,22 @@
   display: flex;
   flex-direction: column;
 
+}
+
+.test-droite-crit-container {
+  background-color: aqua;
+}
+
+.test-droite-crit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 1.875rem;
+}
+
+.test-droite-one-crit {
+  display: flex;
+  justify-content: center;
 }
