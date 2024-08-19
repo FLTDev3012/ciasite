@@ -1,0 +1,42 @@
+.anti-nav {
+  content: "";
+  height: 6.5rem;
+  width: 100%;
+  background-color: rgb(70, 70, 70);
+}
+
+.test-container {
+  background-color: rgb(70, 70, 70);
+  content: "";
+  height: 900px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.test-content {
+  background-color: rgb(255, 255, 255);
+  content: "";
+  height: 100%;
+  width: 80%;
+  display: flex;
+  padding: 10px;
+
+}
+
+.test-gauche {
+  background-color: rgb(221, 134, 20);
+  content: "";
+  height: 100%;
+  width: 50%;
+
+}
+
+.test-droite {
+  background-color: rgb(94, 221, 26);
+  content: "";
+  height: 100%;
+  width: 50%;
+
+}
