@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="critere"
 export default class extends Controller {
-  static targets = [ "premiercrit", "deuxiemecrit", "troisiemecrit", "premiercrittitle", "deuxiemecrittitle", "troisiemecrittitle", "quatriemecrittitle", "cinquiemecrittitle" ]
+  static targets = [ "premiercrit", "deuxiemecrit", "troisiemecrit", "premiercrittitle", "deuxiemecrittitle", "troisiemecrittitle", "quatriemecrittitle", "cinquiemecrittitle", "premiercritheader", "deuxiemecritheader", "troisiemecritheader", "quatriemecritheader", "cinquiemecritheader" ]
   connect() {
     console.log("Critère controller connecté!")
   }
@@ -31,6 +31,27 @@ export default class extends Controller {
     this.quatriemecrittitleTarget.classList.remove("opacity-one");
     this.cinquiemecrittitleTarget.classList.remove("opacity-one");
 
+    // add remove header h3 and p
+    this.premiercritheaderTargets.forEach((target) => {
+      target.classList.remove("d-none");
+    });
+
+    this.deuxiemecritheaderTargets.forEach((target) => {
+      target.classList.add("d-none");
+    });
+
+    this.troisiemecritheaderTargets.forEach((target) => {
+      target.classList.add("d-none");
+    });
+
+    this.quatriemecritheaderTargets.forEach((target) => {
+      target.classList.add("d-none");
+    });
+
+    this.cinquiemecritheaderTargets.forEach((target) => {
+      target.classList.add("d-none");
+    });
+
   }
 
   update2() {
@@ -56,6 +77,28 @@ export default class extends Controller {
     this.quatriemecrittitleTarget.classList.remove("opacity-one");
     this.cinquiemecrittitleTarget.classList.remove("opacity-one");
 
+    // add remove header h3 and p
+
+    this.deuxiemecritheaderTargets.forEach((target) => {
+      target.classList.remove("d-none");
+    });
+
+    this.premiercritheaderTargets.forEach((target) => {
+      target.classList.add("d-none");
+    });
+
+    this.troisiemecritheaderTargets.forEach((target) => {
+      target.classList.add("d-none");
+    });
+
+    this.quatriemecritheaderTargets.forEach((target) => {
+      target.classList.add("d-none");
+    });
+
+    this.cinquiemecritheaderTargets.forEach((target) => {
+      target.classList.add("d-none");
+    });
+
   }
 
   update3() {
@@ -76,6 +119,28 @@ export default class extends Controller {
     this.deuxiemecrittitleTarget.classList.remove("opacity-one");
     this.quatriemecrittitleTarget.classList.remove("opacity-one");
     this.cinquiemecrittitleTarget.classList.remove("opacity-one");
+
+    // add remove header h3 and p
+
+    this.troisiemecritheaderTargets.forEach((target) => {
+      target.classList.remove("d-none");
+    });
+
+    this.premiercritheaderTargets.forEach((target) => {
+      target.classList.add("d-none");
+    });
+
+    this.deuxiemecritheaderTargets.forEach((target) => {
+      target.classList.add("d-none");
+    });
+
+    this.quatriemecritheaderTargets.forEach((target) => {
+      target.classList.add("d-none");
+    });
+
+    this.cinquiemecritheaderTargets.forEach((target) => {
+      target.classList.add("d-none");
+    });
 
   }
 
@@ -99,6 +164,28 @@ export default class extends Controller {
     this.troisiemecrittitleTarget.classList.remove("opacity-one");
     this.cinquiemecrittitleTarget.classList.remove("opacity-one");
 
+    // add remove header h3 and p
+
+    this.quatriemecritheaderTargets.forEach((target) => {
+      target.classList.remove("d-none");
+    });
+
+    this.premiercritheaderTargets.forEach((target) => {
+      target.classList.add("d-none");
+    });
+
+    this.deuxiemecritheaderTargets.forEach((target) => {
+      target.classList.add("d-none");
+    });
+
+    this.troisiemecritheaderTargets.forEach((target) => {
+      target.classList.add("d-none");
+    });
+
+    this.cinquiemecritheaderTargets.forEach((target) => {
+      target.classList.add("d-none");
+    });
+
   }
 
   update5() {
@@ -119,6 +206,28 @@ export default class extends Controller {
     this.deuxiemecrittitleTarget.classList.remove("opacity-one");
     this.troisiemecrittitleTarget.classList.remove("opacity-one");
     this.quatriemecrittitleTarget.classList.remove("opacity-one");
+
+    // add remove header h3 and p
+
+    this.cinquiemecritheaderTargets.forEach((target) => {
+      target.classList.remove("d-none");
+    });
+
+    this.premiercritheaderTargets.forEach((target) => {
+      target.classList.add("d-none");
+    });
+
+    this.deuxiemecritheaderTargets.forEach((target) => {
+      target.classList.add("d-none");
+    });
+
+    this.troisiemecritheaderTargets.forEach((target) => {
+      target.classList.add("d-none");
+    });
+
+    this.quatriemecritheaderTargets.forEach((target) => {
+      target.classList.add("d-none");
+    });
 
   }
 
