@@ -58,10 +58,7 @@
 }
 
 
-.test-gauche-logo-show {
-  opacity: 1 !important;
-  background-color: #e21a41;
-}
+
 
 .test-gauche-title {
   font-size: 1.07rem;
@@ -78,10 +75,7 @@
   background-color: #e21a41;
 }
 
-.test-gauche-title-show {
-  color: #e21a41 !important;
-  opacity: 1 !important;
-}
+
 
 
 
@@ -94,17 +88,6 @@
 }
 
 .test-gauche-line {
-  background-color: #e21a4200;
-  content: "";
-  height: 100%;
-  width: 4px;
-  position: absolute;
-  top: 0;
-  right: 0;
-
-}
-
-.test-gauche-line-show {
   background-color: #e21a41;
   content: "";
   height: 100%;
@@ -112,7 +95,11 @@
   position: absolute;
   top: 0;
   right: 0;
+  opacity: 0;
+
 }
+
+
 
 
 
@@ -166,4 +153,14 @@
 
 .test-droite .text-lighty {
   margin-top: 0 !important;
+}
+
+
+.opacity-one * {
+  opacity: 1 !important;
+  color: #e21a41;
+}
+
+.opacity-one .test-gauche-logo {
+  background-color: #e21a41;
 }
