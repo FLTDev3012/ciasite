@@ -28,8 +28,8 @@ export default class extends Controller {
 
     this.deuxiemecrittitleTarget.classList.remove("opacity-one");
     this.troisiemecrittitleTarget.classList.remove("opacity-one");
-    this.quatriemecrittileTarget.classList.remove("opacity-one");
-    this.cinquiemecrittileTarget.classList.remove("opacity-one");
+    this.quatriemecrittitleTarget.classList.remove("opacity-one");
+    this.cinquiemecrittitleTarget.classList.remove("opacity-one");
 
   }
 
@@ -53,8 +53,8 @@ export default class extends Controller {
 
     this.premiercrittitleTarget.classList.remove("opacity-one");
     this.troisiemecrittitleTarget.classList.remove("opacity-one");
-    this.quatriemecrittileTarget.classList.remove("opacity-one");
-    this.cinquiemecrittileTarget.classList.remove("opacity-one");
+    this.quatriemecrittitleTarget.classList.remove("opacity-one");
+    this.cinquiemecrittitleTarget.classList.remove("opacity-one");
 
   }
 
