@@ -94,13 +94,14 @@
 }
 
 .test-gauche-line {
-  background-color: #e21a4200;
+  background-color: #e21a41;
   content: "";
   height: 100%;
   width: 4px;
   position: absolute;
   top: 0;
   right: 0;
+  opacity: 0;
 
 }
 
@@ -112,6 +113,7 @@
   position: absolute;
   top: 0;
   right: 0;
+  opacity: 1;
 }
 
 

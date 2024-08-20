@@ -28,9 +28,10 @@ export default class extends Controller {
     this.premierepageTarget.classList.add("d-none")
     this.deuxiemepageTarget.classList.add("d-none")
   }
+
 }
 
 
-// data-action="click->dashboard#update1"
+// data-action="click->critere#update1"
 
-// data-dashboard-target="premierepage"
+// data-critere-target="premiercrit"
