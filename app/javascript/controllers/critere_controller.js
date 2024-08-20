@@ -14,6 +14,20 @@ export default class extends Controller {
   //   this.troisiemepageTarget.classList.add("d-none")
   // }
 
+  update1() {
+
+    console.log("Updating premiercrit targets:");
+    this.premiercritTargets.forEach((target) => {
+      target.classList.add("crit-present");
+    });
+
+    console.log("Updating deuxiemecrit targets:");
+    this.deuxiemecritTargets.forEach((target) => {
+      target.classList.remove("crit-present");
+    });
+
+  }
+
   update2() {
 
     console.log("Updating premiercrit targets:");
