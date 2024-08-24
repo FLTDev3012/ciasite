@@ -52,45 +52,113 @@
 
 
 
+  <!-- stimulus -->
+  <div class="ns-stimulus-container" data-controller="critere">
+    <div class="ns-stimulus-content">
 
+      <div class="ns-stimulus-gauche">
 
+        <div class="ns-stimulus-gauche-oneline opacity-one" data-action="click->critere#update1" data-critere-target="premiercrittitle">
+          <div class="ns-stimulus-gauche-logo"></div>
+          <p class="ns-stimulus-gauche-title">Landing Page</p>
+          <div class="ns-stimulus-gauche-line"></div>
+        </div>
 
+        <div class="ns-stimulus-gauche-oneline"  data-action="click->critere#update2" data-critere-target="deuxiemecrittitle">
+          <div class="ns-stimulus-gauche-logo"></div>
+          <p class="ns-stimulus-gauche-title">Showcase Site</p>
+          <div class="ns-stimulus-gauche-line"></div>
+        </div>
 
+        <div class="ns-stimulus-gauche-oneline" data-action="click->critere#update3" data-critere-target="troisiemecrittitle">
+          <div class="ns-stimulus-gauche-logo"></div>
+          <p class="ns-stimulus-gauche-title">CMS</p>
+          <div class="ns-stimulus-gauche-line"></div>
+        </div>
 
-  <!-- test -->
+        <div class="ns-stimulus-gauche-oneline" data-action="click->critere#update4" data-critere-target="quatriemecrittitle">
+          <div class="ns-stimulus-gauche-logo"></div>
+          <p class="ns-stimulus-gauche-title">E-Commerce</p>
+          <div class="ns-stimulus-gauche-line"></div>
+        </div>
 
-  <div class="ns-carrou-container">
-    <div class="ns-carrou-content">
+        <div class="ns-stimulus-gauche-oneline" data-action="click->critere#update5" data-critere-target="cinquiemecrittitle">
+          <div class="ns-stimulus-gauche-logo"></div>
+          <p class="ns-stimulus-gauche-title">Web Application</p>
+          <div class="ns-stimulus-gauche-line"></div>
+        </div>
 
-      <div class="ns-carrou-gauche">
-        <h3 class="text-title">Title</h3>
-        <%= image_tag("test.png") %>
-        <p> &lt; O O O O &gt; </p>
       </div>
 
-      <div class="ns-carrou-droite">
-        <h3 class="text-title">Critères</h3>
-        <div class="ns-carrou-list-container">
-          <div class="ns-carrou-list">
-            <p>Présentation de l'information</p>
-            <p>Galerie d'images</p>
-            <p>Informations de contact</p>
 
-            <p class="crit-none">Création d'articles</p>
-            <p class="crit-none">Catégories et tags</p>
-            <p class="crit-none">Gestion des médias</p>
-            <p class="crit-none">Commentaires et partage</p>
-            <p class="crit-none">Interface d'administration</p>
 
-            <p class="crit-none">Gestion des utilisateurs</p>
-            <p class="crit-none">Panier d'achat</p>
-            <p class="crit-none">Gestion des stocks</p>
-            <p class="crit-none">Traitement des paiements</p>
-            <p class="crit-none">Gestion des commandes</p>
-            <p class="crit-none">Gestion des clients</p>
-            <p class="crit-none">Interface de gestion</p>
-            <br>
-            <p>Prix de départ</p>
+      <div class="ns-stimulus-droite">
+
+        <h3 class="text-title" data-critere-target="premiercritheader">Landing Page</h3>
+        <h3 class="text-title d-none" data-critere-target="deuxiemecritheader">Showcase Site</h3>
+        <h3 class="text-title d-none" data-critere-target="troisiemecritheader">CMS</h3>
+        <h3 class="text-title d-none" data-critere-target="quatriemecritheader">E-Commerce</h3>
+        <h3 class="text-title d-none" data-critere-target="cinquiemecritheader">Web Application</h3>
+
+
+        <p class="text-lighty" data-critere-target="premiercritheader">Une page unique spécialement conçue pour attirer l’attention et inciter à l’action, souvent utilisée pour proposer les services de son entreprises, des campagnes publicitaires ou des promotions spécifiques.</p>
+        <p class="text-lighty d-none" data-critere-target="deuxiemecritheader">Un site qui présente des produits, services ou projets de manière visuellement attrayante, souvent utilisé pour démontrer le savoir-faire ou les offres d’une entreprise.</p>
+        <p class="text-lighty d-none" data-critere-target="troisiemecritheader">Une solution permettant de créer, gérer, modifier, supprimer et publier du contenu web facilement au commande du votre tableau de bord utilisée pour proposer les services et articles de son entreprises.</p>
+        <p class="text-lighty d-none" data-critere-target="quatriemecritheader">Un site dédié à la vente en ligne de produits ou services, intégrant des fonctionnalités d'ajout, modifier et supprimer ses articles ,gestion des commandes et de paiement, et options de livraison.</p>
+        <p class="text-lighty d-none" data-critere-target="cinquiemecritheader">Une application accessible via un navigateur web, offrant des fonctionnalités interactives et des services en ligne, souvent utilisée pour des tâches spécifiques comme ex: un site de rencontre.</p>
+
+
+
+        <div class="ns-stimulus-droite-crit-container">
+          <div class="ns-stimulus-droite-crit-grid">
+            <div class="ns-stimulus-droite-one-crit">
+              <p class="crit-present" data-critere-target="premiercrit">Présentation de l'information</p>
+            </div>
+            <div class="ns-stimulus-droite-one-crit">
+              <p class="crit-present" data-critere-target="premiercrit">Galerie d'images</p>
+            </div>
+            <div class="ns-stimulus-droite-one-crit">
+              <p class="crit-present"data-critere-target="premiercrit">Informations de contact</p>
+            </div>
+            <div class="ns-stimulus-droite-one-crit">
+              <p data-critere-target="deuxiemecrit">Création d'articles</p>
+            </div>
+            <div class="ns-stimulus-droite-one-crit">
+              <p data-critere-target="deuxiemecrit">Catégories et filtres</p>
+            </div>
+            <div class="ns-stimulus-droite-one-crit">
+              <p data-critere-target="deuxiemecrit">Gestion des médias</p>
+            </div>
+            <div class="ns-stimulus-droite-one-crit">
+              <p data-critere-target="deuxiemecrit">Commentaires et partage</p>
+            </div>
+            <div class="ns-stimulus-droite-one-crit">
+              <p data-critere-target="deuxiemecrit">Interface d'administration</p>
+            </div>
+            <div class="ns-stimulus-droite-one-crit">
+              <p data-critere-target="troisiemecrit">Gestion des utilisateurs</p>
+            </div>
+            <div class="ns-stimulus-droite-one-crit">
+              <p data-critere-target="troisiemecrit">Panier d'achat</p>
+            </div>
+            <div class="ns-stimulus-droite-one-crit">
+              <p data-critere-target="troisiemecrit">Gestion des stocks</p>
+            </div>
+            <div class="ns-stimulus-droite-one-crit">
+              <p data-critere-target="troisiemecrit">Traitement des paiements</p>
+            </div>
+            <div class="ns-stimulus-droite-one-crit">
+              <p data-critere-target="troisiemecrit">Gestion des commandes</p>
+            </div>
+            <div class="ns-stimulus-droite-one-crit">
+              <p data-critere-target="troisiemecrit">Gestion des clients</p>
+            </div>
+            <div class="ns-stimulus-droite-one-crit">
+              <p data-critere-target="troisiemecrit">Interface de gestion</p>
+            </div>
+
+
+
           </div>
         </div>
       </div>
@@ -98,7 +166,11 @@
     </div>
   </div>
 
-  <!-- test -->
+  <!-- stimulus -->
+
+
+
+
 
 
 
