@@ -223,16 +223,16 @@
   position: relative;
 }
 
-.ns-fade {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 10%;
-  width: 100%;
-  background: linear-gradient( #333335 0%, #161618 100%);
-  content: "";
-  z-index: 1;
-}
+// .ns-fade {
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   height: 10%;
+//   width: 100%;
+//   background: linear-gradient( #333335 0%, #161618 100%);
+//   content: "";
+//   z-index: 1;
+// }
 
 //----------------------------------------------------------------
 
@@ -408,8 +408,50 @@
 }
 
 
-// presentation des differentes offres --------------------------------
-// landing page
+// presentation des differentes offres (ns-pdo) --------------------------------
+
+.ns-pdo-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ns-pdo-content {
+  width: 80%;
+  height: fit-content;
+}
+
+// black style landing page
+.ns-pdo-black-content {
+  display: flex;
+  position: relative;
+  color: #fff;
+}
+
+.ns-pdo-black-gauche {
+  width: 50%;
+}
+
+.ns-pdo-black-droite {
+  width: 50%;
+}
+
+
+// white style site-vitrine page
+.ns-pdo-white-content {
+  display: flex;
+  position: relative;
+  background-color: #fff;
+}
+
+.ns-pdo-white-gauche {
+  width: 50%;
+}
+
+.ns-pdo-white-droite {
+  width: 50%;
+}
 
 // site vitrine
 
