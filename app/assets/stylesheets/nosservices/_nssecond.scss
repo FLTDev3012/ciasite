@@ -1,0 +1,159 @@
+// ns seconde ----------------------------------------------------------------
+// stimulus ----------------------------------------------------------------
+
+.ns-stimulus-container {
+  content: "";
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.ns-stimulus-content {
+
+  content: "";
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 50px 0;
+  position: relative;
+}
+
+.ns-stimulus-gauche {
+  content: "";
+  height: 100%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 2px solid #cacaca;
+
+}
+
+.ns-stimulus-gauche-oneline {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.ns-stimulus-gauche-logo {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  height: 30px;
+  width: 30px;
+  content: "";
+  background-color: #979797;
+  opacity: 0.5;
+}
+
+
+
+
+.ns-stimulus-gauche-title {
+  font-size: 1.07rem;
+  font-weight: 400;
+  font-family: 'GT America Trial', sans-serif;
+  letter-spacing: 0.6px;
+}
+
+.ns-stimulus-gauche-oneline:hover .ns-stimulus-gauche-title {
+  color: #e21a41;
+}
+
+.ns-stimulus-gauche-oneline:hover .ns-stimulus-gauche-logo {
+  background-color: #e21a41;
+}
+
+
+
+
+
+.ns-stimulus-gauche p {
+  opacity: 0.5;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  margin-bottom: 0;
+}
+
+.ns-stimulus-gauche-line {
+  background-color: #e21a41;
+  content: "";
+  height: 100%;
+  width: 4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+
+}
+
+
+
+
+
+
+
+.ns-stimulus-droite {
+  content: "";
+  height: 75%;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+
+}
+
+.ns-stimulus-droite-crit-grid {
+  display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: auto auto;
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.ns-stimulus-droite-one-crit {
+  display: flex;
+  // justify-content: center;
+  margin: .5rem 0;
+  width: fit-content;
+}
+
+.ns-stimulus-droite-one-crit p {
+  margin-bottom: 0;
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+  text-decoration-color: #111;
+}
+
+.ns-stimulus-droite-one-crit .crit-present {
+  text-decoration: none;
+  text-decoration-thickness: 0;
+  text-decoration-color: transparent;
+  opacity: 1;
+  color: #e21a41;
+}
+
+.ns-stimulus-droite .text-lighty {
+  margin-top: 0 !important;
+}
+
+
+.opacity-one * {
+  opacity: 1 !important;
+  color: #e21a41;
+}
+
+.opacity-one .ns-stimulus-gauche-logo {
+  background-color: #e21a41;
+}
