@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   root to: "pages#home"
   get 'nosservices', to: 'pages#nosservices'
   get 'projects', to: 'pages#projects'
+  get 'estimation', to: 'pages#estimation'
+  get 'about', to: 'pages#about'
   get 'test', to: 'pages#test'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

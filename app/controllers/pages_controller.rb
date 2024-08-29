@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :nosservices, :projects, :test]
+  skip_before_action :authenticate_user!, only: [:home, :nosservices, :projects, :estimation, :about, :test]
 
   def home
   end
@@ -8,6 +8,12 @@ class PagesController < ApplicationController
   end
 
   def projects
+  end
+
+  def estimation
+  end
+
+  def about
   end
 
   def test
