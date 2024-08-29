@@ -1,3 +1,15 @@
+<script>
+  // JavaScript pour mettre à jour la barre de progression
+  window.addEventListener('scroll', function() {
+    const progressBar = document.getElementById('progress-bar');
+    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPosition = window.scrollY;
+    const scrollPercentage = (scrollPosition / totalHeight) * 100;
+
+    progressBar.style.width= scrollPercentage + "%";
+  });
+</script>
+
 <div class="newnav-gray-container">
 
   <div class="newnav-container">
@@ -27,4 +39,15 @@
 
   </div>
 
+  <div class="progress-bar" id="progress-bar"></div>
+
 </div>
+
+<!--
+<div class="pass-nav">
+  <div class="colleputain">
+    <div class="block-noir-ligne"></div>
+    <div class="block-rouge-ligne"></div>
+  </div>
+</div>
+-->
