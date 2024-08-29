@@ -18,6 +18,20 @@
   background-color: $gris;
   display: flex;
   justify-content: center;
+  border-top: #aa1935 1px solid;
+  position: relative;
+}
+
+.home-first-div-content::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #aa1935;
+  filter: blur(2px);
+
 }
 
 // img vagues
