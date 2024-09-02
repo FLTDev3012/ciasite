@@ -53,102 +53,104 @@
 
 </script>
 
+<div class="pass-nav-block-noir pass-blanc"></div>
+
 <div class="estimation-container">
+  <div class="estimation-content">
+    <!-- Première catégorie : une seule option sélectionnable -->
+    <div>
+      <h3>Catégorie 1 : Sélection unique style de site</h3>
+      <label>
+        <input type="checkbox" class="price-checkbox single-option category-1" data-price="100"> landing page (100€)
+      </label>
+      <label>
+        <input type="checkbox" class="price-checkbox single-option category-1" data-price="200"> site vitrine (200€)
+      </label>
+      <label>
+        <input type="checkbox" class="price-checkbox single-option category-1" data-price="300"> Cms (300€)
+      </label>
+    </div>
+
+    <!-- Deuxième catégorie : plusieurs options sélectionnables -->
+    <div>
+      <h3>Catégorie 2 : Sélection multiple ajout sur le site</h3>
+      <label>
+        <input type="checkbox" class="price-checkbox multiple-option category-2" data-price="50"> Option A map (50€)
+      </label>
+      <label>
+        <input type="checkbox" class="price-checkbox multiple-option category-2" data-price="75"> Option commentaire (75€)
+      </label>
+      <label>
+        <input type="checkbox" class="price-checkbox multiple-option category-2" data-price="150"> Option C (150€)
+      </label>
+    </div>
+
+    <!-- Troisième catégorie : une seule option sélectionnable -->
+    <div>
+      <h3>Catégorie 3 : Sélection unique contact</h3>
+      <label>
+        <input type="checkbox" class="price-checkbox single-option category-3" data-price="120"> lien sur email (20€)
+      </label>
+      <label>
+        <input type="checkbox" class="price-checkbox single-option category-3" data-price="250"> formulaire sur site (250€)
+      </label>
+      <label>
+        <input type="checkbox" class="price-checkbox single-option category-3" data-price="350"> Option Z (350€)
+      </label>
+    </div>
+
+    <!-- Quatrième catégorie : une seule option sélectionnable -->
+    <div>
+      <h3>Catégorie 4 : Sélection unique categorie et tags</h3>
+      <label>
+        <input type="checkbox" class="price-checkbox single-option category-4" data-price="200"> Option 1 oui (200€)
+      </label>
+      <label>
+        <input type="checkbox" class="price-checkbox single-option category-4" data-price="300"> Option 2 non  (300€)
+      </label>
+    </div>
 
 
-  <div class="pass-nav-block-noir"></div>
+    <!-- Quatrième catégorie : une seule option sélectionnable -->
+    <div>
+      <h3>Catégorie 4 : Sélection unique commentaire avis </h3>
+      <label>
+        <input type="checkbox" class="price-checkbox single-option category-5" data-price="200"> Option 1 google (200€)
+      </label>
+      <label>
+        <input type="checkbox" class="price-checkbox single-option category-5" data-price="300"> Option creation sur sites de commentaires  (300€)
+      </label>
+      <label>
+        <input type="checkbox" class="price-checkbox single-option category-5" data-price="400"> google auto new (400€)
+      </label>
+    </div>
 
+    <!-- Quatrième catégorie : une seule option sélectionnable -->
+    <div>
+      <h3>Catégorie 4 : Sélection unique style level </h3>
+        <input type="checkbox" class="price-checkbox single-option category-6" data-price="200"> normal (0€)
+      </label>
+      <label>
+        <input type="checkbox" class="price-checkbox single-option category-6" data-price="300"> custom dynamique  (500€)
+      </label>
+      <label>
+        <input type="checkbox" class="price-checkbox single-option category-6" data-price="400"> creatif omg (2000€)
+      </label>
+    </div>
 
-  <!-- Première catégorie : une seule option sélectionnable -->
-  <div>
-    <h3>Catégorie 1 : Sélection unique style de site</h3>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-1" data-price="100"> landing page (100€)
-    </label>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-1" data-price="200"> site vitrine (200€)
-    </label>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-1" data-price="300"> Cms (300€)
-    </label>
+    <!-- Quatrième catégorie : une seule option sélectionnable -->
+    <div>
+      <h3>Catégorie 4 : Sélection unique referencement  </h3>
+        <input type="checkbox" class="price-checkbox single-option category-7" data-price="200"> normal (0€)
+      </label>
+      <label>
+        <input type="checkbox" class="price-checkbox single-option category-7" data-price="300"> hardcore  (500€)
+      </label>
+    </div>
+
+    <h3>Total: <span id="total-price">0</span>€</h3>
   </div>
 
-  <!-- Deuxième catégorie : plusieurs options sélectionnables -->
-  <div>
-    <h3>Catégorie 2 : Sélection multiple ajout sur le site</h3>
-    <label>
-      <input type="checkbox" class="price-checkbox multiple-option category-2" data-price="50"> Option A map (50€)
-    </label>
-    <label>
-      <input type="checkbox" class="price-checkbox multiple-option category-2" data-price="75"> Option commentaire (75€)
-    </label>
-    <label>
-      <input type="checkbox" class="price-checkbox multiple-option category-2" data-price="150"> Option C (150€)
-    </label>
-  </div>
-
-  <!-- Troisième catégorie : une seule option sélectionnable -->
-  <div>
-    <h3>Catégorie 3 : Sélection unique contact</h3>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-3" data-price="120"> lien sur email (20€)
-    </label>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-3" data-price="250"> formulaire sur site (250€)
-    </label>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-3" data-price="350"> Option Z (350€)
-    </label>
-  </div>
-
-  <!-- Quatrième catégorie : une seule option sélectionnable -->
-  <div>
-    <h3>Catégorie 4 : Sélection unique categorie et tags</h3>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-4" data-price="200"> Option 1 oui (200€)
-    </label>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-4" data-price="300"> Option 2 non  (300€)
-    </label>
-  </div>
 
 
-  <!-- Quatrième catégorie : une seule option sélectionnable -->
-  <div>
-    <h3>Catégorie 4 : Sélection unique commentaire avis </h3>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-5" data-price="200"> Option 1 google (200€)
-    </label>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-5" data-price="300"> Option creation sur sites de commentaires  (300€)
-    </label>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-5" data-price="400"> google auto new (400€)
-    </label>
-  </div>
-
-  <!-- Quatrième catégorie : une seule option sélectionnable -->
-  <div>
-    <h3>Catégorie 4 : Sélection unique style level </h3>
-      <input type="checkbox" class="price-checkbox single-option category-6" data-price="200"> normal (0€)
-    </label>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-6" data-price="300"> custom dynamique  (500€)
-    </label>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-6" data-price="400"> creatif omg (2000€)
-    </label>
-  </div>
-
-  <!-- Quatrième catégorie : une seule option sélectionnable -->
-  <div>
-    <h3>Catégorie 4 : Sélection unique referencement  </h3>
-      <input type="checkbox" class="price-checkbox single-option category-7" data-price="200"> normal (0€)
-    </label>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-7" data-price="300"> hardcore  (500€)
-    </label>
-  </div>
-
-  <h3>Total: <span id="total-price">0</span>€</h3>
 </div>
