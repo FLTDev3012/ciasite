@@ -87,3 +87,11 @@ text {
   width: 100%;
   height: auto;
 }
+
+.about-main-link-container {
+  display: flex;
+}
+
+.about-main-link-container .link-ligne-rouge-container {
+  margin-right: 15px;
+}
