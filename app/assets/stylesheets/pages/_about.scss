@@ -13,6 +13,7 @@ svg {
   pointer-events: none;
   transition: top 1s, left 1s;
   transition-timing-function: ease-out;
+  z-index: 1;
 }
 
 text {
@@ -51,9 +52,22 @@ text {
 
 // modif de pdo pour about
 
+.about-container a {
+  color: #fff;
+}
+
+.about-container .ns-pdo-white-container a {
+  color: #111;
+}
+
 .about-container .about-first-div {
   min-height: calc(100vh - 6.2rem);
   position: relative;
+}
+
+
+.about-container .about-first-div .text-main-title {
+  margin-bottom: 1.875rem !important;
 }
 
 .about-container .about-first-div .ns-pdo-black-gauche {
