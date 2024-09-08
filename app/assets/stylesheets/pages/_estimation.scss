@@ -58,6 +58,10 @@
   width: 60%;
 }
 
+.estimation-choix-gauche > div {
+  margin: 1rem 0;
+}
+
 .estimation-result-droite {
   width: 40%;
 }
@@ -67,8 +71,7 @@
 }
 
 .estimation-choix-result-container label {
-  border: 1px solid #878787;
+  border: 1px solid #aa1935;
   margin: 0px 15px 15px 0;
   padding: 8px 16px;
-  background-color: #878787;
 }
