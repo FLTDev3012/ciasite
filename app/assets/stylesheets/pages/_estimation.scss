@@ -61,3 +61,14 @@
 .estimation-result-droite {
   width: 40%;
 }
+
+.estimation-choix-result-container input {
+  display: none;
+}
+
+.estimation-choix-result-container label {
+  border: 1px solid #878787;
+  margin: 0px 15px 15px 0;
+  padding: 8px 16px;
+  background-color: #878787;
+}
