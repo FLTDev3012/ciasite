@@ -21,11 +21,16 @@
       checkboxes.forEach((checkbox) => {
         checkbox.addEventListener('change', function() {
           if (this.checked) {
+            // Décocher les autres cases dans la même catégorie et réinitialiser le fond
             checkboxes.forEach((cb) => {
               if (cb !== this) {
                 cb.checked = false;
+                cb.parentElement.style.backgroundColor = ''; // Réinitialiser le fond
               }
             });
+            this.parentElement.style.backgroundColor = 'red'; // Appliquer le fond rouge
+          } else {
+            this.parentElement.style.backgroundColor = ''; // Réinitialiser si décochée
           }
           updateTotalPrice();
         });
@@ -38,15 +43,21 @@
     handleSingleOption('category-3');
     handleSingleOption('category-4');
 
-
     // Gestion pour les sélections multiples
     const multipleCheckboxes = document.querySelectorAll('.multiple-option');
     multipleCheckboxes.forEach((checkbox) => {
       checkbox.addEventListener('change', function() {
+        if (this.checked) {
+          this.parentElement.style.backgroundColor = 'red'; // Appliquer le fond rouge
+        } else {
+          this.parentElement.style.backgroundColor = ''; // Réinitialiser si décochée
+        }
         updateTotalPrice();
       });
     });
   });
+
+
 
 
 </script>
@@ -54,7 +65,7 @@
 
 <!-- ESTIMATION ----------------------------------------------------------- -->
 
-<div class="pass-nav-block-noir pass-blanc"></div>
+<div class="pass-nav-block-noir"></div>
 
 <div class="estimation-container-black">
   <div class="imagevague-container">
@@ -87,88 +98,101 @@
 
 
 <div class="estimation-container-white">
+  <div class="estimation-content">
 
-  <p>dans ce tableau vous pouvez visualiser les attribues par defaut par style de site </p>
+    <h2 class="text-main-title">recapituluatif </h2>
+    <p>dans ce tableau vous pouvez visualiser les attribues par defaut par style de site </p>
 
-  <!-- Première catégorie : une seule option sélectionnable -->
-  <div>
-    <h3 class="text-bold">1 : Sélection unique style de site</h3>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-1" data-price="1500">landing page ($ 1500)
-    </label>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-1" data-price="3000"> site vitrine ($ 3000)
-    </label>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-1" data-price="4000"> Cms ($ 4000)
-    </label>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-1" data-price="30000"> E-commerce ($ 30000)
-    </label>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-1" data-price="30000"> Web application ($ 30000)
-    </label>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-1" data-price="8000"> QR Code Bar/Restaurant ($ 8000)
-    </label>
+    <div class="estimation-choix-result-container">
+
+      <div class="estimation-choix-gauche">
+        <!-- Première catégorie : une seule option sélectionnable -->
+        <div>
+          <h3 class="text-bold">1 : Sélection unique style de site</h3>
+          <label>
+            <input type="checkbox" class="price-checkbox single-option category-1" data-price="1500">landing page ($ 1500)
+          </label>
+          <label>
+            <input type="checkbox" class="price-checkbox single-option category-1" data-price="3000"> site vitrine ($ 3000)
+          </label>
+          <label>
+            <input type="checkbox" class="price-checkbox single-option category-1" data-price="4000"> Cms ($ 4000)
+          </label>
+          <label>
+            <input type="checkbox" class="price-checkbox single-option category-1" data-price="30000"> E-commerce ($ 30000)
+          </label>
+          <label>
+            <input type="checkbox" class="price-checkbox single-option category-1" data-price="30000"> Web application ($ 30000)
+          </label>
+          <label>
+            <input type="checkbox" class="price-checkbox single-option category-1" data-price="8000"> QR Code Bar/Restaurant ($ 8000)
+          </label>
+        </div>
+
+        <!-- Deuxieme catégorie : une seule option sélectionnable -->
+        <div>
+          <h3 class="text-bold">2 : Sélection unique Besoin d un template</h3>
+          <label>
+            <input type="checkbox" class="price-checkbox single-option category-2" data-price="0"> Non ($ 0)
+          </label>
+          <label>
+            <input type="checkbox" class="price-checkbox single-option category-2" data-price="1000"> Oui ($ 1000)
+          </label>
+        </div>
+
+
+
+
+        <!-- Troisieme catégorie : une seule option sélectionnable -->
+        <div>
+          <h3 class="text-bold">3 : Sélection unique animation du site</h3>
+          <label>
+            <input type="checkbox" class="price-checkbox single-option category-3" data-price="0"> normal ($ 0)
+          </label>
+          <label>
+            <input type="checkbox" class="price-checkbox single-option category-3" data-price="500"> dynamique ($ 500)
+          </label>
+          <label>
+            <input type="checkbox" class="price-checkbox single-option category-3" data-price="2000"> creatif ($ 2000)
+          </label>
+        </div>
+
+        <!-- Quatrieme catégorie : une seule option sélectionnable -->
+        <div>
+          <h3 class="text-bold">4 : Sélection unique contact du site</h3>
+          <label>
+            <input type="checkbox" class="price-checkbox single-option category-4" data-price="0"> link ($ 0)
+          </label>
+          <label>
+            <input type="checkbox" class="price-checkbox single-option category-4" data-price="400"> form stock in website ($ 400)
+          </label>
+          <label>
+            <input type="checkbox" class="price-checkbox single-option category-4" data-price="800"> form send a email ($ 800)
+          </label>
+        </div>
+
+        <!-- Cinquieme catégorie : plusieurs options sélectionnables -->
+        <div>
+          <h3 class="text-bold">5 : Sélection multiple ajout les plus demander</h3>
+          <label>
+            <input type="checkbox" class="price-checkbox multiple-option" data-price="400"> map ($ 400)
+          </label>
+          <label>
+            <input type="checkbox" class="price-checkbox multiple-option" data-price="200"> commentaire avis($ 200)
+          </label>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="estimation-result-droite">
+        <h3>Total: $ <span id="total-price">0</span></h3>
+      </div>
+
+    </div>
+
   </div>
 
-  <!-- Deuxieme catégorie : une seule option sélectionnable -->
-  <div>
-    <h3 class="text-bold">2 : Sélection unique Besoin d un template</h3>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-2" data-price="0"> Non ($ 0)
-    </label>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-2" data-price="1000"> Oui ($ 1000)
-    </label>
-  </div>
-
-
-
-
-  <!-- Troisieme catégorie : une seule option sélectionnable -->
-  <div>
-    <h3 class="text-bold">3 : Sélection unique animation du site</h3>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-3" data-price="0"> normal ($ 0)
-    </label>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-3" data-price="500"> dynamique ($ 500)
-    </label>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-3" data-price="2000"> creatif ($ 2000)
-    </label>
-  </div>
-
-  <!-- Quatrieme catégorie : une seule option sélectionnable -->
-  <div>
-    <h3 class="text-bold">4 : Sélection unique contact du site</h3>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-4" data-price="0"> link ($ 0)
-    </label>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-4" data-price="400"> form stock in website ($ 400)
-    </label>
-    <label>
-      <input type="checkbox" class="price-checkbox single-option category-4" data-price="800"> form send a email ($ 800)
-    </label>
-  </div>
-
-  <!-- Cinquieme catégorie : plusieurs options sélectionnables -->
-  <div>
-    <h3 class="text-bold">5 : Sélection multiple ajout les plus demander</h3>
-    <label>
-      <input type="checkbox" class="price-checkbox multiple-option" data-price="400"> map ($ 400)
-    </label>
-    <label>
-      <input type="checkbox" class="price-checkbox multiple-option" data-price="200"> commentaire avis($ 200)
-    </label>
-  </div>
-
-
-
-
-
-  <h3>Total: $ <span id="total-price">0</span></h3>
 </div>
