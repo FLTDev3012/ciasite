@@ -28,7 +28,7 @@
                 cb.parentElement.style.backgroundColor = ''; // Réinitialiser le fond
               }
             });
-            this.parentElement.style.backgroundColor = 'red'; // Appliquer le fond rouge
+            this.parentElement.style.backgroundColor = '#e21a41'; // Appliquer le fond rouge
           } else {
             this.parentElement.style.backgroundColor = ''; // Réinitialiser si décochée
           }
@@ -48,7 +48,7 @@
     multipleCheckboxes.forEach((checkbox) => {
       checkbox.addEventListener('change', function() {
         if (this.checked) {
-          this.parentElement.style.backgroundColor = 'red'; // Appliquer le fond rouge
+          this.parentElement.style.backgroundColor = '#e21a41'; // Appliquer le fond rouge
         } else {
           this.parentElement.style.backgroundColor = ''; // Réinitialiser si décochée
         }
@@ -110,13 +110,13 @@
         <div>
           <h3 class="text-bold">1 : Sélection unique style de site</h3>
           <label>
-            <input type="checkbox" class="price-checkbox single-option category-1" data-price="1500">landing page ($ 1500)
+            <input type="checkbox" class="price-checkbox single-option category-1" data-price="1500">Landing Page - $ 1.500
           </label>
           <label>
-            <input type="checkbox" class="price-checkbox single-option category-1" data-price="3000"> site vitrine ($ 3000)
+            <input type="checkbox" class="price-checkbox single-option category-1" data-price="3000"> Site Vitrine - $ 3000
           </label>
           <label>
-            <input type="checkbox" class="price-checkbox single-option category-1" data-price="4000"> Cms ($ 4000)
+            <input type="checkbox" class="price-checkbox single-option category-1" data-price="4000"> Content Management System ($ 4000)
           </label>
           <label>
             <input type="checkbox" class="price-checkbox single-option category-1" data-price="30000"> E-commerce ($ 30000)
