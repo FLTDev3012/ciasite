@@ -25,61 +25,40 @@ xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
 
 <script>
 
-  const circleSvg = document.querySelector('svg')
-    const btn = document.querySelector('button')
+  document.addEventListener("turbo:load", function() {
+    const circleSvg = document.querySelector('svg');
+    const btn = document.querySelector('button');
 
-    let mouseX = 0
-    let mouseY = 0
-    //let intv = 0
+    let mouseX = 0;
+    let mouseY = 0;
+    let scrollY = 0;
 
     window.addEventListener('mousemove', (event) => {
-    // circleSvg.style.top = event.clientY - 45;
-    // circleSvg.style.left = event.clientX - 45;
+      mouseY = (event.clientY) - 45;
+      mouseX = (event.clientX) - 45;
+    });
 
-    mouseY = (event.clientY) - (45)
-    mouseX = (event.clientX) - (45)
+    window.addEventListener('scroll', (event) => {
+      scrollY = window.scrollY;
+    });
 
-})
+    const mouseMove = () => {
+      circleSvg.style.top = mouseY + scrollY + 'px';
+      circleSvg.style.left = mouseX + 'px';
+      window.requestAnimationFrame(mouseMove);
+    };
 
-let scrollY = 0
+    mouseMove();
 
-window.addEventListener('scroll', (event) => {
-    // circleSvg.style.top = event.clientY - 45;
-    // circleSvg.style.left = event.clientX - 45;
-
-    scrollY =  window.scrollY
-    console.log(scrollY)
-
-})
-
-
-
-
-
-const mouseMove = () => {
-    //intv += 1
-
-    circleSvg.style.top = mouseY + scrollY + 'px'
-    circleSvg.style.left = mouseX + 'px'
-
-
-    //circleSvg.style.opacity = 1 + Math.sin(intv * .04)
-    //console.log(Math.sin(intv * .04))
-
-    window.requestAnimationFrame(mouseMove)
-}
-
-mouseMove()
-
-    var tl = gsap.timeline({defaults: {ease: "power2.inOut"}})
-
-    tl.to(circleSvg, {width: 0, opacity: 0})
-    tl.to('body, button', {background: 'white'})
-    tl.pause()
+    var tl = gsap.timeline({defaults: {ease: "power2.inOut"}});
+    tl.to(circleSvg, {width: 0, opacity: 0});
+    tl.to('body, button', {background: 'white'});
+    tl.pause();
 
     btn.addEventListener('click', () => {
-        tl.play()
-    })
+      tl.play();
+    });
+  });
 
 </script>
 
