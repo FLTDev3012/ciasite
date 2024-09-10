@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="estimation"
 export default class extends Controller {
-  static targets = [ "firstCatFirstType", "firstCatSecondType", "firstCatThirdType", "firstCatFourthType", "secondCatSecondType", "thirdCatFirstType", "thirdCatSecondType", "thirdCatThirdType", "fourthCatFirstType", "fourthCatSecondType", "fourthCatThirdType" ]
+  static targets = [ "firstCatFirstType", "firstCatSecondType", "firstCatThirdType", "firstCatFourthType", "secondCatSecondType", "thirdCatFirstType", "thirdCatSecondType", "thirdCatThirdType", "fourthCatFirstType", "fourthCatSecondType", "fourthCatThirdType", "fifthCatFirstType", "fifthCatSecondType"]
   connect() {
     console.log("estimation controller connecté!")
   }
@@ -199,7 +199,7 @@ export default class extends Controller {
 
   }
 
-  // ------ seconde category of selection template ------------
+  // ------ third category of selection template ------------
 
 
   third_cat_first_choice(event) {
@@ -250,7 +250,7 @@ export default class extends Controller {
 
   }
 
-  // ------ seconde category of selection template ------------
+  // ------ fourth category of selection template ------------
 
   fourth_cat_first_choice(event) {
     const checkbox = event.currentTarget.querySelector('input[type="checkbox"]');
@@ -300,8 +300,34 @@ export default class extends Controller {
 
   }
 
+  // ------ fifth category of selection template ------------
+
+  fifth_cat_first_choice(event) {
+    const checkbox = event.currentTarget.querySelector('input[type="checkbox"]');
+    const isChecked = checkbox.checked;
+
+    if (isChecked) {
+      this.fifthCatFirstTypeTarget.classList.add("estimation-selected");
+    }
+    else {
+      this.fifthCatFirstTypeTarget.classList.remove("estimation-selected");
+    }
+
+  }
 
 
+  fifth_cat_second_choice(event) {
+    const checkbox = event.currentTarget.querySelector('input[type="checkbox"]');
+    const isChecked = checkbox.checked;
+
+    if (isChecked) {
+      this.fifthCatSecondTypeTarget.classList.add("estimation-selected");
+    }
+    else {
+      this.fifthCatSecondTypeTarget.classList.remove("estimation-selected");
+    }
+
+  }
 
 
 }

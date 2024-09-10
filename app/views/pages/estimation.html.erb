@@ -188,12 +188,15 @@
         <!-- Cinquieme catégorie : plusieurs options sélectionnables -->
         <div>
           <h3 class="text-bold">5 : Sélection multiple ajout les plus demander</h3>
-          <label>
+
+          <label data-action="click->estimation#fifth_cat_first_choice">
             <input type="checkbox" class="price-checkbox multiple-option" data-price="400"> map - $ 400
           </label>
-          <label>
+
+          <label data-action="click->estimation#fifth_cat_second_choice">
             <input type="checkbox" class="price-checkbox multiple-option" data-price="200"> commentaire avis - $ 200
           </label>
+
         </div>
       </div>
 
@@ -228,11 +231,11 @@
         <p data-estimation-target="fourthCatFirstType" >7 contact par lien</p>
         <p data-estimation-target="fourthCatSecondType" >7 contact par formulaire dans le site</p>
         <p data-estimation-target="fourthCatThirdType" >7 contact par formulaire envoyer en e-mail</p>
-        <p>8 ajout d'une map</p>
-        <p>8 ajout des commentaires avis</p>
+        <p data-estimation-target="fifthCatFirstType" >8 ajout d'une map</p>
+        <p data-estimation-target="fifthCatSecondType" >8 ajout des commentaires avis</p>
 
         <div class="estimation-result-total-container">
-          <p class="estimation-result-total">Total:<span id="total-price"> &nbsp; 0 &nbsp; </span>$</p>
+          <p class="estimation-result-total">Total:&nbsp;<span id="total-price"> 0 </span>$</p>
         </div>
       </div>
 

@@ -85,9 +85,10 @@
   border: 1px solid aquamarine;
 }
 
-.estimation-result-droite p {
+.estimation-result-droite > p {
   color: #cacaca;
   margin-bottom: 0.5rem;
+  display: none;
 }
 
 .estimation-result-title {
@@ -113,6 +114,7 @@
 
 .estimation-selected {
   color: #e21a41 !important;
+  display: block !important;
 }
 
 .estimation-hidden {
