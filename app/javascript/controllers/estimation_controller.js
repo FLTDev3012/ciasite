@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="estimation"
 export default class extends Controller {
-  static targets = [ "firstCatFirstType", "firstCatSecondType", "firstCatThirdType", "firstCatFourthType", "secondCatSecondType" ]
+  static targets = [ "firstCatFirstType", "firstCatSecondType", "firstCatThirdType", "firstCatFourthType", "secondCatSecondType", "thirdCatFirstType", "thirdCatSecondType", "thirdCatThirdType" ]
   connect() {
     console.log("estimation controller connecté!")
   }
@@ -198,6 +198,59 @@ export default class extends Controller {
     }
 
   }
+
+  // ------ seconde category of selection template ------------
+
+
+  third_cat_first_choice(event) {
+    const checkbox = event.currentTarget.querySelector('input[type="checkbox"]');
+    const isChecked = checkbox.checked;
+
+    if (isChecked) {
+      this.thirdCatFirstTypeTarget.classList.add("estimation-selected");
+
+      this.thirdCatSecondTypeTarget.classList.remove("estimation-selected");
+      this.thirdCatThirdTypeTarget.classList.remove("estimation-selected");
+    }
+    else {
+      this.thirdCatFirstTypeTarget.classList.remove("estimation-selected");
+    }
+
+  }
+
+  third_cat_second_choice(event) {
+    const checkbox = event.currentTarget.querySelector('input[type="checkbox"]');
+    const isChecked = checkbox.checked;
+
+    if (isChecked) {
+      this.thirdCatSecondTypeTarget.classList.add("estimation-selected");
+
+      this.thirdCatFirstTypeTarget.classList.remove("estimation-selected");
+      this.thirdCatThirdTypeTarget.classList.remove("estimation-selected");
+    }
+    else {
+      this.thirdCatSecondTypeTarget.classList.remove("estimation-selected");
+    }
+
+  }
+
+  third_cat_third_choice(event) {
+    const checkbox = event.currentTarget.querySelector('input[type="checkbox"]');
+    const isChecked = checkbox.checked;
+
+    if (isChecked) {
+      this.thirdCatThirdTypeTarget.classList.add("estimation-selected");
+
+      this.thirdCatSecondTypeTarget.classList.remove("estimation-selected");
+      this.thirdCatFirstTypeTarget.classList.remove("estimation-selected");
+    }
+    else {
+      this.thirdCatThirdTypeTarget.classList.remove("estimation-selected");
+    }
+
+  }
+
+
 
 
 
