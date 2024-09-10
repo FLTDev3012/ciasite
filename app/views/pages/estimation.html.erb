@@ -97,7 +97,7 @@
 </div>
 
 
-<div class="estimation-container-white">
+<div class="estimation-container-white" data-controller="estimation">
   <div class="estimation-content">
 
     <h2 class="text-main-title">recapituluatif </h2>
@@ -109,33 +109,40 @@
         <!-- Première catégorie : une seule option sélectionnable -->
         <div>
           <h3 class="text-bold">1 : Sélection unique style de site</h3>
-          <label>
+
+          <label data-action="click->estimation#first_cat_first_choice">
             <input type="checkbox" class="price-checkbox single-option category-1" data-price="1500">Landing Page - $ 1.500
           </label>
-          <label>
+
+          <label data-action="click->estimation#first_cat_first_choice">
             <input type="checkbox" class="price-checkbox single-option category-1" data-price="3000"> Site Vitrine - $ 3.000
           </label>
-          <label>
+
+          <label data-action="click->estimation#first_cat_second_choice">
             <input type="checkbox" class="price-checkbox single-option category-1" data-price="4000"> Content Management System - $ 4.000
           </label>
-          <label>
+
+          <label data-action="click->estimation#first_cat_third_choice">
             <input type="checkbox" class="price-checkbox single-option category-1" data-price="30000"> E-commerce - $ 30.000
           </label>
-          <label>
+
+          <label data-action="click->estimation#first_cat_third_choice">
             <input type="checkbox" class="price-checkbox single-option category-1" data-price="30000"> Web application - $ 30.000
           </label>
-          <label>
+
+          <label data-action="click->estimation#first_cat_fourth_choice">
             <input type="checkbox" class="price-checkbox single-option category-1" data-price="8000"> QR Code Bar/Restaurant - $ 8.000
           </label>
+
         </div>
 
         <!-- Deuxieme catégorie : une seule option sélectionnable -->
         <div>
           <h3 class="text-bold">2 : Sélection unique Besoin d un template</h3>
-          <label>
+          <label data-action="click->estimation#second_cat_first_choice">
             <input type="checkbox" class="price-checkbox single-option category-2" data-price="0"> Non - $ 0
           </label>
-          <label>
+          <label data-action="click->estimation#second_cat_second_choice">
             <input type="checkbox" class="price-checkbox single-option category-2" data-price="1000"> Oui - $ 1.000
           </label>
         </div>
@@ -146,13 +153,16 @@
         <!-- Troisieme catégorie : une seule option sélectionnable -->
         <div>
           <h3 class="text-bold">3 : Sélection unique animation du site</h3>
-          <label>
-            <input type="checkbox" class="price-checkbox single-option category-3" data-price="0"> normal - $ 0
+
+          <label data-action="click->estimation#third_cat_first_choice">
+            <input type="checkbox" class="price-checkbox single-option category-3" data-price="0"> standard - $ 0
           </label>
-          <label>
+
+          <label data-action="click->estimation#third_cat_second_choice">
             <input type="checkbox" class="price-checkbox single-option category-3" data-price="500"> dynamique - $ 500
           </label>
-          <label>
+
+          <label data-action="click->estimation#third_cat_third_choice">
             <input type="checkbox" class="price-checkbox single-option category-3" data-price="2000"> creatif - $ 2.000
           </label>
         </div>
@@ -160,26 +170,33 @@
         <!-- Quatrieme catégorie : une seule option sélectionnable -->
         <div>
           <h3 class="text-bold">4 : Sélection unique contact du site</h3>
-          <label>
+
+          <label data-action="click->estimation#fourth_cat_first_choice">
             <input type="checkbox" class="price-checkbox single-option category-4" data-price="0"> link - $ 0
           </label>
-          <label>
+
+          <label data-action="click->estimation#fourth_cat_second_choice">
             <input type="checkbox" class="price-checkbox single-option category-4" data-price="400"> form stock in website - $ 400
           </label>
-          <label>
+
+          <label data-action="click->estimation#fourth_cat_third_choice">
             <input type="checkbox" class="price-checkbox single-option category-4" data-price="800"> form send a email - $ 800
           </label>
+
         </div>
 
         <!-- Cinquieme catégorie : plusieurs options sélectionnables -->
         <div>
           <h3 class="text-bold">5 : Sélection multiple ajout les plus demander</h3>
-          <label>
+
+          <label data-action="click->estimation#fifth_cat_first_choice">
             <input type="checkbox" class="price-checkbox multiple-option" data-price="400"> map - $ 400
           </label>
-          <label>
+
+          <label data-action="click->estimation#fifth_cat_second_choice">
             <input type="checkbox" class="price-checkbox multiple-option" data-price="200"> commentaire avis - $ 200
           </label>
+
         </div>
       </div>
 
@@ -191,34 +208,34 @@
 
         <h3 class="estimation-result-title">Votre site</h3>
 
-        <p>1 Présentation de l'information</p>
-        <p>1 Galerie d'images</p>
-        <p>1 Informations de contact (pas 4)</p>
-        <p>1 Screen adaptability</p>
-        <p>2 Création d'articles</p>
-        <p>2 Catégories et filtres</p>
-        <p>2 Gestion des médias</p>
-        <p>2 Commentaires et partage (pas 4)</p>
-        <p>2 Interface d'administration</p>
-        <p>3 Gestion des utilisateurs</p>
-        <p>3 Panier d'achat</p>
-        <p>3 Gestion des stocks</p>
-        <p>3 Traitement des paiements</p>
-        <p>3 Gestion des commandes</p>
-        <p>3 Gestion des clients</p>
-        <p>3 Interface de gestion</p>
-        <p>5 Creation d'un Template</p>
-        <p>6 Animation du site normal</p>
-        <p>6 Animation du site dynamique</p>
-        <p>6 Animation du site creatif</p>
-        <p>7 contact par lien</p>
-        <p>7 contact par formulaire dans le site</p>
-        <p>7 contact par formulaire envoyer en e-mail</p>
-        <p>8 ajout d'une map</p>
-        <p>8 ajout des commentaires avis</p>
+        <p data-estimation-target="firstCatFirstType" >1 Présentation de l'information</p>
+        <p data-estimation-target="firstCatFirstType" >1 Galerie d'images</p>
+        <p data-estimation-target="firstCatFirstType firstCatFourthType" >1 Informations de contact (pas 4)</p>
+        <p data-estimation-target="firstCatFirstType" >1 Screen adaptability</p>
+        <p data-estimation-target="firstCatSecondType" >2 Création d'articles</p>
+        <p data-estimation-target="firstCatSecondType" >2 Catégories et filtres</p>
+        <p data-estimation-target="firstCatSecondType" >2 Gestion des médias</p>
+        <p data-estimation-target="firstCatSecondType firstCatFourthType" >2 Commentaires et partage (pas 4)</p>
+        <p data-estimation-target="firstCatSecondType" >2 Interface d'administration</p>
+        <p data-estimation-target="firstCatThirdType" >3 Gestion des utilisateurs</p>
+        <p data-estimation-target="firstCatThirdType" >3 Panier d'achat</p>
+        <p data-estimation-target="firstCatThirdType" >3 Gestion des stocks</p>
+        <p data-estimation-target="firstCatThirdType" >3 Traitement des paiements</p>
+        <p data-estimation-target="firstCatThirdType" >3 Gestion des commandes</p>
+        <p data-estimation-target="firstCatThirdType" >3 Gestion des clients</p>
+        <p data-estimation-target="firstCatThirdType" >3 Interface de gestion</p>
+        <p data-estimation-target="secondCatSecondType" >5 Creation d'un Template</p>
+        <p data-estimation-target="thirdCatFirstType" >6 Animation du site Standard</p>
+        <p data-estimation-target="thirdCatSecondType" >6 Animation du site dynamique</p>
+        <p data-estimation-target="thirdCatThirdType" >6 Animation du site creatif</p>
+        <p data-estimation-target="fourthCatFirstType" >7 contact par lien</p>
+        <p data-estimation-target="fourthCatSecondType" >7 contact par formulaire dans le site</p>
+        <p data-estimation-target="fourthCatThirdType" >7 contact par formulaire envoyer en e-mail</p>
+        <p data-estimation-target="fifthCatFirstType" >8 ajout d'une map</p>
+        <p data-estimation-target="fifthCatSecondType" >8 ajout des commentaires avis</p>
 
         <div class="estimation-result-total-container">
-          <p class="estimation-result-total">Total:<span id="total-price"> &nbsp; 0 &nbsp; </span>$</p>
+          <p class="estimation-result-total">Total:&nbsp;<span id="total-price"> 0 </span>$</p>
         </div>
       </div>
 
