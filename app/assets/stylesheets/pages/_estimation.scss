@@ -93,9 +93,20 @@
 .estimation-result-title {
   display: flex;
   justify-content: center;
+  background-color: rgb(226, 26, 65);
+  margin: 0;
+  padding: 8px 16px;
+  color: #fff;
+}
+
+.estimation-result-total-container {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .estimation-result-total {
-  display: flex;
-  justify-content: flex-end;
+  background-color: rgb(226, 26, 65);
+  margin: 0 !important;
+  padding: 8px 16px;
+  color: #fff !important;
 }
