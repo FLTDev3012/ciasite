@@ -7,23 +7,31 @@ export default class extends Controller {
     console.log("estimation controller connecté!")
   }
 
-  first_cat_first_choice() {
+  first_cat_first_choice(event) {
+    const checkbox = event.currentTarget.querySelector('input[type="checkbox"]');
+    const isChecked = checkbox.checked;
 
-    // add color good type
-    this.firstCatFirstTypeTargets.forEach((target) => {
-      target.classList.add("estimation-selected");
-    });
+    if (isChecked) {
+      // Appliquer le style à firstCatFirstType
+      this.firstCatFirstTypeTargets.forEach((target) => {
+        target.classList.add("estimation-selected");
+      });
 
-    // remove color bad type
+      // Réinitialiser le style des autres catégories
+      this.firstCatSecondTypeTargets.forEach((target) => {
+        target.classList.remove("estimation-selected");
+      });
 
-    this.firstCatSecondTypeTargets.forEach((target) => {
-      target.classList.remove("estimation-selected");
-    });
-
-    this.firstCatThirdTypeTargets.forEach((target) => {
-      target.classList.remove("estimation-selected");
-    });
-
+      this.firstCatThirdTypeTargets.forEach((target) => {
+        target.classList.remove("estimation-selected");
+      });
+    }
+    else {
+      // Réinitialiser le style si la case est décochée
+      this.firstCatFirstTypeTargets.forEach((target) => {
+        target.classList.remove("estimation-selected");
+      });
+    }
   }
 
   first_cat_second_choice() {
