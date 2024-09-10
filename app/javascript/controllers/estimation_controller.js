@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="estimation"
 export default class extends Controller {
-  static targets = [ "firstCatFirstType", "firstCatSecondType", "firstCatThirdType" ]
+  static targets = [ "firstCatFirstType", "firstCatSecondType", "firstCatThirdType", "firstCatFourthType" ]
   connect() {
     console.log("estimation controller connecté!")
   }
@@ -22,6 +22,10 @@ export default class extends Controller {
 
       this.firstCatThirdTypeTargets.forEach((target) => {
         target.classList.remove("estimation-selected");
+      });
+
+      this.firstCatFourthTypeTargets.forEach((target) => {
+        target.classList.remove("estimation-hidden");
       });
     }
     else {
@@ -49,6 +53,10 @@ export default class extends Controller {
 
       this.firstCatThirdTypeTargets.forEach((target) => {
         target.classList.remove("estimation-selected");
+      });
+
+      this.firstCatFourthTypeTargets.forEach((target) => {
+        target.classList.remove("estimation-hidden");
       });
 
     }
@@ -90,6 +98,11 @@ export default class extends Controller {
       this.firstCatThirdTypeTargets.forEach((target) => {
         target.classList.add("estimation-selected");
       });
+
+      this.firstCatFourthTypeTargets.forEach((target) => {
+        target.classList.remove("estimation-hidden");
+      });
+
     }
     else {
 
@@ -103,6 +116,51 @@ export default class extends Controller {
 
       this.firstCatThirdTypeTargets.forEach((target) => {
         target.classList.remove("estimation-selected");
+      });
+    }
+
+  }
+
+  first_cat_fourth_choice(event) {
+
+    const checkbox = event.currentTarget.querySelector('input[type="checkbox"]');
+    const isChecked = checkbox.checked;
+
+    // add color good type
+    if (isChecked) {
+
+      this.firstCatFirstTypeTargets.forEach((target) => {
+        target.classList.add("estimation-selected");
+      });
+
+      this.firstCatSecondTypeTargets.forEach((target) => {
+        target.classList.add("estimation-selected");
+      });
+
+      this.firstCatThirdTypeTargets.forEach((target) => {
+        target.classList.add("estimation-selected");
+      });
+
+      this.firstCatFourthTypeTargets.forEach((target) => {
+        target.classList.add("estimation-hidden");
+      });
+    }
+    else {
+
+      this.firstCatFirstTypeTargets.forEach((target) => {
+        target.classList.remove("estimation-selected");
+      });
+
+      this.firstCatSecondTypeTargets.forEach((target) => {
+        target.classList.remove("estimation-selected");
+      });
+
+      this.firstCatThirdTypeTargets.forEach((target) => {
+        target.classList.remove("estimation-selected");
+      });
+
+      this.firstCatFourthTypeTargets.forEach((target) => {
+        target.classList.remove("estimation-hidden");
       });
     }
 
