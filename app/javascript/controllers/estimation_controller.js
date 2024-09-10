@@ -12,12 +12,10 @@ export default class extends Controller {
     const isChecked = checkbox.checked;
 
     if (isChecked) {
-      // Appliquer le style à firstCatFirstType
       this.firstCatFirstTypeTargets.forEach((target) => {
         target.classList.add("estimation-selected");
       });
 
-      // Réinitialiser le style des autres catégories
       this.firstCatSecondTypeTargets.forEach((target) => {
         target.classList.remove("estimation-selected");
       });
@@ -27,49 +25,86 @@ export default class extends Controller {
       });
     }
     else {
-      // Réinitialiser le style si la case est décochée
       this.firstCatFirstTypeTargets.forEach((target) => {
         target.classList.remove("estimation-selected");
       });
     }
   }
 
-  first_cat_second_choice() {
+  first_cat_second_choice(event) {
+
+    const checkbox = event.currentTarget.querySelector('input[type="checkbox"]');
+    const isChecked = checkbox.checked;
 
     // add color good type
+    if (isChecked) {
 
-    this.firstCatFirstTypeTargets.forEach((target) => {
-      target.classList.add("estimation-selected");
-    });
+      this.firstCatFirstTypeTargets.forEach((target) => {
+        target.classList.add("estimation-selected");
+      });
 
-    this.firstCatSecondTypeTargets.forEach((target) => {
-      target.classList.add("estimation-selected");
-    });
+      this.firstCatSecondTypeTargets.forEach((target) => {
+        target.classList.add("estimation-selected");
+      });
+
+      this.firstCatThirdTypeTargets.forEach((target) => {
+        target.classList.remove("estimation-selected");
+      });
+
+    }
+    else {
+
+      this.firstCatFirstTypeTargets.forEach((target) => {
+        target.classList.remove("estimation-selected");
+      });
+
+      this.firstCatSecondTypeTargets.forEach((target) => {
+        target.classList.remove("estimation-selected");
+      });
+
+    }
 
     // remove color bad type
 
 
-    this.firstCatThirdTypeTargets.forEach((target) => {
-      target.classList.remove("estimation-selected");
-    });
+
 
   }
 
-  first_cat_third_choice() {
+  first_cat_third_choice(event) {
+
+    const checkbox = event.currentTarget.querySelector('input[type="checkbox"]');
+    const isChecked = checkbox.checked;
 
     // add color good type
+    if (isChecked) {
 
-    this.firstCatFirstTypeTargets.forEach((target) => {
-      target.classList.add("estimation-selected");
-    });
+      this.firstCatFirstTypeTargets.forEach((target) => {
+        target.classList.add("estimation-selected");
+      });
 
-    this.firstCatSecondTypeTargets.forEach((target) => {
-      target.classList.add("estimation-selected");
-    });
+      this.firstCatSecondTypeTargets.forEach((target) => {
+        target.classList.add("estimation-selected");
+      });
 
-    this.firstCatThirdTypeTargets.forEach((target) => {
-      target.classList.add("estimation-selected");
-    });
+      this.firstCatThirdTypeTargets.forEach((target) => {
+        target.classList.add("estimation-selected");
+      });
+    }
+    else {
+
+      this.firstCatFirstTypeTargets.forEach((target) => {
+        target.classList.remove("estimation-selected");
+      });
+
+      this.firstCatSecondTypeTargets.forEach((target) => {
+        target.classList.remove("estimation-selected");
+      });
+
+      this.firstCatThirdTypeTargets.forEach((target) => {
+        target.classList.remove("estimation-selected");
+      });
+    }
 
   }
 
