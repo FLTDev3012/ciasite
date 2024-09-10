@@ -2,11 +2,12 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="estimation"
 export default class extends Controller {
-  static targets = [ "firstCatFirstType", "firstCatSecondType", "firstCatThirdType", "firstCatFourthType" ]
+  static targets = [ "firstCatFirstType", "firstCatSecondType", "firstCatThirdType", "firstCatFourthType", "secondCatSecondType" ]
   connect() {
     console.log("estimation controller connecté!")
   }
 
+  // ------ first category of selection (style website ------------
   first_cat_first_choice(event) {
     const checkbox = event.currentTarget.querySelector('input[type="checkbox"]');
     const isChecked = checkbox.checked;
@@ -166,6 +167,37 @@ export default class extends Controller {
 
   }
 
+  // ------ seconde category of selection template ------------
+
+  second_cat_first_choice(event) {
+
+
+    const checkbox = event.currentTarget.querySelector('input[type="checkbox"]');
+    const isChecked = checkbox.checked;
+
+    // add color good type
+    if (isChecked) {
+      this.secondCatSecondTypeTarget.classList.remove("estimation-selected");
+    }
+
+
+  }
+
+  second_cat_second_choice(event) {
+
+
+    const checkbox = event.currentTarget.querySelector('input[type="checkbox"]');
+    const isChecked = checkbox.checked;
+
+    // add color good type
+    if (isChecked) {
+      this.secondCatSecondTypeTarget.classList.add("estimation-selected");
+    }
+    else {
+      this.secondCatSecondTypeTarget.classList.remove("estimation-selected");
+    }
+
+  }
 
 
 
