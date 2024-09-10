@@ -83,6 +83,7 @@
 .estimation-result-droite {
   width: 40%;
   border: 1px solid aquamarine;
+  overflow: hidden;
 }
 
 .estimation-result-droite > p {
@@ -112,9 +113,24 @@
   color: #fff !important;
 }
 
+
 .estimation-selected {
   color: #e21a41 !important;
+  animation: estimate-swiping 1s ease-in-out !important;
   display: block !important;
+}
+
+
+@keyframes estimate-swiping {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .estimation-hidden {

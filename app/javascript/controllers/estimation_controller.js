@@ -13,8 +13,16 @@ export default class extends Controller {
     const isChecked = checkbox.checked;
 
     if (isChecked) {
-      this.firstCatFirstTypeTargets.forEach((target) => {
-        target.classList.add("estimation-selected");
+
+      this.firstCatFirstTypeTargets.forEach((target, index) => {
+        // Appliquer le délai d'animation d'abord
+
+        target.style.animationDelay = `${index * 0.1}s`;
+
+        // Utiliser setTimeout pour ajouter la classe après le délai
+        setTimeout(() => {
+          target.classList.add("estimation-selected");
+        }, index * 200); // 200ms correspond à 0.2s
       });
 
       this.firstCatSecondTypeTargets.forEach((target) => {
