@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="estimation"
 export default class extends Controller {
-  static targets = [ "firstCatFirstType", "firstCatSecondType", "firstCatThirdType", "firstCatFourthType", "secondCatSecondType", "thirdCatFirstType", "thirdCatSecondType", "thirdCatThirdType" ]
+  static targets = [ "firstCatFirstType", "firstCatSecondType", "firstCatThirdType", "firstCatFourthType", "secondCatSecondType", "thirdCatFirstType", "thirdCatSecondType", "thirdCatThirdType", "fourthCatFirstType", "fourthCatSecondType", "fourthCatThirdType" ]
   connect() {
     console.log("estimation controller connecté!")
   }
@@ -246,6 +246,56 @@ export default class extends Controller {
     }
     else {
       this.thirdCatThirdTypeTarget.classList.remove("estimation-selected");
+    }
+
+  }
+
+  // ------ seconde category of selection template ------------
+
+  fourth_cat_first_choice(event) {
+    const checkbox = event.currentTarget.querySelector('input[type="checkbox"]');
+    const isChecked = checkbox.checked;
+
+    if (isChecked) {
+      this.fourthCatFirstTypeTarget.classList.add("estimation-selected");
+
+      this.fourthCatSecondTypeTarget.classList.remove("estimation-selected");
+      this.fourthCatThirdTypeTarget.classList.remove("estimation-selected");
+    }
+    else {
+      this.fourthCatFirstTypeTarget.classList.remove("estimation-selected");
+    }
+
+  }
+
+  fourth_cat_second_choice(event) {
+    const checkbox = event.currentTarget.querySelector('input[type="checkbox"]');
+    const isChecked = checkbox.checked;
+
+    if (isChecked) {
+      this.fourthCatSecondTypeTarget.classList.add("estimation-selected");
+
+      this.fourthCatFirstTypeTarget.classList.remove("estimation-selected");
+      this.fourthCatThirdTypeTarget.classList.remove("estimation-selected");
+    }
+    else {
+      this.fourthCatSecondTypeTarget.classList.remove("estimation-selected");
+    }
+
+  }
+
+  fourth_cat_third_choice(event) {
+    const checkbox = event.currentTarget.querySelector('input[type="checkbox"]');
+    const isChecked = checkbox.checked;
+
+    if (isChecked) {
+      this.fourthCatThirdTypeTarget.classList.add("estimation-selected");
+
+      this.fourthCatSecondTypeTarget.classList.remove("estimation-selected");
+      this.fourthCatFirstTypeTarget.classList.remove("estimation-selected");
+    }
+    else {
+      this.fourthCatThirdTypeTarget.classList.remove("estimation-selected");
     }
 
   }

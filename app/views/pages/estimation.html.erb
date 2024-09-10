@@ -170,15 +170,19 @@
         <!-- Quatrieme catégorie : une seule option sélectionnable -->
         <div>
           <h3 class="text-bold">4 : Sélection unique contact du site</h3>
-          <label>
+
+          <label data-action="click->estimation#fourth_cat_first_choice">
             <input type="checkbox" class="price-checkbox single-option category-4" data-price="0"> link - $ 0
           </label>
-          <label>
+
+          <label data-action="click->estimation#fourth_cat_second_choice">
             <input type="checkbox" class="price-checkbox single-option category-4" data-price="400"> form stock in website - $ 400
           </label>
-          <label>
+
+          <label data-action="click->estimation#fourth_cat_third_choice">
             <input type="checkbox" class="price-checkbox single-option category-4" data-price="800"> form send a email - $ 800
           </label>
+
         </div>
 
         <!-- Cinquieme catégorie : plusieurs options sélectionnables -->
@@ -221,9 +225,9 @@
         <p data-estimation-target="thirdCatFirstType" >6 Animation du site Standard</p>
         <p data-estimation-target="thirdCatSecondType" >6 Animation du site dynamique</p>
         <p data-estimation-target="thirdCatThirdType" >6 Animation du site creatif</p>
-        <p>7 contact par lien</p>
-        <p>7 contact par formulaire dans le site</p>
-        <p>7 contact par formulaire envoyer en e-mail</p>
+        <p data-estimation-target="fourthCatFirstType" >7 contact par lien</p>
+        <p data-estimation-target="fourthCatSecondType" >7 contact par formulaire dans le site</p>
+        <p data-estimation-target="fourthCatThirdType" >7 contact par formulaire envoyer en e-mail</p>
         <p>8 ajout d'une map</p>
         <p>8 ajout des commentaires avis</p>
 
