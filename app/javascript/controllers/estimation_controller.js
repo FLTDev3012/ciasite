@@ -14,6 +14,10 @@ export default class extends Controller {
 
     if (isChecked) {
 
+      this.firstCatFirstTypeTargets.forEach((target) => {
+        target.classList.add("estimation-selected-block");
+      });
+
       this.firstCatFirstTypeTargets.forEach((target, index) => {
         // Appliquer le délai d'animation d'abord
 
@@ -26,11 +30,11 @@ export default class extends Controller {
       });
 
       this.firstCatSecondTypeTargets.forEach((target) => {
-        target.classList.remove("estimation-selected");
+        target.classList.remove("estimation-selected",  "estimation-selected-block");
       });
 
       this.firstCatThirdTypeTargets.forEach((target) => {
-        target.classList.remove("estimation-selected");
+        target.classList.remove("estimation-selected",  "estimation-selected-block");
       });
 
       this.firstCatFourthTypeTargets.forEach((target) => {
@@ -39,7 +43,7 @@ export default class extends Controller {
     }
     else {
       this.firstCatFirstTypeTargets.forEach((target) => {
-        target.classList.remove("estimation-selected");
+        target.classList.remove("estimation-selected",  "estimation-selected-block");
       });
     }
   }
@@ -53,15 +57,31 @@ export default class extends Controller {
     if (isChecked) {
 
       this.firstCatFirstTypeTargets.forEach((target) => {
-        target.classList.add("estimation-selected");
+        target.classList.add("estimation-selected-block");
       });
 
       this.firstCatSecondTypeTargets.forEach((target) => {
-        target.classList.add("estimation-selected");
+        target.classList.add("estimation-selected-block");
       });
 
+      // Combine les deux groupes de cibles
+      const combinedTargets = [...this.firstCatFirstTypeTargets, ...this.firstCatSecondTypeTargets];
+
+      combinedTargets.forEach((target, index) => {
+        // Appliquer le délai d'animation d'abord
+        target.style.animationDelay = `${index * 0.1}s`;
+
+        // Utiliser setTimeout pour ajouter la classe après le délai
+        setTimeout(() => {
+          target.classList.add("estimation-selected");
+        }, index * 200); // 200ms correspond à 0.2s
+      });
+
+
+
+
       this.firstCatThirdTypeTargets.forEach((target) => {
-        target.classList.remove("estimation-selected");
+        target.classList.remove("estimation-selected",  "estimation-selected-block");
       });
 
       this.firstCatFourthTypeTargets.forEach((target) => {
@@ -72,11 +92,11 @@ export default class extends Controller {
     else {
 
       this.firstCatFirstTypeTargets.forEach((target) => {
-        target.classList.remove("estimation-selected");
+        target.classList.remove("estimation-selected",  "estimation-selected-block");
       });
 
       this.firstCatSecondTypeTargets.forEach((target) => {
-        target.classList.remove("estimation-selected");
+        target.classList.remove("estimation-selected",  "estimation-selected-block");
       });
 
     }
@@ -96,17 +116,32 @@ export default class extends Controller {
     // add color good type
     if (isChecked) {
 
+
       this.firstCatFirstTypeTargets.forEach((target) => {
-        target.classList.add("estimation-selected");
+        target.classList.add("estimation-selected-block");
       });
 
       this.firstCatSecondTypeTargets.forEach((target) => {
-        target.classList.add("estimation-selected");
+        target.classList.add("estimation-selected-block");
       });
 
       this.firstCatThirdTypeTargets.forEach((target) => {
-        target.classList.add("estimation-selected");
+        target.classList.add("estimation-selected-block");
       });
+
+      // Combine les trois groupes de cibles
+      const combinedTargets = [...this.firstCatFirstTypeTargets, ...this.firstCatSecondTypeTargets, ...this.firstCatThirdTypeTargets];
+
+      combinedTargets.forEach((target, index) => {
+        // Appliquer le délai d'animation d'abord
+        target.style.animationDelay = `${index * 0.1}s`;
+
+        // Utiliser setTimeout pour ajouter la classe après le délai
+        setTimeout(() => {
+          target.classList.add("estimation-selected");
+        }, index * 200); // 200ms correspond à 0.2s
+      });
+
 
       this.firstCatFourthTypeTargets.forEach((target) => {
         target.classList.remove("estimation-hidden");
@@ -116,15 +151,15 @@ export default class extends Controller {
     else {
 
       this.firstCatFirstTypeTargets.forEach((target) => {
-        target.classList.remove("estimation-selected");
+        target.classList.remove("estimation-selected",  "estimation-selected-block");
       });
 
       this.firstCatSecondTypeTargets.forEach((target) => {
-        target.classList.remove("estimation-selected");
+        target.classList.remove("estimation-selected",  "estimation-selected-block");
       });
 
       this.firstCatThirdTypeTargets.forEach((target) => {
-        target.classList.remove("estimation-selected");
+        target.classList.remove("estimation-selected",  "estimation-selected-block");
       });
     }
 
