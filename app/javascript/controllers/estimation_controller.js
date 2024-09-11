@@ -174,20 +174,36 @@ export default class extends Controller {
     if (isChecked) {
 
       this.firstCatFirstTypeTargets.forEach((target) => {
-        target.classList.add("estimation-selected");
+        target.classList.add("estimation-selected-block");
       });
 
       this.firstCatSecondTypeTargets.forEach((target) => {
-        target.classList.add("estimation-selected");
+        target.classList.add("estimation-selected-block");
       });
 
       this.firstCatThirdTypeTargets.forEach((target) => {
-        target.classList.add("estimation-selected");
+        target.classList.add("estimation-selected-block");
       });
 
       this.firstCatFourthTypeTargets.forEach((target) => {
         target.classList.add("estimation-hidden");
       });
+
+      // Combine les trois groupes de cibles
+      const combinedTargets = [...this.firstCatFirstTypeTargets, ...this.firstCatSecondTypeTargets, ...this.firstCatThirdTypeTargets];
+
+      combinedTargets.forEach((target, index) => {
+        // Appliquer le délai d'animation d'abord
+        target.style.animationDelay = `${index * 0.1}s`;
+
+        // Utiliser setTimeout pour ajouter la classe après le délai
+        setTimeout(() => {
+          target.classList.add("estimation-selected");
+        }, index * 200); // 200ms correspond à 0.2s
+      });
+
+
+
     }
     else {
 
@@ -220,7 +236,7 @@ export default class extends Controller {
 
     // add color good type
     if (isChecked) {
-      this.secondCatSecondTypeTarget.classList.remove("estimation-selected");
+      this.secondCatSecondTypeTarget.classList.remove("estimation-selected", "estimation-selected-block");
     }
 
 
@@ -234,10 +250,10 @@ export default class extends Controller {
 
     // add color good type
     if (isChecked) {
-      this.secondCatSecondTypeTarget.classList.add("estimation-selected");
+      this.secondCatSecondTypeTarget.classList.add("estimation-selected", "estimation-selected-block");
     }
     else {
-      this.secondCatSecondTypeTarget.classList.remove("estimation-selected");
+      this.secondCatSecondTypeTarget.classList.remove("estimation-selected", "estimation-selected-block");
     }
 
   }
@@ -250,13 +266,13 @@ export default class extends Controller {
     const isChecked = checkbox.checked;
 
     if (isChecked) {
-      this.thirdCatFirstTypeTarget.classList.add("estimation-selected");
+      this.thirdCatFirstTypeTarget.classList.add("estimation-selected", "estimation-selected-block");
 
-      this.thirdCatSecondTypeTarget.classList.remove("estimation-selected");
-      this.thirdCatThirdTypeTarget.classList.remove("estimation-selected");
+      this.thirdCatSecondTypeTarget.classList.remove("estimation-selected", "estimation-selected-block");
+      this.thirdCatThirdTypeTarget.classList.remove("estimation-selected", "estimation-selected-block");
     }
     else {
-      this.thirdCatFirstTypeTarget.classList.remove("estimation-selected");
+      this.thirdCatFirstTypeTarget.classList.remove("estimation-selected", "estimation-selected-block");
     }
 
   }
@@ -266,13 +282,13 @@ export default class extends Controller {
     const isChecked = checkbox.checked;
 
     if (isChecked) {
-      this.thirdCatSecondTypeTarget.classList.add("estimation-selected");
+      this.thirdCatSecondTypeTarget.classList.add("estimation-selected", "estimation-selected-block");
 
-      this.thirdCatFirstTypeTarget.classList.remove("estimation-selected");
-      this.thirdCatThirdTypeTarget.classList.remove("estimation-selected");
+      this.thirdCatFirstTypeTarget.classList.remove("estimation-selected", "estimation-selected-block");
+      this.thirdCatThirdTypeTarget.classList.remove("estimation-selected", "estimation-selected-block");
     }
     else {
-      this.thirdCatSecondTypeTarget.classList.remove("estimation-selected");
+      this.thirdCatSecondTypeTarget.classList.remove("estimation-selected", "estimation-selected-block");
     }
 
   }
@@ -282,13 +298,13 @@ export default class extends Controller {
     const isChecked = checkbox.checked;
 
     if (isChecked) {
-      this.thirdCatThirdTypeTarget.classList.add("estimation-selected");
+      this.thirdCatThirdTypeTarget.classList.add("estimation-selected", "estimation-selected-block");
 
-      this.thirdCatSecondTypeTarget.classList.remove("estimation-selected");
-      this.thirdCatFirstTypeTarget.classList.remove("estimation-selected");
+      this.thirdCatSecondTypeTarget.classList.remove("estimation-selected", "estimation-selected-block");
+      this.thirdCatFirstTypeTarget.classList.remove("estimation-selected", "estimation-selected-block");
     }
     else {
-      this.thirdCatThirdTypeTarget.classList.remove("estimation-selected");
+      this.thirdCatThirdTypeTarget.classList.remove("estimation-selected", "estimation-selected-block");
     }
 
   }
