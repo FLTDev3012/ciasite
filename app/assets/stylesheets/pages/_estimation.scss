@@ -82,12 +82,14 @@
 
 .estimation-result-droite {
   width: 40%;
-  border: 1px solid aquamarine;
+  // border: 1px solid aquamarine;
   overflow: hidden;
+  height: fit-content;
+
 }
 
 .estimation-result-droite > p {
-  color: #cacaca;
+  color: #cacaca00;
   margin-bottom: 0.5rem;
   display: none;
 }
@@ -117,12 +119,12 @@
 .estimation-selected {
   color: #e21a41 !important;
   animation: estimate-swiping 1s ease-in-out !important;
-  opacity: 1 !important;
+  opacity: 1;
 }
 
 .estimation-selected-block {
   display: block !important;
-  opacity: 0;
+  // opacity: 0;
 }
 
 
@@ -131,6 +133,8 @@
     transform: translateX(100%);
     opacity: 0;
   }
+
+
 
   100% {
     transform: translateX(0);
