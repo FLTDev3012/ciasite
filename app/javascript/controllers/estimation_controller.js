@@ -26,7 +26,7 @@ export default class extends Controller {
         // Utiliser setTimeout pour ajouter la classe après le délai
         setTimeout(() => {
           target.classList.add("estimation-selected");
-        }, index * 200); // 200ms correspond à 0.2s
+        }, index * 20); // 200ms correspond à 0.2s
       });
 
       [...this.firstCatSecondTypeTargets, ...this.firstCatThirdTypeTargets].forEach((target) => {
@@ -66,7 +66,7 @@ export default class extends Controller {
         // Utiliser setTimeout pour ajouter la classe après le délai
         setTimeout(() => {
           target.classList.add("estimation-selected");
-        }, index * 200); // 200ms correspond à 0.2s
+        }, index * 20); // 200ms correspond à 0.2s
       });
 
 
@@ -119,7 +119,7 @@ export default class extends Controller {
         // Utiliser setTimeout pour ajouter la classe après le délai
         setTimeout(() => {
           target.classList.add("estimation-selected");
-        }, index * 200); // 200ms correspond à 0.2s
+        }, index * 20); // 200ms correspond à 0.2s
       });
 
 
@@ -164,7 +164,7 @@ export default class extends Controller {
         // Utiliser setTimeout pour ajouter la classe après le délai
         setTimeout(() => {
           target.classList.add("estimation-selected");
-        }, index * 200); // 200ms correspond à 0.2s
+        }, index * 20); // 200ms correspond à 0.2s
       });
 
 
