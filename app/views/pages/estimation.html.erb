@@ -3,6 +3,7 @@
 
   document.addEventListener("turbo:load", function() {
     const totalPriceElement = document.getElementById('total-price');
+    const totalContainer = document.getElementById('total-container'); // Corrected to getElementsByClassName
     let totalPrice = 0;
 
     // Fonction pour mettre à jour le prix total
@@ -13,6 +14,15 @@
         totalPrice += parseInt(checkbox.getAttribute('data-price'), 10);
       });
       totalPriceElement.textContent = totalPrice;
+
+      // Vérifie si le total est 0 et applique les classes de style
+      if (totalPrice === 0) {
+        // mettre display: none à .stimation-result-total-container
+        totalContainer.style.display = 'none';
+      } else {
+        // mettre display: block à .stimation-result-total-container
+        totalContainer.style.display = 'block';
+      }
     }
 
     // Gérer les sélections uniques par catégorie
@@ -55,12 +65,13 @@
         updateTotalPrice();
       });
     });
+
+    // Initialiser le prix total au chargement de la page
+    updateTotalPrice();
   });
 
-
-
-
 </script>
+
 
 
 <!-- ESTIMATION ----------------------------------------------------------- -->
@@ -235,7 +246,7 @@
         <p data-estimation-target="fifthCatSecondType" >8 ajout des commentaires avis</p>
 
         <div class="estimation-result-total-container">
-          <p class="estimation-result-total">Total:&nbsp;<span id="total-price"> 0 </span>$</p>
+          <p id="total-container" class="estimation-result-total">Total:&nbsp;<span id="total-price"> 0 </span>$</p>
         </div>
       </div>
 
