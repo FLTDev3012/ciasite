@@ -1,10 +1,8 @@
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
 
 // Define fonts for body and headers
-$body-font: "Work Sans", "Helvetica", "sans-serif";
-$headers-font: "Nunito", "Helvetica", "sans-serif";
-
+  $primary-font: 'GT America Trial', sans-serif;
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";
@@ -15,21 +13,21 @@ $headers-font: "Nunito", "Helvetica", "sans-serif";
 // }
 // $my-font: "Font Name";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 // font-family: "Outfit", sans-serif;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 // font-family: "Montserrat", sans-serif;
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 // font-family: "Lora", serif;
 
-@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
 // font-family: "Hind Madurai", sans-serif;
 
-@import url('https://fonts.cdnfonts.com/css/gt-america-trial');
+//@import url('https://fonts.cdnfonts.com/css/gt-america-trial');
 //font-family: 'GT America Trial', sans-serif;
 
 @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
@@ -50,7 +48,63 @@ $headers-font: "Nunito", "Helvetica", "sans-serif";
   color: #353535;
   font-weight: 300;
   margin-top: 1.875rem !important;
-  font-family: 'GT America Trial', sans-serif;
+  // font-family: 'GT America Trial', sans-serif;
+  font-family: 'GT America Standard Ultra Light', sans-serif;
   letter-spacing: 0.6px;
 
 }
+
+
+
+/* GT America Extended Bold */
+@font-face {
+  font-family: 'GT America Extended Bold';
+  src: asset-url('fonts/GT-America-Extended-Bold-Trial.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* GT America Standard Black */
+@font-face {
+  font-family: 'GT America Trial';
+  src: asset-url('fonts/GT-America-Standard-Black-Trial.woff') format('woff');
+  font-weight: black;
+  font-style: normal;
+}
+
+/* GT America Standard Regular */
+@font-face {
+  font-family: 'GT America Standard Regular';
+  src: asset-url('fonts/GT-America-Standard-Regular-Trial.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* GT America Standard Ultra Light */
+@font-face {
+  font-family: 'GT America Standard Ultra Light';
+  src: asset-url('fonts/GT-America-Standard-Ultra-Light-Trial.woff') format('woff');
+  font-weight: 200; /* or adjust based on how light you want it */
+  font-style: normal;
+}
+
+.bold-text {
+  font-family: 'GT America Extended Bold', sans-serif;
+}
+
+.black-text {
+  font-family: 'GT America Standard Black', sans-serif;
+}
+
+.regular-text {
+  font-family: 'GT America Standard Regular', sans-serif;
+}
+
+.ultra-light-text {
+  font-family: 'GT America Standard Ultra Light', sans-serif;
+}
+
+// font-family: 'GT America Extended Bold', sans-serif;
+// font-family: 'GT America Standard Black', sans-serif;
+// font-family: 'GT America Standard Regular', sans-serif;
+// font-family: 'GT America Standard Ultra Light', sans-serif;
