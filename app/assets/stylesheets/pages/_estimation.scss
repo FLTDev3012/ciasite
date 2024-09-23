@@ -80,37 +80,22 @@
   color: #fff;
 }
 
+.estimation-choix-result-container label:active {
+
+  padding: 6px 16px;
+
+}
+
 .estimation-result-droite {
   width: 40%;
   // border: 1px solid aquamarine;
-  overflow: hidden;
   height: fit-content;
-  background-color: #cacaca42;
 
 }
 
-.estimation-result-droite > p > span{
-  width: fit-content;
-  background-color: #e2c41a;
-}
-
-.estimation-result-droite > p {
-  color: #cacaca00;
-  margin-bottom: 0.5rem;
-  display: none;
-  margin-left: 15px;
-
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  font-family: 'GT America Trial', sans-serif;
-}
 
 
 
-.estimation-result-droite > div:first-of-type {
-  margin-top: 1rem !important;
-}
 
 .estimation-result-title-container {
   display: flex;
@@ -131,6 +116,31 @@
   font-style: italic;
   font-weight: 600;
   font-size: 2.5rem;
+}
+
+
+.estimation-result-target-container {
+  overflow: hidden;
+  background-color: #cacaca42;
+
+}
+
+.estimation-result-target-container > p {
+  color: #cacaca00;
+  margin-bottom: 0.5rem;
+  display: none;
+  margin-left: 15px;
+
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: 'GT America Trial', sans-serif;
+}
+
+
+
+.estimation-result-target-container > div:first-of-type {
+  margin-top: 1rem !important;
 }
 
 .estimation-result-total-container {
@@ -201,4 +211,8 @@
   border: 2px solid #fff;;
 
   box-shadow: 0px 3px 2px #0000004f;
+}
+
+.gold {
+  background-color: #dcb253 !important;
 }

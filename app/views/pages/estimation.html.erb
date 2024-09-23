@@ -13,7 +13,7 @@
       allCheckedCheckboxes.forEach((checkbox) => {
         totalPrice += parseInt(checkbox.getAttribute('data-price'), 10);
       });
-      totalPriceElement.textContent = totalPrice;
+      totalPriceElement.textContent = totalPrice.toLocaleString('fr-FR');
 
       // Vérifie si le total est 0 et applique les classes de style
       if (totalPrice === 0) {
@@ -229,41 +229,44 @@
           </div>
         </span>
 
-        <div data-estimation-target="firstCatFirstType" class="esti-target-div"><p>- Présentation de l'information</p></div>
-        <div data-estimation-target="firstCatFirstType" class="esti-target-div"><p>- Galerie d'images</p></div>
-        <div data-estimation-target="firstCatFirstType firstCatFourthType" class="esti-target-div"><p>- Informations de contact</p></div>
-        <div data-estimation-target="firstCatFirstType" class="esti-target-div"><p>- Adaptabilité multi-écrans</p></div>
-        <p data-estimation-target="firstCatFirstType"><br></p>
+        <div class="estimation-result-target-container">
+          <div data-estimation-target="firstCatFirstType" class="esti-target-div"><p>- Présentation de l'information</p></div>
+          <div data-estimation-target="firstCatFirstType" class="esti-target-div"><p>- Galerie d'images</p></div>
+          <div data-estimation-target="firstCatFirstType firstCatFourthType" class="esti-target-div"><p>- Informations de contact</p></div>
+          <div data-estimation-target="firstCatFirstType" class="esti-target-div"><p>- Adaptabilité multi-écrans</p></div>
+          <p data-estimation-target="firstCatFirstType"><br></p>
 
-        <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p>- Interface d'administration</p></div>
-        <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p>- Création d'articles</p></div>
-        <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p>- Gestion des médias</p></div>
-        <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p>- Catégories et filtres</p></div>
-        <div data-estimation-target="firstCatSecondType firstCatFourthType" class="esti-target-div"><p>- Commentaires et partage</p></div>
-        <p data-estimation-target="firstCatSecondType"><br></p>
+          <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p>- Interface d'administration</p></div>
+          <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p>- Création d'articles</p></div>
+          <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p>- Gestion des médias</p></div>
+          <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p>- Catégories et filtres</p></div>
+          <div data-estimation-target="firstCatSecondType firstCatFourthType" class="esti-target-div"><p>- Commentaires et partage</p></div>
+          <p data-estimation-target="firstCatSecondType"><br></p>
 
-        <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Gestion des utilisateurs</p></div>
-        <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Gestion des stocks</p></div>
-        <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Gestion des commandes</p></div>
-        <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Gestion des clients</p></div>
-        <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Panier d'achat</p></div>
-        <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Traitement des paiements</p></div>
-        <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Interface de gestion</p></div>
-        <p data-estimation-target="firstCatThirdType"><br></p>
+          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Gestion des utilisateurs</p></div>
+          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Gestion des stocks</p></div>
+          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Gestion des commandes</p></div>
+          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Gestion des clients</p></div>
+          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Panier d'achat</p></div>
+          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Traitement des paiements</p></div>
+          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Interface de gestion</p></div>
+          <p data-estimation-target="firstCatThirdType"><br></p>
 
-        <div data-estimation-target="secondCatSecondType" class="esti-target-div"><p>- Creation d'un Template</p></div>
-        <div data-estimation-target="thirdCatFirstType" class="esti-target-div"><p>- Animation du site Standard</p></div>
-        <div data-estimation-target="thirdCatSecondType" class="esti-target-div"><p>- Animation du site dynamique</p></div>
-        <div data-estimation-target="thirdCatThirdType" class="esti-target-div"><p>- Animation du site créatif</p></div>
-        <div data-estimation-target="fourthCatFirstType" class="esti-target-div"><p>- Contact par lien</p></div>
-        <div data-estimation-target="fourthCatSecondType" class="esti-target-div"><p>- Contact par formulaire dans le site</p></div>
-        <div data-estimation-target="fourthCatThirdType" class="esti-target-div"><p>- Contact par formulaire envoyé en e-mail</p></div>
-        <div data-estimation-target="fifthCatFirstType" class="esti-target-div"><p>- Ajout d'une map</p></div>
-        <div data-estimation-target="fifthCatSecondType" class="esti-target-div"><p>- Ajout des commentaires avis</p></div>
+          <div data-estimation-target="secondCatSecondType" class="esti-target-div"><p>- Creation d'un Template</p></div>
+          <div data-estimation-target="thirdCatFirstType" class="esti-target-div"><p>- Animation du site Standard</p></div>
+          <div data-estimation-target="thirdCatSecondType" class="esti-target-div"><p class="gold">- Animation du site dynamique</p></div>
+          <div data-estimation-target="thirdCatThirdType" class="esti-target-div "><p class="gold">- Animation du site créatif</p></div>
+          <div data-estimation-target="fourthCatFirstType" class="esti-target-div"><p>- Contact par lien</p></div>
+          <div data-estimation-target="fourthCatSecondType" class="esti-target-div"><p>- Contact par formulaire dans le site</p></div>
+          <div data-estimation-target="fourthCatThirdType" class="esti-target-div"><p class="gold">- Contact par formulaire envoyé en e-mail</p></div>
+          <div data-estimation-target="fifthCatFirstType" class="esti-target-div"><p class="gold">- Ajout d'une map</p></div>
+          <div data-estimation-target="fifthCatSecondType" class="esti-target-div"><p class="gold">- Ajout des commentaires avis</p></div>
 
-        <div class="estimation-result-total-container">
-          <p id="total-container" class="estimation-result-total">Estimation ≈&nbsp;<span id="total-price"> 0 </span>$</p>
+          <div class="estimation-result-total-container">
+            <p id="total-container" class="estimation-result-total">Estimation ≈&nbsp;<span id="total-price"> 0 </span>$</p>
+          </div>
         </div>
+
       </div>
 
     </div>
