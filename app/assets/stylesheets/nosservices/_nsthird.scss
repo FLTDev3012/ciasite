@@ -51,8 +51,14 @@
   // width: 250px;
   content: "";
   // background-color: #152b76;
+  filter: drop-shadow(5px 5px 2px #00000039);
 }
 
+.ns-pdo-black-gauche-img img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(5px 5px 2px #00000039);
+}
 
 .ns-pdo-black-droite {
   width: 50%;
@@ -101,6 +107,12 @@
   // width: 250px;
   content: "";
   // background-color: #152b76;
+}
+
+.ns-pdo-white-droite-img img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(5px 5px 2px #00000040);
 }
 
 
