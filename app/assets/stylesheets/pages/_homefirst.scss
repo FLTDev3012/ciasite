@@ -1,6 +1,6 @@
 .home-first-div-container {
   position: relative;
-  height: 100vh;
+  // height: 100vh;
   // box-shadow: 0 0 0 2px rgba(226,26,65,.35),0 0 3px 5px rgba(226,26,65,.35);
   // outline: 2px dotted transparent;
   // outline-offset: 2px;
@@ -20,6 +20,7 @@
   justify-content: center;
   border-top: #aa1935 1px solid;
   position: relative;
+  min-height: 90vh;
 }
 
 .home-first-div-content::before {
