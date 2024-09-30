@@ -57,10 +57,15 @@
 
 
 .ns-stimulus-gauche-title {
-  font-size: 1.07rem;
-  font-weight: 400;
-  font-family: 'GT America Trial', sans-serif;
-  letter-spacing: 0.6px;
+  // font-size: 1.07rem;
+  //font-weight: 400;
+  // font-family: 'GT America Trial', sans-serif;
+  // letter-spacing: 0.6px;
+
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: "GT America Trial", sans-serif;
+  font-size: 1.1rem;
 }
 
 .ns-stimulus-gauche-oneline:hover .ns-stimulus-gauche-title {
