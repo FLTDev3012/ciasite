@@ -36,11 +36,14 @@
               if (cb !== this) {
                 cb.checked = false;
                 cb.parentElement.style.backgroundColor = ''; // Réinitialiser le fond
+                cb.parentElement.style.color = '#111'; // Réinitialiser la couleur
               }
             });
             this.parentElement.style.backgroundColor = '#e21a41'; // Appliquer le fond rouge
+            this.parentElement.style.color = '#fff'; // Appliquer la couleur font rouge
           } else {
             this.parentElement.style.backgroundColor = ''; // Réinitialiser si décochée
+            this.parentElement.style.color = '#111'; // Réinitialiser si décochée
           }
           updateTotalPrice();
         });
@@ -59,8 +62,10 @@
       checkbox.addEventListener('change', function() {
         if (this.checked) {
           this.parentElement.style.backgroundColor = '#e21a41'; // Appliquer le fond rouge
+          this.parentElement.style.color = '#fff'; // Appliquer la couleur font rouge
         } else {
           this.parentElement.style.backgroundColor = ''; // Réinitialiser si décochée
+          this.parentElement.style.color = '#111'; // Réinitialiser si décochée
         }
         updateTotalPrice();
       });
