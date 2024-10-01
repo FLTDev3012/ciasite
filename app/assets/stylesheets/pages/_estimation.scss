@@ -48,11 +48,15 @@
 .estimation-first-div .estimation-droite {
   height: 100%;
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.estimation-first-div .estimatiom-droite img {
-  width: 100%;
+.estimation-first-div .estimation-droite img {
+  width: 80%;
   height: auto;
+  z-index: 1;
 }
 
 .estimation-choix-result-container {
