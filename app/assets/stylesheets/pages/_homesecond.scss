@@ -36,8 +36,10 @@
 .home-seconde-gauche {
   width: 50%;
   height: 100%;
-  padding-top: 7.5rem;
+  //padding-top: 7.5rem;
   padding-left: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .home-seconde-gauche .home-seconde-logo {
@@ -49,7 +51,8 @@
 
 .home-seconde-gauche .home-seconde-logo img {
   height: 100%;
-  width: 100%;
+  width: auto;
+  opacity: 0.8;
 }
 
 
