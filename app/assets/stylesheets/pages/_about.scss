@@ -74,9 +74,21 @@ text {
   justify-content: center;
 }
 
+
+
 .about-container .about-first-div .ns-pdo-black-droite {
   justify-content: normal;
   align-items: center;
+  padding: 0;
+}
+
+.about-container .about-first-div .ns-pdo-black-droite h2 {
+  padding-left: 15px;
+}
+
+.about-block-border-left-red {
+  border-left: 1px solid #e21a41;
+  padding-left: 15px;
 }
 
 .about-container .about-first-div .ns-pdo-black-gauche-img {
