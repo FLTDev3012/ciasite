@@ -4,7 +4,7 @@ body {
   // font-family: 'GT America Trial', sans-serif;
 }
 
-body textPath {
+body > svg text {
   opacity: 0;
   animation: apparitionSvg 2s 5s ease-in-out forwards;
 }
