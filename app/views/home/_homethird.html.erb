@@ -7,7 +7,7 @@
 
       <div class="home-trois-gauche">
         <!-- <div class="home-trois-gauche-logo"></div> -->
-        <%= image_tag("styles_site/main_pic.png", class: "home-trois-gauche-logo-img") %>
+        <%= image_tag("styles_site/main_pic.png", class: "home-trois-gauche-logo-img js-home-third-pic ") %>
       </div>
 
       <div class="home-trois-droite">
@@ -31,3 +31,24 @@
 
   </div>
 </div>
+
+<script>
+
+  window.addEventListener('scroll', function() {
+      var scrollPosition = window.scrollY;
+      console.log(scrollPosition);
+
+
+
+
+      var scrollText = document.querySelector('.js-home-third-pic');
+
+      if (scrollPosition > 860) {
+        scrollText.classList.add('show');
+      } else {
+        scrollText.classList.remove('show');
+      }
+
+
+    });
+</script>

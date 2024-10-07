@@ -128,3 +128,12 @@
 :root {
   --tab-color: #5c5c5e;
 }
+
+
+// js translate
+
+.js-home-third-pic {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.5s ease-in-out;
+}
