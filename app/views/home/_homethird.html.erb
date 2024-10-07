@@ -17,7 +17,7 @@
           <p class="text-bold">We accomplish our mission of creating web solutions with ingenuity and determination, always dedicated to your online success.</p>
           <p class="text-lighty">We offer a range of services, including captivating showcase websites to present your brand, flexible CMS platforms to manage your content effortlessly, and robust e-commerce sites to boost your sales.</p>
 
-          <a href="#" class="btn-rouge">
+          <a href="#" class="btn-rouge js-home-third-button ">
             <div class="block-rouge"></div>
             <div class="block-noir-fleche"><i class="fa-solid fa-arrow-right" style="color: #fff;"></i></div>
             <div class="block-text">Discover Our Services</div>
@@ -47,6 +47,14 @@
         scrollText.classList.add('show');
       } else {
         scrollText.classList.remove('show');
+      }
+
+      var scrollText = document.querySelector('.js-home-third-button');
+
+      if (scrollPosition > 1100) {
+        scrollText.classList.add('shake');
+      } else {
+        scrollText.classList.remove('shake');
       }
 
 
