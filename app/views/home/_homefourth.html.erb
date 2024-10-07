@@ -7,7 +7,7 @@
 
     <div class="home-quatre-article-container">
 
-      <div class="home-quatre-article">
+      <div class="home-quatre-article js-home-fourth-article-first">
         <div class="home-quatre-picture">
           <div class="picture"></div>
         </div>
@@ -24,7 +24,7 @@
         </div>
       </div>
 
-      <div class="home-quatre-article">
+      <div class="home-quatre-article js-home-fourth-article-second">
         <div class="home-quatre-picture">
           <div class="picture"></div>
         </div>
@@ -41,7 +41,7 @@
         </div>
       </div>
 
-      <div class="home-quatre-article">
+      <div class="home-quatre-article js-home-fourth-article-third">
         <div class="home-quatre-picture">
           <div class="picture"></div>
         </div>
@@ -70,3 +70,42 @@
 
   </div>
 </div>
+
+<script>
+
+  window.addEventListener('scroll', function() {
+      var scrollPosition = window.scrollY;
+      console.log(scrollPosition);
+
+
+      var scrollHomeFourthArticleFirst = document.querySelector('.js-home-fourth-article-first');
+
+      if (scrollPosition > 1650) {
+        scrollHomeFourthArticleFirst.classList.add('shake');
+      } else {
+        scrollHomeFourthArticleFirst.classList.remove('shake');
+      }
+
+
+
+      var scrollHomeFourthArticleSecond = document.querySelector('.js-home-fourth-article-second');
+
+      if (scrollPosition > 1750) {
+        scrollHomeFourthArticleSecond.classList.add('shake');
+      } else {
+        scrollHomeFourthArticleSecond.classList.remove('shake');
+      }
+
+
+      var scrollHomeFourthArticleThird = document.querySelector('.js-home-fourth-article-third');
+
+      if (scrollPosition > 1850) {
+        scrollHomeFourthArticleThird.classList.add('shake');
+      } else {
+        scrollHomeFourthArticleThird.classList.remove('shake');
+      }
+
+
+    });
+
+</script>
