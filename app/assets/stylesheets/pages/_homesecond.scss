@@ -109,3 +109,18 @@
   transition: all 0.3s linear;
   transition-delay: 0.2s;
 }
+
+
+// js translate opacity
+
+.js-home-seconde-h2 {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.js-home-seconde-text {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.5s ease-in-out;
+}
