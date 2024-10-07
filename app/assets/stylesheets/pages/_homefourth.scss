@@ -143,3 +143,15 @@
 .home-quatrieme-div-content .link-ligne-rouge-container a {
   color: #000;
 }
+
+.shake-article {
+  animation:  article-shaking 0.5s forwards;
+}
+
+
+@keyframes article-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(2deg); }
+  75% { transform: rotate(-1deg); }
+  100% { transform: rotate(0deg); }
+}

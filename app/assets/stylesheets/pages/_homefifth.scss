@@ -2,7 +2,7 @@
 
 .home-cinq-div-container {
   position: relative;
-  height: 60vh;
+  // height: 60vh;
   overflow: hidden;
   // box-shadow: 0 0 0 2px rgba(226,26,65,.35),0 0 3px 5px rgba(226,26,65,.35);
   // outline: 2px dotted transparent;
@@ -21,15 +21,15 @@
   // position: absolute;
   // top: 0;
   // left: 0;
-  height: 100%;
-  width: 100%;
+  // height: 100%;
+  // width: 100%;
   background-color: $gris;
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
 }
 
 .home-cinq-container {
-  position: absolute;
+  // position: absolute;
   width: 100%;
   height: 100%;
 }
@@ -37,7 +37,7 @@
 .home-cinq-content {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
   height: 100%;
   width: 100%;
@@ -123,9 +123,10 @@
 .home-cinq-droite-pic img {
   width: 100%;
   height: auto;
-  opacity: 0.79;
+  opacity: 0.60;
 }
 
 .home-cinq-div-container .btn-rouge {
   width: inherit;
+  margin-left: 15px;
 }

@@ -73,40 +73,35 @@
   </div>
 </div>
 
-<script>
 
+<script>
   window.addEventListener('scroll', function() {
       var scrollPosition = window.scrollY;
 
-
+      // Sélectionnez les trois éléments que vous souhaitez animer
       var scrollHomeFourthArticleFirst = document.querySelector('.js-home-fourth-article-first');
-
-      if (scrollPosition > 1650) {
-        scrollHomeFourthArticleFirst.classList.add('shake');
-      } else {
-        scrollHomeFourthArticleFirst.classList.remove('shake');
-      }
-
-
-
       var scrollHomeFourthArticleSecond = document.querySelector('.js-home-fourth-article-second');
-
-      if (scrollPosition > 1750) {
-        scrollHomeFourthArticleSecond.classList.add('shake');
-      } else {
-        scrollHomeFourthArticleSecond.classList.remove('shake');
-      }
-
-
       var scrollHomeFourthArticleThird = document.querySelector('.js-home-fourth-article-third');
 
-      if (scrollPosition > 1850) {
-        scrollHomeFourthArticleThird.classList.add('shake');
+      // Vérifiez si le défilement dépasse 1650 pour déclencher les animations
+      if (scrollPosition > 1650) {
+        // Premier élément : aucun délai
+        scrollHomeFourthArticleFirst.classList.add('shake-article');
+
+        // Deuxième élément : délai de 1 seconde
+        setTimeout(function() {
+          scrollHomeFourthArticleSecond.classList.add('shake-article');
+        }, 250);
+
+        // Troisième élément : délai de 2 secondes
+        setTimeout(function() {
+          scrollHomeFourthArticleThird.classList.add('shake-article');
+        }, 500);
       } else {
-        scrollHomeFourthArticleThird.classList.remove('shake');
+        // Retirer les classes lorsque l'utilisateur revient en arrière
+        scrollHomeFourthArticleFirst.classList.remove('shake-article');
+        scrollHomeFourthArticleSecond.classList.remove('shake-article');
+        scrollHomeFourthArticleThird.classList.remove('shake-article');
       }
-
-
     });
-
 </script>
