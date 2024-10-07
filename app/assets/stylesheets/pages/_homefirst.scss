@@ -160,6 +160,7 @@
   opacity: 0;
   transform:translateY(250px);
   animation: apparition 0.6s 0.2s ease-out forwards;
+  z-index: 1;
 }
 
 // .test-home-first-title-container h1 {
@@ -189,6 +190,7 @@
   opacity: 0;
   transform:translateY(50px);
   animation: apparition 0.6s 1s ease-out forwards;
+  z-index: 1;
 }
 
 .test-home-first-title-container h1{
