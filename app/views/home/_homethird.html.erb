@@ -17,11 +17,13 @@
           <p class="text-bold">Accomplish our mission of creating web solutions with ingenuity and determination, always dedicated to your online success.</p>
           <p class="text-lighty">I offer a range of services, including captivating showcase websites to present your brand, flexible CMS platforms to manage your content effortlessly, and robust e-commerce sites to boost your sales.</p>
 
-          <a href="#" class="btn-rouge js-home-third-button ">
+          <%= link_to nosservices_path, class: 'btn-rouge js-home-third-button' do %>
             <div class="block-rouge"></div>
-            <div class="block-noir-fleche"><i class="fa-solid fa-arrow-right" style="color: #fff;"></i></div>
+            <div class="block-noir-fleche">
+              <i class="fa-solid fa-arrow-right" style="color: #fff;"></i>
+            </div>
             <div class="block-text">Discover My Services</div>
-          </a>
+          <% end %>
 
         </div>
       </div>
