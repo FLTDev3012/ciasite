@@ -141,6 +141,10 @@ text {
   margin-bottom: .5rem;
 }
 
+.about-form-content .form-group ::placeholder {
+  color: #16161845;
+}
+
 .about-form-content .form-group textarea {
   min-height: 100px;
 }
