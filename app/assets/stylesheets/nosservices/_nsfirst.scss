@@ -101,18 +101,15 @@
 
 .ns-first .link-ligne-rouge-container {
   margin-top: 1.875rem;
-
 }
 
 .ns-first-gauche {
   height: 100%;
   width: 50%;
 
-
   display: flex;
   align-items: center;
-  margin-left: 15px;
-
+  // margin-left: 15px;
 
   position: relative;
   z-index: 10;
@@ -154,6 +151,7 @@
 .ns-first-droite-content h2 {
   margin-bottom: 1.875rem !important;
   line-height: normal !important;
+  margin-left: 15px;
 
 }
 
@@ -197,4 +195,9 @@
 
 .ns-site-vitrine h1 {
   color: #fff;
+}
+
+.ns-first-gauche-block-border-left-red {
+  border-left: 1px solid #e21a41;
+  padding-left: 15px;
 }
