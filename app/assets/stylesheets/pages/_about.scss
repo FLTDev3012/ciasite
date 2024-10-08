@@ -121,5 +121,52 @@ text {
 
 .about-form-content {
   width: 80%;
+  display: flex;
 
+}
+
+.about-form-gauche {
+  width: 50%;
+}
+
+.about-form-gauche form {
+  width: 100%;
+}
+
+.about-form-content .form-group {
+  margin-bottom: 1rem;
+}
+
+.about-form-content .form-group label {
+  margin-bottom: .5rem;
+}
+
+.about-form-content .form-group textarea {
+  min-height: 100px;
+}
+
+
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #e21a41;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #e21a4140;
+}
+
+.about-form-container h2 {
+  color: #fff;
+}
+
+.about-form-container .form-group label {
+  color: #fff;
+}
+
+.form-group .btn-rouge {
+  max-width: 350px;
+}
+
+
+.about-form-droite {
+  width: 50%;
 }
