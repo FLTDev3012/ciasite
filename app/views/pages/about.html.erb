@@ -129,7 +129,7 @@ xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
       <%= form_tag("#", method: :post) do %>
 
         <div class="form-group">
-          <%= label_tag :name, "Your Name" %>
+          <%= label_tag :name, "Full Name" %>
           <%= text_field_tag :name, nil, placeholder: "Enter your name", class: "form-control", required: true %>
         </div>
 
@@ -139,12 +139,21 @@ xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
         </div>
 
         <div class="form-group">
+          <%= label_tag :phone, "Contact Phone" %>
+          <%= text_field_tag :phone, nil, placeholder: "Enter your number phone", class: "form-control", required: true %>
+        </div>
+
+        <div class="form-group">
           <%= label_tag :message, "Your Message" %>
           <%= text_area_tag :message, nil, placeholder: "Enter your message", class: "form-control", required: true %>
         </div>
 
         <div class="form-group">
-          <%= submit_tag "Send Message", class: "btn btn-primary" %>
+          <button type="submit" class="btn-rouge js-home-fifth-button">
+            <div class="block-rouge"></div>
+            <div class="block-noir-fleche"><i class="fa-solid fa-arrow-right" style="color: #fff;"></i></div>
+            <div class="block-text">Send</div>
+          </button>
         </div>
 
       <% end %>
