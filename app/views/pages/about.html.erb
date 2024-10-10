@@ -12,64 +12,64 @@
 </div>
 
 <script>
-  document.addEventListener("turbo:load", function() {
-    const coords = { x: 0, y: 0, scrollY: 0 };
-    const circles = document.querySelectorAll(".circle");
 
-    const colors = [
-      "#e21a41", "#e21a41", "#e21a41", "#e21a41", "#e21a41", "#e21a41", "#e21a41", "#e21a41", "#e21a41", "#e21a41"
-    ];
+  const coords = { x: 0, y: 0, scrollY: 0 };
+  const circles = document.querySelectorAll(".circle");
 
-    let containerX = 0;
-    let containerY = 0;
+  const colors = [
+    "#e21a41", "#e21a41", "#e21a41", "#e21a41", "#e21a41", "#e21a41", "#e21a41", "#e21a41", "#e21a41", "#e21a41"
+  ];
 
-    // Initialisation des cercles avec leurs couleurs et positions
-    circles.forEach(function (circle, index) {
-      circle.x = 0;
-      circle.y = 0;
-      circle.style.backgroundColor = colors[index % colors.length];
-    });
+  let containerX = 0;
+  let containerY = 0;
 
-    // Suivi de la position de la souris
-    window.addEventListener("mousemove", function (e) {
-      coords.x = e.clientX;
-      coords.y = e.clientY;
-    });
-
-    // Suivi du défilement (scroll)
-    window.addEventListener("scroll", function () {
-      coords.scrollY = window.scrollY;
-    });
-
-    // Animation des cercles
-    function animateCircles() {
-      // Ralentir le déplacement global du conteneur
-      containerX += (coords.x - containerX) * 0.1; // Ajuster ce facteur pour plus ou moins de lenteur
-      containerY += (coords.y + coords.scrollY - containerY) * 0.1;
-
-      let x = containerX;
-      let y = containerY;
-
-      circles.forEach(function (circle, index) {
-        circle.style.left = x - 9 + "px";
-        circle.style.top = y - 9 + "px";
-
-        // Garder le comportement fluide des cercles
-        circle.style.scale = (circles.length - index) / circles.length;
-
-        circle.x = x;
-        circle.y = y;
-
-        const nextCircle = circles[index + 1] || circles[0];
-        x += (nextCircle.x - x) * 0.3;
-        y += (nextCircle.y - y) * 0.3;
-      });
-
-      requestAnimationFrame(animateCircles);
-    }
-
-    animateCircles();
+  // Initialisation des cercles avec leurs couleurs et positions
+  circles.forEach(function (circle, index) {
+    circle.x = 0;
+    circle.y = 0;
+    circle.style.backgroundColor = colors[index % colors.length];
   });
+
+  // Suivi de la position de la souris
+  window.addEventListener("mousemove", function (e) {
+    coords.x = e.clientX;
+    coords.y = e.clientY;
+  });
+
+  // Suivi du défilement (scroll)
+  window.addEventListener("scroll", function () {
+    coords.scrollY = window.scrollY;
+  });
+
+  // Animation des cercles
+  function animateCircles() {
+    // Ralentir le déplacement global du conteneur
+    containerX += (coords.x - containerX) * 0.1; // Ajuster ce facteur pour plus ou moins de lenteur
+    containerY += (coords.y + coords.scrollY - containerY) * 0.1;
+
+    let x = containerX;
+    let y = containerY;
+
+    circles.forEach(function (circle, index) {
+      circle.style.left = x - 9 + "px";
+      circle.style.top = y - 9 + "px";
+
+      // Garder le comportement fluide des cercles
+      circle.style.scale = (circles.length - index) / circles.length;
+
+      circle.x = x;
+      circle.y = y;
+
+      const nextCircle = circles[index + 1] || circles[0];
+      x += (nextCircle.x - x) * 0.3;
+      y += (nextCircle.y - y) * 0.3;
+    });
+
+    requestAnimationFrame(animateCircles);
+  }
+
+  animateCircles();
+
 </script>
 
 
