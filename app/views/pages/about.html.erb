@@ -226,44 +226,62 @@
     const nameInput = document.getElementById("form-full-name");
     const emailInput = document.getElementById("form-email");
     const phoneInput = document.getElementById("form-phone");
-    const messageInput = document.getElementById("form-message"); // Ajout du champ message
+    const messageInput = document.getElementById("form-message");
     const rocket = document.querySelector(".rocket");
     const scene = document.querySelector(".scene");
+    let depart = 0;
 
-    // Gérer l'animation de la rocket selon l'input du nom
-    nameInput.addEventListener("input", function() {
-      if (nameInput.value.trim() !== "") {
+    // Tableau pour suivre les champs remplis
+    const filledFields = {
+      name: false,
+      email: false,
+      phone: false,
+      message: false
+    };
+
+    function updateRocketAnimation() {
+      rocket.classList.remove("animated-rocket", "email-filled", "phone-filled");
+      scene.classList.remove("message-filled");
+
+      if (depart === 0) {
+        // Rien à faire
+      } else if (depart === 1) {
         rocket.classList.add("animated-rocket");
-      } else {
-        rocket.classList.remove("animated-rocket");
-      }
-    });
-
-    // Gérer l'animation de la rocket selon l'input de l'email
-    emailInput.addEventListener("input", function() {
-      if (emailInput.value.trim() !== "") {
-        rocket.classList.add("email-filled");
-      } else {
-        rocket.classList.remove("email-filled");
-      }
-    });
-
-    // Gérer l'animation de la rocket selon l'input du téléphone
-    phoneInput.addEventListener("input", function() {
-      if (phoneInput.value.trim() !== "") {
-        rocket.classList.add("phone-filled");
-      } else {
-        rocket.classList.remove("phone-filled");
-      }
-    });
-
-    // Gérer le changement de background de .scene i selon l'input du message
-    messageInput.addEventListener("input", function() {
-      if (messageInput.value.trim() !== "") {
+      } else if (depart === 2) {
+        rocket.classList.add("animated-rocket", "email-filled");
+      } else if (depart === 3) {
+        rocket.classList.add("animated-rocket", "email-filled", "phone-filled");
+      } else if (depart === 4) {
+        rocket.classList.add("animated-rocket", "email-filled", "phone-filled");
         scene.classList.add("message-filled");
-      } else {
-        scene.classList.remove("message-filled");
       }
+    }
+
+    function handleInputChange(input, fieldName) {
+      if (input.value.trim() !== "" && !filledFields[fieldName]) {
+        filledFields[fieldName] = true; // Marquer le champ comme rempli
+        depart++;
+      } else if (input.value.trim() === "" && filledFields[fieldName]) {
+        filledFields[fieldName] = false; // Marquer le champ comme vide
+        depart--;
+      }
+      updateRocketAnimation();
+    }
+
+    nameInput.addEventListener("input", function() {
+      handleInputChange(nameInput, 'name');
+    });
+
+    emailInput.addEventListener("input", function() {
+      handleInputChange(emailInput, 'email');
+    });
+
+    phoneInput.addEventListener("input", function() {
+      handleInputChange(phoneInput, 'phone');
+    });
+
+    messageInput.addEventListener("input", function() {
+      handleInputChange(messageInput, 'message');
     });
   });
 </script>
