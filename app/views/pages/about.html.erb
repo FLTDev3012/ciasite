@@ -147,22 +147,22 @@
 
           <div class="form-group">
             <%= label_tag :name, "Full Name", class:"text-light" %>
-            <%= text_field_tag :name, nil, placeholder: "Full name", class: "form-control", required: true %>
+            <%= text_field_tag :name, nil, placeholder: "Full name", class: "form-control", required: true, id: "form-full-name" %>
           </div>
 
           <div class="form-group">
             <%= label_tag :email, "Email Address", class:"text-light" %>
-            <%= email_field_tag :email, nil, placeholder: "your@email.com", class: "form-control", required: true %>
+            <%= email_field_tag :email, nil, placeholder: "your@email.com", class: "form-control", required: true, id: "form-email" %>
           </div>
 
           <div class="form-group">
             <%= label_tag :phone, "Phone Contact", class:"text-light" %>
-            <%= text_field_tag :phone, nil, placeholder: "0412345678", class: "form-control", required: true %>
+            <%= text_field_tag :phone, nil, placeholder: "0412345678", class: "form-control", required: true, id: "form-phone" %>
           </div>
 
           <div class="form-group">
             <%= label_tag :message, "Your Message", class:"text-light" %>
-            <%= text_area_tag :message, nil, placeholder: "Enter your message", class: "form-control", required: true %>
+            <%= text_area_tag :message, nil, placeholder: "Enter your message", class: "form-control", required: true, id: "form-message" %>
           </div>
 
           <div class="form-group">
@@ -177,6 +177,17 @@
       </div>
 
       <div class="about-form-droite">
+
+        <div class="scene">
+          <div class="rocket">
+            <%= image_tag("rocket.png") %>
+          </div>
+        </div>
+
+        <div class="text-etoile-container">
+          <h2 class="text-title text-etoile-cible">Unlock Your Horizons in one Form!</h2>
+        </div>
+
       </div>
 
     </div>
@@ -186,6 +197,102 @@
 
 
 </div>
+
+
+<script>
+  function stars() {
+    let count = 50;
+    let scene = document.querySelector(".scene");
+
+    let i = 0;
+    while (i < count) {
+      let star = document.createElement("i");
+      let x = Math.floor(Math.random() * window.innerWidth);
+
+      let duration = Math.random() * 1;
+      let h = Math.random() * 100;
+
+      star.style.left = x + "px";
+      star.style.width = 1 + "px";
+      star.style.height = 50 + h + "px";
+      star.style.animationDuration = duration + "s";
+
+      scene.appendChild(star);
+      i++;
+    }
+  }
+  stars();
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const nameInput = document.getElementById("form-full-name");
+    const emailInput = document.getElementById("form-email");
+    const phoneInput = document.getElementById("form-phone");
+    const messageInput = document.getElementById("form-message");
+    const rocket = document.querySelector(".rocket");
+    const textEtoile = document.querySelector(".text-etoile-cible"); // Assurez-vous que cela cible le bon élément
+    const scene = document.querySelector(".scene");
+    let depart = 0;
+
+    // Tableau pour suivre les champs remplis
+    const filledFields = {
+      name: false,
+      email: false,
+      phone: false,
+      message: false
+    };
+
+    function updateRocketAnimation() {
+      rocket.classList.remove("animated-rocket", "email-filled", "phone-filled");
+      scene.classList.remove("message-filled");
+      textEtoile.classList.remove("text-etoile"); // Réinitialiser la classe text-etoile
+
+      if (depart === 0) {
+        // Rien à faire
+      } else if (depart === 1) {
+        rocket.classList.add("animated-rocket");
+      } else if (depart === 2) {
+        rocket.classList.add("animated-rocket", "email-filled");
+      } else if (depart === 3) {
+        rocket.classList.add("animated-rocket", "email-filled", "phone-filled");
+        textEtoile.classList.add("text-etoile"); // Ajouter la classe quand depart est 3
+      } else if (depart === 4) {
+        rocket.classList.add("animated-rocket", "email-filled", "phone-filled");
+        scene.classList.add("message-filled");
+        textEtoile.classList.add("text-etoile");
+      }
+    }
+
+    function handleInputChange(input, fieldName) {
+      if (input.value.trim() !== "" && !filledFields[fieldName]) {
+        filledFields[fieldName] = true; // Marquer le champ comme rempli
+        depart++;
+      } else if (input.value.trim() === "" && filledFields[fieldName]) {
+        filledFields[fieldName] = false; // Marquer le champ comme vide
+        depart--;
+      }
+      updateRocketAnimation();
+    }
+
+    nameInput.addEventListener("input", function() {
+      handleInputChange(nameInput, 'name');
+    });
+
+    emailInput.addEventListener("input", function() {
+      handleInputChange(emailInput, 'email');
+    });
+
+    phoneInput.addEventListener("input", function() {
+      handleInputChange(phoneInput, 'phone');
+    });
+
+    messageInput.addEventListener("input", function() {
+      handleInputChange(messageInput, 'message');
+    });
+  });
+</script>
 
 
 <!--
