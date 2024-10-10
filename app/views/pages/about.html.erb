@@ -184,6 +184,10 @@
           </div>
         </div>
 
+        <div class="text-etoile-container">
+          <h2 class="text-title text-etoile-cible">Unlock Your Horizons in one Form!</h2>
+        </div>
+
       </div>
 
     </div>
@@ -228,6 +232,7 @@
     const phoneInput = document.getElementById("form-phone");
     const messageInput = document.getElementById("form-message");
     const rocket = document.querySelector(".rocket");
+    const textEtoile = document.querySelector(".text-etoile-cible"); // Assurez-vous que cela cible le bon élément
     const scene = document.querySelector(".scene");
     let depart = 0;
 
@@ -242,6 +247,7 @@
     function updateRocketAnimation() {
       rocket.classList.remove("animated-rocket", "email-filled", "phone-filled");
       scene.classList.remove("message-filled");
+      textEtoile.classList.remove("text-etoile"); // Réinitialiser la classe text-etoile
 
       if (depart === 0) {
         // Rien à faire
@@ -251,9 +257,11 @@
         rocket.classList.add("animated-rocket", "email-filled");
       } else if (depart === 3) {
         rocket.classList.add("animated-rocket", "email-filled", "phone-filled");
+        textEtoile.classList.add("text-etoile"); // Ajouter la classe quand depart est 3
       } else if (depart === 4) {
         rocket.classList.add("animated-rocket", "email-filled", "phone-filled");
         scene.classList.add("message-filled");
+        textEtoile.classList.add("text-etoile");
       }
     }
 
