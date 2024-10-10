@@ -127,6 +127,7 @@ text {
 
 .about-form-gauche {
   width: 50%;
+  padding: 15px;
 }
 
 .about-form-gauche form {
@@ -173,4 +174,172 @@ text {
 
 .about-form-droite {
   width: 50%;
+  background-color: aliceblue;
+}
+
+
+.scene {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #161618;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scene .rocket {
+  position: relative;
+}
+
+.animated-rocket {
+  animation: animate 0.2s ease infinite;
+}
+
+// .scene .rocket {
+//   position: relative;
+//   animation: animate 0.2s ease infinite;
+// }
+
+.scene .rocket img {
+  transform: translateY(180px);
+}
+
+@keyframes animate {
+  0%, 100% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+
+}
+
+
+
+.scene i {
+  position: absolute;
+  top: -250px;
+  background: rgba(255, 255, 255, 0);
+  animation: animateStars linear infinite;
+  transition: background 0.3s ease;
+}
+
+
+
+.scene.message-filled i {
+  background: rgba(255, 255, 255, 0.5); /* Changement de background */
+}
+
+// .scene i {
+//   position: absolute;
+//   top: -250px;
+//   background: rgba(255, 255, 255, 0.5);
+//   animation: animateStars linear infinite;
+// }
+
+@keyframes animateStars {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(200vh);
+  }
+
+}
+
+.scene .rocket::before {
+  content: "";
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 0px;
+  background: linear-gradient(#00d0ff, transparent);
+}
+
+.scene .rocket::after {
+  content: "";
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 0px;
+  background: linear-gradient(#00d0ff, transparent);
+  filter: blur(20px);
+}
+
+// .scene .rocket::before {
+//   content: "";
+//   position: absolute;
+//   bottom: -200px;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   width: 10px;
+//   height: 20px;
+//   background: linear-gradient(#00d0ff, transparent);
+// }
+
+// .scene .rocket::after {
+//   content: "";
+//   position: absolute;
+//   bottom: -200px;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   width: 10px;
+//   height: 20px;
+//   background: linear-gradient(#00d0ff, transparent);
+//   filter: blur(20px);
+// }
+
+// .scene .rocket::before {
+//   content: "";
+//   position: absolute;
+//   bottom: -200px;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   width: 10px;
+//   height: 200px;
+//   background: linear-gradient(#00d0ff, transparent);
+// }
+
+// .scene .rocket::after {
+//   content: "";
+//   position: absolute;
+//   bottom: -200px;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   width: 10px;
+//   height: 200px;
+//   background: linear-gradient(#00d0ff, transparent);
+//   filter: blur(20px);
+// }
+
+/* Modifier la hauteur des pseudos-éléments lorsque l'email est rempli */
+.scene .rocket.email-filled::before,
+.scene .rocket.email-filled::after {
+  height: 20px; /* Hauteur des pseudos-éléments */
+}
+
+/* Déplacer l'image de 20px vers le bas quand l'email est rempli */
+.scene .rocket.email-filled img {
+  transform: translateY(180px);
+  transition: transform 0.3s ease; /* Transition pour le déplacement fluide */
+}
+
+
+/* Quand le téléphone est rempli */
+.scene .rocket.phone-filled::before,
+.scene .rocket.phone-filled::after {
+  height: 200px; /* Hauteur augmentée pour les pseudos-éléments */
+  transition: height 0.3s ease;
+}
+
+/* Quand le téléphone est rempli, remettre l'image à sa position initiale */
+.scene .rocket.phone-filled img {
+  transform: translateY(0px);
+  transition: transform 0.3s ease;
 }
