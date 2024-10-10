@@ -128,11 +128,13 @@ text {
 
 .about-form-gauche {
   width: 50%;
-  padding: 15px;
+  padding: 15px 15px 15px 0px;
 }
 
 .about-form-gauche form {
   width: 100%;
+  border-left: 1px solid #e21a41;
+  padding-left: 15px;
 }
 
 .about-form-content .form-group {
@@ -162,6 +164,7 @@ text {
 
 .about-form-container h2 {
   color: #fff;
+  padding-left: 15px;
 }
 
 .about-form-container .form-group label {
@@ -358,12 +361,22 @@ text {
   left: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
+  flex-direction: column;
 }
 
 .text-etoile-container h2 {
   color: #ffffff0f;
   text-align: center;
+  font-size: 3rem;
+  margin-top: 1.875rem;
+  padding-bottom: 0;
+}
+
+.text-etoile-container p {
+  color: #ffffff7d;
+  text-align: center;
+  font-style: italic;
 }
 
 .text-etoile {
