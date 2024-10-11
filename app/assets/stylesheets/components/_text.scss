@@ -1,11 +1,23 @@
+// .text-main-title {
+//   font-size: 4.3rem;
+//   color: #fff;
+//   font-weight: 800;
+//   line-height: 90%;
+//   letter-spacing: 2px;
+// }
+
 .text-main-title {
-  // font-family: 'GT America Trial', sans-serif;
+  font-family: "Spectral", serif;
+  font-style: italic;
   font-size: 4.3rem;
   color: #fff;
-  font-weight: 800;
+  padding: 1.875rem 0;
+  font-weight: 600;
   line-height: 90%;
   letter-spacing: 2px;
+  margin: 0;
 }
+
 
 .text-title {
   font-family: "Spectral", serif;
