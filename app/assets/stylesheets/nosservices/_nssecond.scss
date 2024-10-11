@@ -28,12 +28,17 @@
   height: 100%;
   width: 100%;
   // width: 35%;
-  display: flex;
+  //display: flex;
   // justify-content: center;
-  padding: 1.875rem 0;
+  // padding: 1.875rem 0;
   // flex-direction: column;
   // justify-content: center;
   // border-right: 2px solid #cacaca;
+  display: grid;
+  // grid-auto-columns: auto; /* Colonnes basées sur le contenu */
+  grid-auto-columns: min-content;
+  grid-auto-flow: column; /* Les éléments s'ajustent en colonnes */
+  gap: 10px;
 
 }
 
@@ -45,34 +50,8 @@
   padding: 0 15px;
 }
 
-
-
-
-
-
-
-.ns-stimulus-gauche-title {
-  // font-size: 1.07rem;
-  //font-weight: 400;
-  // font-family: 'GT America Trial', sans-serif;
-  // letter-spacing: 0.6px;
-
-  font-weight: 600;
-  letter-spacing: 1px;
-  font-family: "GT America Trial", sans-serif;
-  font-size: 1rem;
-}
-
-.ns-stimulus-gauche-oneline:hover .ns-stimulus-gauche-title {
-  color: #e21a41;
-}
-
-.ns-stimulus-gauche p {
-  opacity: 0.5;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  margin-bottom: 0;
+.ns-stimulus-gauche-oneline .text-bold {
+  display: block ruby;
 }
 
 
