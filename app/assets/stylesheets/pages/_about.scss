@@ -374,6 +374,7 @@ text {
   font-size: 3rem;
   margin-top: 1.875rem;
   padding-bottom: 0;
+  transition: color 0.3s ease;
 }
 
 .text-etoile-container p {
@@ -384,5 +385,5 @@ text {
 
 .text-etoile {
   color: #ffffff00 !important;
-  transition: transform 0.3s ease !important;
+  transition: color 0.3s ease !important;
 }
