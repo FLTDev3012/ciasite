@@ -102,7 +102,14 @@
 
 // ---------
 
+.ns-stimulus-droite .text-title {
+  font-size: 2.5rem;
+  padding-bottom: 0;
+}
 
+.ns-stimulus-droite > p {
+  margin: .5rem 0 2rem 0 !important;
+}
 
 .ns-stimulus-droite-crit-grid {
   display: grid;
@@ -135,8 +142,4 @@
   text-decoration-color: transparent;
   opacity: 1;
   color: #e21a41;
-}
-
-.ns-stimulus-droite .text-lighty {
-  margin-top: 0 !important;
 }
