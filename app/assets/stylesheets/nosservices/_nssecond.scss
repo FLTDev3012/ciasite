@@ -34,24 +34,25 @@
   // flex-direction: column;
   // justify-content: center;
   // border-right: 2px solid #cacaca;
+
   display: grid;
-  // grid-auto-columns: auto; /* Colonnes basées sur le contenu */
-  grid-auto-columns: min-content;
-  grid-auto-flow: column; /* Les éléments s'ajustent en colonnes */
+  grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
   gap: 10px;
 
 }
 
 .ns-stimulus-gauche-oneline {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
   position: relative;
   cursor: pointer;
   padding: 0 15px;
+  align-items: center; /* Aligne verticalement */
+  width: fit-content;
 }
 
 .ns-stimulus-gauche-oneline .text-bold {
-  display: block ruby;
+  display: block;
 }
 
 
