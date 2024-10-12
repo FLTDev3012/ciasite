@@ -14,7 +14,7 @@
         </div>
 
         <div class="ns-pdo-black-gauche">
-          <div class="ns-pdo-black-gauche-img"><%= image_tag("styles_site/landing.png") %></div>
+          <div class="ns-pdo-black-gauche-img js-ns-third-one-pic"><%= image_tag("styles_site/landing.png") %></div>
         </div>
 
         <div class="ns-pdo-black-droite">
@@ -71,7 +71,7 @@
         </div>
 
         <div class="ns-pdo-white-droite">
-          <div class="ns-pdo-white-droite-img"><%= image_tag("styles_site/vitrine.png") %></div>
+          <div class="ns-pdo-white-droite-img js-ns-third-two-pic"><%= image_tag("styles_site/vitrine.png") %></div>
         </div>
 
       </div>
@@ -90,7 +90,7 @@
         </div>
 
         <div class="ns-pdo-black-gauche">
-          <div class="ns-pdo-black-gauche-img"><%= image_tag("styles_site/cms.png") %></div>
+          <div class="ns-pdo-black-gauche-img js-ns-third-three-pic"><%= image_tag("styles_site/cms.png") %></div>
         </div>
 
         <div class="ns-pdo-black-droite">
@@ -146,7 +146,7 @@
         </div>
 
         <div class="ns-pdo-white-droite">
-          <div class="ns-pdo-white-droite-img"><%= image_tag("styles_site/eco.png") %></div>
+          <div class="ns-pdo-white-droite-img js-ns-third-four-pic"><%= image_tag("styles_site/eco.png") %></div>
         </div>
 
       </div>
@@ -165,7 +165,7 @@
         </div>
 
         <div class="ns-pdo-black-gauche">
-          <div class="ns-pdo-black-gauche-img"><%= image_tag("styles_site/apph.png") %></div>
+          <div class="ns-pdo-black-gauche-img js-ns-third-five-pic"><%= image_tag("styles_site/apph.png") %></div>
         </div>
 
         <div class="ns-pdo-black-droite">
@@ -223,7 +223,7 @@
         </div>
 
         <div class="ns-pdo-white-droite">
-          <div class="ns-pdo-white-droite-img"><%= image_tag("styles_site/qr.png") %></div>
+          <div class="ns-pdo-white-droite-img js-ns-third-six-pic"><%= image_tag("styles_site/qr.png") %></div>
         </div>
 
       </div>
@@ -232,3 +232,64 @@
 
   </div>
 </div>
+
+<script>
+
+  window.addEventListener('scroll', function() {
+      var scrollPosition = window.scrollY;
+      console.log(scrollPosition);
+
+
+
+
+      var scrollNsThirdOnePic = document.querySelector('.js-ns-third-one-pic');
+
+      if (scrollPosition > 1100) {
+        scrollNsThirdOnePic.classList.add('show');
+      } else {
+        scrollNsThirdOnePic.classList.remove('show');
+      }
+
+      var scrollNsThirdTwoPic = document.querySelector('.js-ns-third-two-pic');
+
+      if (scrollPosition > 1900) {
+        scrollNsThirdTwoPic.classList.add('show');
+      } else {
+        scrollNsThirdTwoPic.classList.remove('show');
+      }
+
+      var scrollNsThirdThreePic = document.querySelector('.js-ns-third-three-pic');
+
+      if (scrollPosition > 2620) {
+        scrollNsThirdThreePic.classList.add('show');
+      } else {
+        scrollNsThirdThreePic.classList.remove('show');
+      }
+
+      var scrollNsThirdFourPic = document.querySelector('.js-ns-third-four-pic');
+
+      if (scrollPosition > 3400) {
+        scrollNsThirdFourPic.classList.add('show');
+      } else {
+        scrollNsThirdFourPic.classList.remove('show');
+      }
+
+      var scrollNsThirdFivePic = document.querySelector('.js-ns-third-five-pic');
+
+      if (scrollPosition > 4270) {
+        scrollNsThirdFivePic.classList.add('show');
+      } else {
+        scrollNsThirdFivePic.classList.remove('show');
+      }
+
+      var scrollNsThirdSixPic = document.querySelector('.js-ns-third-six-pic');
+
+      if (scrollPosition > 4980) {
+        scrollNsThirdSixPic.classList.add('show');
+      } else {
+        scrollNsThirdSixPic.classList.remove('show');
+      }
+
+
+    });
+</script>

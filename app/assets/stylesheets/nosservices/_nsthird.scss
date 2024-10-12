@@ -60,6 +60,7 @@
   filter: drop-shadow(5px 5px 2px #00000039);
 }
 
+
 .ns-pdo-black-droite {
   width: 50%;
   display: flex;
@@ -145,4 +146,43 @@
 
 .link-estimation {
   margin-left: 1rem;
+}
+
+
+// js translate
+
+.js-ns-third-one-pic {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.js-ns-third-two-pic {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.js-ns-third-three-pic {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.js-ns-third-four-pic {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.js-ns-third-five-pic {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.js-ns-third-six-pic {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.5s ease-in-out;
 }
