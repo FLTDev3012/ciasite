@@ -13,12 +13,12 @@ class ContactsController < ApplicationController
     # Validez les données manuellement
     if valid_contact?(contact_data)
       # Envoyer l'e-mail ici
-      ContactMailer.with(contact: contact_data).send_contact_email.deliver_now
+      ContactMailer.with(contact: contact_data).send_message.deliver_now
+      flash[:notice] = "Votre message a été envoyé !"
+      redirect_to about_path
 
-      flash[:success] = "Votre message a été envoyé !"
-      redirect_to root_path
     else
-      flash.now[:error] = "Une erreur s'est produite. Veuillez réessayer."
+      flash.now[:alert] = "Une erreur s'est produite. Veuillez réessayer."
       render :some_view # Remplacez par la vue souhaitée
     end
   end
