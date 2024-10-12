@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'test', to: 'pages#test'
 
+  post 'send_contact', to: 'contacts#create'
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
