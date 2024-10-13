@@ -289,10 +289,12 @@
           <p id="total-container" class="estimation-result-total">Estimation ≈&nbsp;<span id="total-price"> 0 </span>$</p>
         </div>
 
-        <div class="link-ligne-rouge-container">
-          <div class="link-ligne-rouge-red"></div>
-          <a href="#" class="text-bold">Contact</a>
-        </div>
+        <%= link_to about_path, data: { turbo: false } do %>
+          <div class="link-ligne-rouge-container">
+            <div class="link-ligne-rouge-red"></div>
+            <span class="text-bold">Contact</span>
+          </div>
+        <% end %>
 
 
       </div>
@@ -320,7 +322,7 @@
               <p>If you're ready to discuss your project or have any questions, feel free to reach out. I'm here to help bring your vision to life and provide personalized guidance along the way.</p>
 
 
-              <%= link_to about_path, class: "btn-rouge js-home-fifth-button" do %>
+              <%= link_to about_path, class: "btn-rouge js-home-fifth-button", data: { turbo: false } do %>
                 <div class="block-rouge"></div>
                 <div class="block-noir-fleche"><i class="fa-solid fa-arrow-right" style="color: #fff;"></i></div>
                 <div class="block-text">Contact Me!</div>

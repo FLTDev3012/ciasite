@@ -16,6 +16,9 @@ body {
   position: relative;
 }
 
+a {
+  text-decoration: none;
+}
 ::selection {
   background-color: #e21a41;
   color: #ffffff;

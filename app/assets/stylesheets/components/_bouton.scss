@@ -35,3 +35,10 @@
 .link-ligne-rouge-container a:hover {
   border-color: #e21a41;
 }
+
+.link-ligne-rouge-container span {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #111;
+}
