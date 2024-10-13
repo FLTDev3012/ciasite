@@ -1,11 +1,3 @@
-// .text-main-title {
-//   font-size: 4.3rem;
-//   color: #fff;
-//   font-weight: 800;
-//   line-height: 90%;
-//   letter-spacing: 2px;
-// }
-
 .text-main-title {
   font-family: "Spectral", serif;
   font-style: italic;
@@ -33,16 +25,12 @@
   font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 1px;
-  // font-family: 'GT America Trial', sans-serif;
 }
 
 .text-lighty {
   font-size: 1.07rem;
   font-weight: 200;
   margin-top: 1.875rem !important;
-  // font-family: 'GT America Trial', sans-serif;
-  // font-family: 'GT America Trial', sans-serif;
-
   letter-spacing: 0.6px;
 }
 
@@ -55,7 +43,6 @@
 }
 
 .text-article-link {
-  // font-family: 'GT America Trial', sans-serif;
   display: flex;
   font-size: 1.35rem;
   justify-content: flex-end;
@@ -65,5 +52,4 @@
   color: #111;
   font-weight: 800;
   letter-spacing: .5px;
-  // transform: scaleX(1.5);
 }

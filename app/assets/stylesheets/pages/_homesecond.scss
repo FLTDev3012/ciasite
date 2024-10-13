@@ -4,15 +4,8 @@
   position: relative;
   color: #000;
   height: 64vh;
-  // box-shadow: 0 0 0 2px rgba(226,26,65,.35),0 0 3px 5px rgba(226,26,65,.35);
   outline: 2px dotted transparent;
   outline-offset: 2px;
-  // z-index: 10;
-  // box-shadow:
-  //   0 -2px 0 2px rgba(226, 26, 65, .35),    /* haut */
-  //   2px 0 0 2px rgba(226, 26, 65, .35),     /* droite */
-  //   -2px 0 0 2px rgba(226, 26, 65, .35),    /* gauche */
-  //   0 0 3px 5px rgba(226, 26, 65, .35) inset; /* flou interne pour le contour */
 }
 
 // seconde----------------------------------------------------------------
@@ -37,7 +30,6 @@
 .home-seconde-gauche {
   width: 50%;
   height: 100%;
-  //padding-top: 7.5rem;
   padding-left: 15px;
   display: flex;
   align-items: center;
@@ -47,7 +39,6 @@
   content: "";
   height: 95px;
   width: 95px;
-  // background-color: #555;
 }
 
 .home-seconde-gauche .home-seconde-logo img {
@@ -71,8 +62,6 @@
   height: 100%;
   padding-top: 7.5rem;
   padding-left: 15px;
-  // border-left: 1px solid #242426;
-  // border-left: 1px solid #555;
 }
 
 .home-seconde-droite-link-container {
