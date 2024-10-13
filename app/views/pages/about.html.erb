@@ -40,20 +40,28 @@
             <p class="text-lighty">Graduated from a French school in web development, I have gained solid expertise in creating websites and web applications. As a freelancer, I split my time between Australia and France, where I bring my passion and skills to help clients develop tailored digital solutions.</p>
 
             <div class="about-main-link-container">
-              <div class="link-ligne-rouge-container">
-                <div class="link-ligne-rouge-red"></div>
-                <%= link_to 'E-mail', 'mailto:unlockhorizons@gmail.com', class: 'text-bold' %>
-              </div>
 
-              <div class="link-ligne-rouge-container">
-                <div class="link-ligne-rouge-red"></div>
-                <%= link_to 'Phone Message', 'sms:+1234567890', class: 'text-bold' %>
-              </div>
+              <%= link_to class: 'link-ligne-rouge-container', href: 'mailto:unlockhorizons@gmail.com' do %>
+                <div class="link-ligne-rouge-container">
+                  <div class="link-ligne-rouge-red"></div>
+                  <%= link_to 'E-mail', 'mailto:unlockhorizons@gmail.com', class: 'text-bold' %>
+                </div>
+              <% end %>
 
+              <%= link_to class: 'link-ligne-rouge-container', href: 'sms:+1234567890' do %>
+                <div class="link-ligne-rouge-container">
+                  <div class="link-ligne-rouge-red"></div>
+                  <%= link_to 'Phone Message', 'sms:+1234567890', class: 'text-bold' %>
+                </div>
+              <% end %>
+
+              <%= link_to class: 'link-ligne-rouge-container', href: 'https://github.com/FLTDev3012', target: '_blank' do %>
               <div class="link-ligne-rouge-container">
                 <div class="link-ligne-rouge-red"></div>
                 <%= link_to 'Github', 'https://github.com/FLTDev3012', target: '_blank', class: 'text-bold' %>
               </div>
+              <% end %>
+
             </div>
 
           </div>
