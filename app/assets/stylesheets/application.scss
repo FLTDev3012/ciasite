@@ -14,4 +14,31 @@
 
 body {
   position: relative;
+  cursor: url('rocket.png'), auto;
+}
+
+::selection {
+  background-color: #e21a41;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background-color: #e21a41;
+  color: #ffffff;
+}
+
+body {
+  cursor: url('path_to_image/default-cursor.png'), auto;
+}
+
+a {
+  cursor: url('path_to_image/link-cursor.png'), pointer;
+}
+
+p, h1, h2, h3 {
+  cursor: url('path_to_image/text-cursor.png'), text;
+}
+
+input, textarea {
+  cursor: url('path_to_image/textfield-cursor.png'), text;
 }

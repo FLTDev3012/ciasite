@@ -16,7 +16,7 @@
 
     <div class="newnav-logo">
       <%= image_tag("uh_logo_white.png", class: "nav-logo-img") %>
-      <%= link_to root_path do%>
+      <%= link_to root_path, data: { turbo: false } do%>
         <p>Unlock</p>
         <p>Your</p>
         <p>Horizons</p>
