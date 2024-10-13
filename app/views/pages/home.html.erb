@@ -7,31 +7,6 @@
 
 <div class="home-container">
 
-
-
-
-  <!--
-  <svg xmlns="http://www.w3.org/2000/svg" xml:lang="en"
-  xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
-      <title>Circular Text Path</title>
-
-      <defs>
-          <path id="textcircle"
-              d="M250,400
-                  a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"
-              transform="rotate(12,250,250)"/>
-      </defs>
-      <rect width="100%" height="100%" fill="none" />
-      <text>
-          <textPath xlink:href="#textcircle"
-                  aria-label="All for One &amp; One for All"
-                  textLength="850">UNLOCK - YOUR - HORIZONS - </textPath>
-
-      </text>
-
-  </svg>
-  -->
-
   <%= render "home/homefirst" %>
   <%= render "home/homesecond" %>
   <%= render "home/homethird" %>
@@ -39,47 +14,3 @@
   <%= render "home/homefifth" %>
 
 </div>
-
-
-
-
-<!--
-<script>
-
-  document.addEventListener("turbo:load", function() {
-    const circleSvg = document.querySelector('svg');
-    const btn = document.querySelector('button');
-
-    let mouseX = 0;
-    let mouseY = 0;
-    let scrollY = 0;
-
-    window.addEventListener('mousemove', (event) => {
-      mouseY = (event.clientY) - 45;
-      mouseX = (event.clientX) - 45;
-    });
-
-    window.addEventListener('scroll', (event) => {
-      scrollY = window.scrollY;
-    });
-
-    const mouseMove = () => {
-      circleSvg.style.top = mouseY + scrollY + 'px';
-      circleSvg.style.left = mouseX + 'px';
-      window.requestAnimationFrame(mouseMove);
-    };
-
-    mouseMove();
-
-    var tl = gsap.timeline({defaults: {ease: "power2.inOut"}});
-    tl.to(circleSvg, {width: 0, opacity: 0});
-    tl.to('body, button', {background: 'white'});
-    tl.pause();
-
-    btn.addEventListener('click', () => {
-      tl.play();
-    });
-  });
-
-</script>
--->

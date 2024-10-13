@@ -6,7 +6,6 @@
     <div class="home-trois-container">
 
       <div class="home-trois-gauche">
-        <!-- <div class="home-trois-gauche-logo"></div> -->
         <%= image_tag("styles_site/main_pic.png", class: "home-trois-gauche-logo-img js-home-third-pic ") %>
       </div>
 
@@ -38,10 +37,6 @@
 
   window.addEventListener('scroll', function() {
       var scrollPosition = window.scrollY;
-
-
-
-
       var scrollText = document.querySelector('.js-home-third-pic');
 
       if (scrollPosition > 860) {
@@ -57,7 +52,6 @@
       } else {
         scrollText.classList.remove('shake');
       }
-
 
     });
 </script>
