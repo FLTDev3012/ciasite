@@ -7,7 +7,8 @@ class ContactsController < ApplicationController
       name: params[:name],
       email: params[:email],
       phone: params[:phone],
-      message: params[:message]
+      message: params[:message],
+      user_ip: request.remote_ip # Capture de l'adresse IP de l'utilisateur
     }
 
     # Validez les données manuellement
