@@ -40,19 +40,7 @@
 }
 
 
-.phone-nav-list {
-  position: fixed;
-  top: 0;
-  left: 0;
 
-  width: 100vw;
-  height: 100vh;
-
-  background-color: $gris;
-  padding-top: 6.5rem;
-
-  z-index: 999;
-}
 
 
 
@@ -64,6 +52,43 @@
   overflow: hidden;
 }
 
-.phone-nav-gray-container .phone-nav-list a {
+.phone-nav-list-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: $gris;
+  padding-top: 6.5rem;
+
+  z-index: 999;
+  display: none;
+}
+
+
+.phone-nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+}
+
+.phone-nav-link {
   color: #fff !important;
+  margin-bottom: 0;
+  // line-height: 1.05rem;
+  transform: scale(1, 0.75);
+  font-size: 4.3rem;
+  font-weight: 700;
+  text-align: center;
+}
+.phone-nav-list a:hover {
+  color: #FFF; /* Reste en blanc au survol */
 }
