@@ -3,7 +3,7 @@
 .home-seconde-div-container {
   position: relative;
   color: #000;
-  height: 64vh;
+  // height: 64vh;
   outline: 2px dotted transparent;
   outline-offset: 2px;
 }
@@ -61,6 +61,7 @@
   width: 50%;
   height: 100%;
   padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
   padding-left: 15px;
 }
 
@@ -106,4 +107,20 @@
   opacity: 0;
   transform: translateX(50px);
   transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 700px) {
+  .home-seconde-content-little {
+    flex-direction: column;
+    padding-top: 7.5rem;
+  }
+
+  .home-seconde-gauche {
+    width: 100%;
+  }
+
+  .home-seconde-droite {
+    width: 100%;
+    padding-top: 0rem;
+  }
 }

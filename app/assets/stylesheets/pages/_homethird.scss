@@ -2,7 +2,7 @@
 
 .home-troisieme-div-container {
   position: relative;
-  height: calc(100vh - 6.5rem + 1px);
+  // height: calc(100vh - 6.5rem + 1px);
 }
 
 // troisieme----------------------------------------------------------------
@@ -17,7 +17,7 @@
 }
 
 .home-trois-container {
-  position: absolute;
+  position: relative;
   height: 100%;
   width: 80%;
   display: flex;
@@ -56,6 +56,7 @@
   width: 85%;
   //justify-content: center;
   margin-top: 7.5rem;
+  margin-bottom: 7.5rem;
   z-index: 1;
 
 }
@@ -135,4 +136,30 @@
   25% { transform: rotate(2deg); }
   75% { transform: rotate(-1deg); }
   100% { transform: rotate(0deg); }
+}
+
+
+@media screen and (max-width: 1050px) {
+
+  .home-trois-container {
+    flex-direction: column-reverse;
+  }
+
+  .home-trois-droite-content {
+    margin-top: 4.5rem;
+    width: 100%;
+  }
+
+  .home-trois-droite {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .home-trois-gauche {
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 7.5rem;
+
+  }
+
 }

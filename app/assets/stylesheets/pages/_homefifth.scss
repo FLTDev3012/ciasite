@@ -110,3 +110,29 @@
   width: inherit;
   margin-left: 15px;
 }
+
+
+@media screen and (max-width: 1050px) {
+
+  .home-cinq-content {
+    flex-direction: column;
+  }
+
+  .home-cinq-droite {
+    width: 100%;
+  }
+
+  .home-cinq-gauche-grand {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .home-cinq-gauche-text {
+    width: 100%;
+  }
+
+  .home-cinq-gauche {
+    width: 100%;
+  }
+
+}
