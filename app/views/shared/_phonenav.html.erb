@@ -1,0 +1,51 @@
+<div class="phone-nav-container">
+
+  <div class="phone-nav-gray-container">
+
+    <div class="phone-nav-content">
+      <div class="newnav-logo">
+
+        <%= image_tag("uh_logo_white.png", class: "nav-logo-img") %>
+          <%= link_to root_path, data: { turbo: false } do%>
+            <p>Unlock</p>
+            <p>Your</p>
+            <p>Horizons</p>
+          <% end %>
+        </div>
+
+        <i class="fa-solid fa-bars open-menu-button" style="color: #FFF;"></i>
+        <i class="fa-solid fa-xmark close-menu-button" style="color: #FFF; display: none;""></i>
+
+    </div>
+
+  </div>
+
+  <div class="phone-nav-list">
+      <%= link_to "Home", root_path, data: { turbo: false } %>
+      <!-- <%= link_to "Our Projects", projects_path, data: { turbo: false } %> -->
+      <%= link_to "Our Services", nosservices_path, data: { turbo: false } %>
+      <%= link_to "Estimation", estimation_path, data: { turbo: false } %>
+      <%= link_to "Contact", about_path, data: { turbo: false } %>
+  </div>
+
+</div>
+
+<script>
+  const menu = document.querySelector('.phone-nav-list');
+  const openMenuButton = document.querySelector('.open-menu-button'); // Bouton d'ouverture du menu
+  const closeMenuButton = document.querySelector('.close-menu-button'); // Bouton de fermeture du menu
+
+  openMenuButton.addEventListener('click', () => {
+    menu.style.display = 'block'; // Affiche le menu
+    openMenuButton.style.display = 'none'; // Cache le bouton "ouvrir"
+    closeMenuButton.style.display = 'block'; // Affiche le bouton "fermer"
+    document.body.classList.add('no-scroll'); // Empêche le scroll
+  });
+
+  closeMenuButton.addEventListener('click', () => {
+    menu.style.display = 'none'; // Cache le menu
+    document.body.classList.remove('no-scroll'); // Réactive le scroll
+    closeMenuButton.style.display = 'none'; // Cache le bouton "fermer"
+    openMenuButton.style.display = 'block'; // Affiche le bouton "ouvrir"
+  });
+</script>
