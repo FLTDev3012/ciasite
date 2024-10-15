@@ -1,0 +1,94 @@
+.phone-nav-gray-container {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.phone-nav-content {
+  padding: 0 1rem;
+  height: calc(6.5rem + 1px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $gris;
+  border-bottom: 2px solid #2b2b2d;
+  // margin-left: 1px;
+  padding-top: 0.895rem;
+  position: relative;
+}
+
+.phone-nav-gray-container p {
+  color: #fff;
+}
+
+
+
+.phone-nav-gray-container i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 1111px) {
+  .phone-nav-container {
+    display: none;
+  }
+
+
+}
+
+
+
+
+
+
+.phone-nav-content .newnav-logo .close-menu-button {
+  display: none !important; /* Surcharge la variable utilisée par Font Awesome */
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.phone-nav-list-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: $gris;
+  padding-top: 6.5rem;
+
+  z-index: 999;
+  display: none;
+}
+
+
+.phone-nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+}
+
+.phone-nav-link {
+  color: #fff !important;
+  margin-bottom: 0;
+  // line-height: 1.05rem;
+  transform: scale(1, 0.75);
+  font-size: 4.3rem;
+  font-weight: 700;
+  text-align: center;
+}
+.phone-nav-list a:hover {
+  color: #FFF; /* Reste en blanc au survol */
+}
