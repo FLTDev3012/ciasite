@@ -257,11 +257,31 @@
 
 
   .home-quatre-article {
-    width: 100%;
+    width: 90%;
   }
 
   .home-quatre-picture {
     height: 380px;
+  }
+
+
+}
+
+@media screen and (max-width: 460px) {
+
+
+  .home-quatre-picture {
+    height: 270px;
+  }
+
+
+}
+
+@media screen and (max-width: 380px) {
+
+
+  .home-quatre-picture {
+    height: 270px;
   }
 
 
