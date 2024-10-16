@@ -163,3 +163,20 @@
   }
 
 }
+
+@media screen and (max-width: 460px) {
+
+  .test-home-first-title-container h1{
+    padding: 0px 1rem;
+  }
+
+  .test-home-first-img-container img {
+    height: 80%;
+    margin-top: 3rem;
+  }
+
+  .home-trois-gauche-logo-img {
+    height: auto;
+    width: 100%;
+  }
+}
