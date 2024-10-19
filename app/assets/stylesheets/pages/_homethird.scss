@@ -129,6 +129,10 @@
   animation:  tilt-shaking 1s forwards;
 }
 
+.home-trois-btn-phone {
+  display: none;
+}
+
 
 
 @keyframes tilt-shaking {
@@ -148,6 +152,7 @@
   .home-trois-droite-content {
     margin-top: 4.5rem;
     width: 100%;
+    margin-bottom: 1.5rem;
   }
 
   .home-trois-droite {
@@ -158,8 +163,19 @@
   .home-trois-gauche {
     width: 100%;
     justify-content: center;
+    flex-direction: column;
     padding-bottom: 7.5rem;
 
+  }
+
+  .home-trois-btn-large {
+    display: none;
+  }
+
+  .home-trois-btn-phone {
+    display: block;
+    width: inherit;
+    margin-top: 5.5rem;
   }
 
 }

@@ -12,7 +12,7 @@
 
 .home-quatrieme-div-content {
   height: 100%;
-  width: 95%;
+  // width: 95%;
   padding-bottom: 7.5rem;
   padding-top: 7.5rem;
   z-index: 2;
@@ -21,6 +21,10 @@
 .home-quatre-title {
   padding: 0 15px;
   margin-bottom: 3.75rem;
+}
+
+.home-quatre-title h2 {
+  margin-left: 15px;
 }
 
 .home-quatre-article-container-master-flex{
@@ -76,7 +80,7 @@
   background-color: #ffffff;
   flex-grow: 1;
   display: flex;
-  justify-content: center;
+  // justify-content: center;
 }
 
 .home-quatre-article-title .text-article-bold{
@@ -199,6 +203,10 @@
 @media screen and (max-width: 1240px) {
   .home-quatre-article-container {
     // grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Trois colonnes de même taille */
+  }
+
+  .home-quatrieme-div-content {
+    width: 95%;
   }
 
   .home-quatre-article {
