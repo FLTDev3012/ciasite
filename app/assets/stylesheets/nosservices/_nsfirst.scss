@@ -126,7 +126,7 @@
 
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   position: relative;
   z-index: 10;
 
@@ -195,11 +195,21 @@
 
   .ns-first {
     flex-direction: column;
-    padding-top: 0;
+    padding-top: 2rem;
+  }
+
+  .ns-first-gauche-block-border-left-red {
+    border-left: none !important;
   }
 
   .ns-first-gauche {
     width: 100%;
+  }
+
+  .ns-first .link-ligne-rouge-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .ns-first-droite {
@@ -229,6 +239,48 @@
   .ns-first-phone-img .ns-first-logo img {
     width: 100%;
   }
+
+  .ns-pdo-black-content {
+    flex-direction: column-reverse;
+    padding: 4rem 0 8rem 0 !important;
+  }
+
+  .ns-pdo-black-droite {
+    width: 100% !important;
+  }
+
+  .ns-pdo-black-droite-content {
+    width: 100% !important;
+  }
+
+  .ns-pdo-black-gauche {
+    width: 100% !important;
+    justify-content: center;
+    padding-top: 2.5rem !important;
+    margin-top: 3rem;
+    border-left: 1px solid #555;
+  }
+
+
+  .ns-pdo-white-content {
+    flex-direction: column;
+    padding: 4rem 0 8rem 0 !important;
+  }
+
+  .ns-pdo-white-gauche {
+    width: 100% !important;
+  }
+
+  .ns-pdo-white-gauche-content {
+    width: 100% !important;
+  }
+
+  .ns-pdo-white-droite {
+    width: 100% !important;
+    justify-content: center !important;
+    padding-top: 2.5rem !important;
+    margin-top: 3rem;
+  }
 }
 
 
@@ -236,5 +288,40 @@
 
   .ns-stimulus-droite-crit-grid {
     grid-template-columns: auto !important;
+  }
+
+  .ns-stimulus-gauche-oneline .link-ligne-rouge-container {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 542px) {
+
+
+
+  .link-estimation {
+    margin-left: 0rem !important;
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+  .ns-content {
+    width: 90%;
+  }
+
+  .ns-stimulus-content {
+    width: 90% !important;
+  }
+
+  .ns-pdo-black-content {
+    width: 90% !important;
+  }
+
+  .ns-pdo-white-content {
+    width: 90% !important;
   }
 }

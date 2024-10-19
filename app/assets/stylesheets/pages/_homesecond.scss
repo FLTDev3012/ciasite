@@ -124,3 +124,15 @@
     padding-top: 0rem;
   }
 }
+
+@media screen and (max-width: 500px) {
+
+  .home-seconde-content-little {
+    width: 90%;
+  }
+
+  .home-trois-container {
+    width: 90% !important;
+  }
+
+}

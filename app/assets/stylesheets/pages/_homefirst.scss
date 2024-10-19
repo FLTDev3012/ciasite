@@ -335,6 +335,13 @@
   height: auto;
 }
 
+@media screen and (max-width: 500px) {
+ .home-content {
+  width: 90%;
+ }
+
+}
+
 @media screen and (max-width: 460px) {
 
   .test-home-first-title-container h1{

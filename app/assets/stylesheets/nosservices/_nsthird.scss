@@ -6,6 +6,7 @@
   height: 100%;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 
@@ -48,13 +49,13 @@
 
 .ns-pdo-black-gauche-img {
   content: "";
-  filter: drop-shadow(5px 5px 2px #00000039);
+  // filter: drop-shadow(5px 5px 2px #00000039);
 }
 
 .ns-pdo-black-gauche-img img {
   width: 100%;
   height: auto;
-  filter: drop-shadow(5px 5px 2px #00000039);
+  filter: drop-shadow(5px 5px 2px #ffffff54);
 }
 
 
@@ -136,11 +137,13 @@
 
 .ns-pdo-two-link {
   display: flex;
-
+  margin-top: 1rem;
 }
 
 .link-estimation {
-  margin-left: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 
