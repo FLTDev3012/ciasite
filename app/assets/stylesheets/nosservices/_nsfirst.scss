@@ -137,6 +137,7 @@
   height: auto;
   width: 100%;
   animation: floatImage 8s 2s ease-in-out infinite;
+  filter: drop-shadow(25px 25px 3px #0003);
 }
 
 .ns-first-droite-content {
@@ -189,6 +190,10 @@
 
 .ns-first-phone-img {
   display: none;
+}
+
+.ns-first-phone-img img {
+  filter: drop-shadow(25px 25px 3px #0003);
 }
 
 @media screen and (max-width: 1025px) {
