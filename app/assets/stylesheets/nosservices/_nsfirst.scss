@@ -7,6 +7,7 @@
   margin-left: 1px;
   border-top: #aa1935 1px solid;
   min-height: calc(100vh - 6.2rem);
+  overflow: hidden;
 }
 
 .ns-fist-arrow-container {
@@ -338,5 +339,12 @@
 
   .ns-pdo-white-content {
     width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .ns-first h2 {
+    font-size: 17vw;
   }
 }

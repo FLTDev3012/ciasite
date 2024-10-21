@@ -3,6 +3,10 @@ body {
   width: 100vw;
 }
 
+.home-container{
+  overflow: hidden;
+}
+
 .home-container .circle {
   opacity: 0;
   animation: apparitionSvg 2s 4s ease-in-out forwards;
