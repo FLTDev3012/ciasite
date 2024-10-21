@@ -150,6 +150,11 @@
   flex-direction: column;
 }
 
+.ns-first-droite-content h2::after {
+  content: "";
+
+}
+
 .ns-first-droite-content h2 {
   margin-left: 15px;
 
