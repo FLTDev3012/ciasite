@@ -169,9 +169,7 @@ text {
   color: #fff;
 }
 
-.form-group .btn-rouge {
-  max-width: 350px;
-}
+
 
 
 .about-form-droite {
@@ -380,33 +378,24 @@ text {
     width: 20%;
   }
 
-
-}
-
-@media screen and (max-width: 500px) {
-
   .text-etoile-container .text-lighty {
     display: none;
   }
 
   .about-form-gauche {
-    width: 90%;
+    width: 100%;
   }
 
   .about-form-droite {
-    width: 10%;
-  }
-
-  .scene .rocket img {
-    height: 95px;
+    width: 0%;
   }
 
   .about-form-gauche {
-    padding: 15px 0px 15px 15px;
+    padding: 0;
   }
 
-  .about-form-content {
-    flex-direction: row-reverse;
+  .about-form-gauche form {
+    padding-right: 15px;
   }
 
 }
