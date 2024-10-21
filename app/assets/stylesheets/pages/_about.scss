@@ -401,4 +401,12 @@ text {
     height: 95px;
   }
 
+  .about-form-gauche {
+    padding: 15px 0px 15px 15px;
+  }
+
+  .about-form-content {
+    flex-direction: row-reverse;
+  }
+
 }
