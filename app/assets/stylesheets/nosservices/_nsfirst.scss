@@ -225,9 +225,17 @@
     width: 100%;
   }
 
-  .ns-first .link-ligne-rouge-container {
+  .ns-first .ns-first-gauche-block-border-left-red > .link-ligne-rouge-container {
     width: 100%;
     display: flex;
+    justify-content: center;
+  }
+
+  .about-main-link-container .link-ligne-rouge-container {
+    margin: 0 7px !important;
+  }
+
+  .about-main-link-container {
     justify-content: center;
   }
 
@@ -350,4 +358,15 @@
   .ns-first h2 {
     font-size: 17vw;
   }
+
+  .about-main-link-container {
+    flex-direction: column;
+  }
+
+  .about-main-link-container .link-ligne-rouge-container {
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem 7px !important;
+  }
+
 }
