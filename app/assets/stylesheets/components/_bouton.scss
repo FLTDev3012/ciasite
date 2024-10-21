@@ -2,7 +2,7 @@
   position: relative;
   width: fit-content;
   height: fit-content;
-  padding: 0.5rem 1rem;
+  // padding: 0.5rem 1rem;
   border: solid 1px #bebebf;
 }
 
@@ -30,6 +30,10 @@
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  text-align: center;
+  display: block;
 }
 
 .link-ligne-rouge-container a:hover {
@@ -41,12 +45,4 @@
   text-transform: uppercase;
   font-size: 1rem;
   color: #111;
-}
-
-.about-main-link-container .link-ligne-rouge-container {
-  padding: 0.5rem 0rem;
-}
-
-.about-main-link-container .link-ligne-rouge-container a {
-  padding: 0.5rem 1rem;
 }

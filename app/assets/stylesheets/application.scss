@@ -12,6 +12,9 @@
 @import "pages/index";
 @import "nosservices/index";
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   position: relative;
