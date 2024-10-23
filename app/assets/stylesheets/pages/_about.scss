@@ -201,6 +201,7 @@ text {
 
 .scene .rocket img {
   transform: translateY(180px);
+  filter: hue-rotate(-14deg);
 }
 
 @keyframes animate {
