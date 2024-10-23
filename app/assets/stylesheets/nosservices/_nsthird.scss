@@ -139,7 +139,13 @@
   width: 85%;
 }
 
-.ns-pdo-two-link {
+.ns-pdo-link-little-screen {
+  margin-top: 4rem;
+  display: none;
+  width: 100%;
+}
+
+.ns-pdo-link-large-screen {
   display: flex;
   margin-top: 1rem;
 }
@@ -187,4 +193,35 @@
   opacity: 0;
   transform: translateX(50px);
   transition: all 0.5s ease-in-out;
+}
+
+
+@media (max-width: 1025px) {
+
+
+  .ns-pdo-black-gauche {
+    width: 100% !important;
+    justify-content: center;
+    padding-top: 2.5rem !important;
+    margin-top: 3rem;
+    border-left: none;
+    flex-direction: column; /* Changement de direction en colonne */
+  }
+
+  .ns-pdo-white-droite {
+    width: 100% !important;
+    justify-content: center !important;
+    padding-top: 2.5rem !important;
+    margin-top: 0rem;
+    flex-direction: column;
+  }
+
+  .ns-pdo-link-little-screen {
+    display: flex; /* Visible sur petits écrans */
+  }
+
+  .ns-pdo-link-large-screen {
+    display: none; /* Caché sur petits écrans */
+  }
+
 }
