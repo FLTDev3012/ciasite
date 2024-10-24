@@ -210,6 +210,18 @@
   filter: drop-shadow(25px 25px 3px #0003);
 }
 
+@media (min-width: 1025px) {
+
+  .ns-first {
+    padding-top: 2.5rem;
+  }
+
+  .ns-page .ns-first .ns-first-droite {
+    transform: translateY(50px);
+  }
+
+}
+
 @media screen and (max-width: 1025px) {
 
   .ns-first {

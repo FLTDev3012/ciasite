@@ -131,7 +131,8 @@
 .estimation-result-title-container {
   display: flex;
   justify-content: center;
-  background-color: rgb(226, 26, 65);
+  background-color: rgb(255, 255, 255);
+  border: solid 1px #bebebf;
   padding: 8px 16px;
   box-shadow: 0px 3px 2px #0000004f;
   margin-top: 1rem;
@@ -139,7 +140,7 @@
 
 .estimation-result-title {
   margin: 0;
-  color: #fff;
+  color: #000000;
   font-family: "Spectral", serif;
   font-style: italic;
   font-weight: 600;
@@ -176,12 +177,13 @@
 }
 
 .estimation-result-total {
-  background-color: rgb(226, 26, 65);
+  background-color: rgb(255, 255, 255);
   margin: 0 !important;
   padding: 8px 16px;
-  color: #fff !important;
+  color: #000000 !important;
   text-shadow: 1px 2px 4px #0000003d;
   box-shadow: 0px 3px 2px #0000004f;
+  border: solid 1px #bebebf;
 }
 
 
@@ -220,7 +222,7 @@
 }
 
 .esti-target-div > p {
-  color: #fff;
+  color: #000000;
   margin-bottom: 0.5rem;
   margin-left: 15px;
 
@@ -230,21 +232,28 @@
   letter-spacing: 1px;
   font-family: 'GT America Trial', sans-serif;
 
-  background-color: #e21a41;
+  background-color: #ffffff;
   width: fit-content;
   padding: 2px 6px;
 
   box-shadow: 0px 3px 2px #0000004f;
+  border: solid 1px #bebebf;
+  // text-shadow: 1px 2px 4px #0000003d;
 }
 
 .gold {
-  background-color: #dcb253 !important;
+  //background-color: #dcb253 !important;
+  background-color: #e21a41 !important;
+  color: #fff !important;
 }
 
 // lien contact
 
 .estimation-result-droite a {
-  color: #111;
+  //color: #111;
+  width: 100%;
+  box-shadow: 0px 3px 2px #0000004f;
+  border: solid 1px #bebebf;
 }
 
 .estimation-result-droite .link-ligne-rouge-container {
