@@ -107,6 +107,39 @@
   color: #FFF; /* Reste en blanc au survol */
 }
 
+// test
+
+.burger {
+  width: 50px;
+  cursor: pointer;
+}
+
+.burger:before,
+.burger:after,
+.burger div {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 6px;
+  border-radius: 3px;
+  margin: 7px 0;
+  transition: 0.5s;
+}
+
+.burger.clicked:before {
+  transform: translateY(12px) rotate(135deg);
+}
+
+.burger.clicked:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+
+.burger.clicked div {
+  transform: scale(0);
+}
+
+// fin test
+
 @media screen and (max-width: 700px) {
 
   .phone-nav-link {
