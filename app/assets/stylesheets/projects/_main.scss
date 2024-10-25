@@ -4,6 +4,12 @@
   display: flex;
   justify-content: center;
   background-color: #fff;
+  position: relative;
+}
+
+.projects-div-content {
+  position: relative;
+  z-index: 2;
 }
 
 .projects-div-content {
