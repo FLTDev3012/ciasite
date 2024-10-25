@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_10_25_130140) do
+ActiveRecord::Schema[7.0].define(version: 2024_10_25_135146) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -42,122 +42,11 @@ ActiveRecord::Schema[7.0].define(version: 2024_10_25_130140) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
-  create_table "activites", force: :cascade do |t|
-    t.string "title"
-    t.text "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "image_url"
-    t.string "address"
-    t.string "phone"
-    t.string "price_a"
-    t.string "price_b"
-    t.string "luns"
-    t.string "lunbs"
-    t.string "lunbe"
-    t.string "lune"
-    t.string "mars"
-    t.string "marbs"
-    t.string "marbe"
-    t.string "mare"
-    t.string "mers"
-    t.string "merbs"
-    t.string "merbe"
-    t.string "mere"
-    t.string "jeus"
-    t.string "jeubs"
-    t.string "jeube"
-    t.string "jeue"
-    t.string "vens"
-    t.string "venbs"
-    t.string "venbe"
-    t.string "vene"
-    t.string "sams"
-    t.string "sambs"
-    t.string "sambe"
-    t.string "same"
-    t.string "dims"
-    t.string "dimbs"
-    t.string "dimbe"
-    t.string "dime"
-    t.float "latitude"
-    t.float "longitude"
-    t.string "categorie"
-  end
-
-  create_table "biotops", force: :cascade do |t|
-    t.string "categorie"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.bigint "user_id", null: false
-    t.index ["user_id"], name: "index_biotops_on_user_id"
-  end
-
-  create_table "espece_categories", force: :cascade do |t|
-    t.string "categorie"
-    t.bigint "type_espece_categorie_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.bigint "user_id", null: false
-    t.boolean "certif", default: false
-    t.index ["type_espece_categorie_id"], name: "index_espece_categories_on_type_espece_categorie_id"
-    t.index ["user_id"], name: "index_espece_categories_on_user_id"
-  end
-
-  create_table "especes", force: :cascade do |t|
-    t.string "nom"
-    t.string "description"
-    t.bigint "espece_categorie_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.bigint "user_id", null: false
-    t.boolean "certif", default: false
-    t.index ["espece_categorie_id"], name: "index_especes_on_espece_categorie_id"
-    t.index ["user_id"], name: "index_especes_on_user_id"
-  end
-
-  create_table "galeries", force: :cascade do |t|
-    t.string "title"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "logements", force: :cascade do |t|
-    t.string "categorie"
-    t.string "title"
-    t.text "description"
-    t.integer "price"
-    t.string "email"
-    t.integer "phone"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "image_url"
-    t.string "address"
-    t.float "latitude"
-    t.float "longitude"
-  end
-
-  create_table "oldpics", force: :cascade do |t|
-    t.string "title"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "projects", force: :cascade do |t|
     t.string "title"
     t.string "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "type_espece_categories", force: :cascade do |t|
-    t.string "categorie"
-    t.bigint "biotop_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.bigint "user_id", null: false
-    t.index ["biotop_id"], name: "index_type_espece_categories_on_biotop_id"
-    t.index ["user_id"], name: "index_type_espece_categories_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -168,22 +57,10 @@ ActiveRecord::Schema[7.0].define(version: 2024_10_25_130140) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "admin", default: false, null: false
-    t.string "first_name"
-    t.string "last_name"
-    t.integer "level", default: 1, null: false
-    t.boolean "certif", default: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "biotops", "users"
-  add_foreign_key "espece_categories", "type_espece_categories", column: "type_espece_categorie_id"
-  add_foreign_key "espece_categories", "users"
-  add_foreign_key "especes", "espece_categories", column: "espece_categorie_id"
-  add_foreign_key "especes", "users"
-  add_foreign_key "type_espece_categories", "biotops"
-  add_foreign_key "type_espece_categories", "users"
 end

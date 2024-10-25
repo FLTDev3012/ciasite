@@ -1,6 +1,8 @@
-<div class="home-quatrieme-div-container">
+<div class="pass-nav-block-blanc"></div>
 
-  <div class="home-quatrieme-div-content">
+<div class="projects-div-container">
+
+  <div class="projects-div-content">
 
     <div class="home-quatre-title">
       <h2 class="text-main-title">Projects</h2>
@@ -15,7 +17,15 @@
         <div class="home-quatre-article">
 
           <div class="home-quatre-picture">
-            <div class="picture"></div>
+            <div class="picture">
+
+              <% if project.photo.attached? %>
+                <%= cl_image_tag(project.photo.key, loading: "eager", fetchpriority: "high") %>
+              <% else %>
+                <%= image_tag("proj_img/pro_merli.png", loading: "eager", fetchpriority: "high") %>
+              <% end %>
+
+            </div>
           </div>
 
           <div class="home-quatre-article-title">
@@ -37,6 +47,8 @@
       <% end %>
 
     </div>
+
+
 
 
   </div>

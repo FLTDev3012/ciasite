@@ -1,22 +1,29 @@
-<br><br><br><br><br><br><br><br><br><br>
-
-<div class="home-quatre-article">
-
-  <div class="home-quatre-picture">
-    <div class="picture"></div>
-  </div>
-
-  <div class="home-quatre-article-title">
-    <h2 class="text-article-bold"><%= @project.title %></h2>
-  </div>
-
-  <div class="home-quatre-article-link">
-    <div class="home-quatre-link-text">
-      <a href="#" class="text-article-link">Read More</a>
+<div class="pass-nav-block-blanc"></div>
+<div class="show-project-container">
+  <div class="show-project-content">
+    <div class="home-quatre-article-title">
+      <h2 class="text-title"><%= @project.title %></h2>
     </div>
-    <div class="home-quatre-link-arrow">
-      <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+
+    <p class="text-lighty">
+      This video is directly embedded from <%= @project.title %> site to give you a visual overview of the project. It allows you to better understand the content and features in action.
+    </p>
+
+
+    <% if @project.url.present? && @project.url.include?("youtube.com/watch?v=") %>
+      <div class="video-container">
+        <iframe
+          src="<%= @project.url.gsub('watch?v=', 'embed/') %>?modestbranding=1&rel=0&"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    <% end %>
+
+    <div class="link-ligne-rouge-container">
+      <div class="link-ligne-rouge-red"></div>
+      <%= link_to 'Back to All Projects', projects_path, class: 'text-bold', data: { turbo: false } %>
     </div>
   </div>
-
 </div>
