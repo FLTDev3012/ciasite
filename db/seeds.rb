@@ -34,4 +34,12 @@ file3 = File.open(Rails.root.join("app/assets/images/proj_img/pro_merli.png"))
 project3.photo.attach(io: file3, filename: "pro_merli.png", content_type: "image/png")
 project3.save!
 
-puts "3 projects created successfully!"
+project4 = Project.new(
+  title: "Merlimont City Web Portail",
+  url: "https://www.youtube.com/watch?v=mZzjl01zf1Y"
+)
+file4 = File.open(Rails.root.join("app/assets/images/proj_img/pro_merli.png"))
+project4.photo.attach(io: file4, filename: "pro_merli.png", content_type: "image/png")
+project4.save!
+
+puts "4 projects created successfully!"
