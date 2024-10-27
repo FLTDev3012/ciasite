@@ -114,6 +114,22 @@
   color: #111;
 }
 
+@media screen and (max-width: 1025px) {
+  .project-first-div {
+    flex-direction: column;
+    padding-top: 2rem;
+    align-items: center;
+  }
+
+  .project-first-gauche {
+    width: 100%;
+  }
+
+  .project-first-droite {
+    width: 50%;
+    margin: 3rem 0;
+  }
+}
 
 @media (max-width: 880px) {
   .projects-div-content .home-quatre-article {
