@@ -58,6 +58,7 @@
   margin-bottom: 1.875rem;
   border-right: .0625rem solid #000;
   filter: drop-shadow(5px 5px 2px #0000001c);
+  cursor: pointer;
 }
 
 .home-quatre-picture {
@@ -145,14 +146,14 @@
   align-items: center;
 }
 
-.home-quatre-link-arrow a {
+.home-quatre-link-arrow i {
   color: #000;
   text-decoration: none;
   transform: rotate(-45deg);
   transition: all .2s linear;
 }
 
-.home-quatre-article-link:hover .home-quatre-link-arrow a {
+.home-quatre-article:hover .home-quatre-link-arrow i {
   transform: rotate(0deg);
   transition: all .2s linear;
 }

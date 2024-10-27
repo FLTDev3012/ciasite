@@ -86,7 +86,7 @@
   width: 100%;
   display: flex;
   color: #fff;
-  padding-top: 7.5rem;
+  // padding-top: 7.5rem;
   padding-bottom: 7.5rem;
 
   position: relative;
@@ -105,11 +105,11 @@
 }
 
 .ns-first-gauche {
-  height: 100%;
+  // height: 100%;
   width: 50%;
 
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 
   position: relative;
   z-index: 10;
@@ -145,6 +145,7 @@
   width: 100%;
   animation: floatImage 8s 2s ease-in-out infinite;
   filter: drop-shadow(25px 25px 3px #0003);
+  opacity: 0.9;
 }
 
 .ns-first-droite-content {
@@ -196,7 +197,8 @@
 }
 
 .ns-first-gauche-block-border-left-red {
-  border-left: 1px solid #e21a41;
+  // border-left: 1px solid #e21a41;
+  border-left: 1px solid #e21a41a1;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -213,7 +215,7 @@
 @media (min-width: 1025px) {
 
   .ns-first {
-    padding-top: 2.5rem;
+    padding-top: 5.5rem;
   }
 
   .ns-page .ns-first .ns-first-droite {
