@@ -21,7 +21,8 @@
   display: flex;
   padding-top: 5.5rem;
   min-height: calc(100vh - 6.2rem);
-  padding-bottom: 7.5rem;
+  // padding-bottom: 7.5rem;
+  position: relative;
 
 }
 
@@ -38,7 +39,7 @@
 
 #scene-container {
   // position: absolute;
-  // width: 100%;
+  width: 80%;
   // height: 100%;
 
 
@@ -116,12 +117,19 @@
 
   .project-first-droite {
     width: 100%;
-    // margin: 3rem 0;
+    margin-top: 1rem;
+    margin-bottom: 6rem;
   }
 
   .projects-div-content .text-lighty {
     margin-bottom: 2rem;
   }
+
+  .projects-grid {
+    margin-top: 6rem;
+  }
+
+
 }
 
 @media (max-width: 880px) {
