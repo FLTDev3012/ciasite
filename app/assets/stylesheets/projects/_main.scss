@@ -17,6 +17,34 @@
 
 }
 
+.project-first-div {
+  display: flex;
+}
+
+.project-first-gauche {
+  width: 50%;
+}
+
+.project-first-droite {
+  width: 50%;
+}
+
+#scene-container {
+  // position: absolute;
+  // width: 100%;
+  // height: 100%;
+}
+
+#scene-container canvas {
+
+  width: 100% !important;
+  height: auto !important;
+  width: 200%  !important;
+  transform: translate(-25%, 0%);
+}
+
+
+
 .projects-div-content .text-main-title {
   margin-top: 5.5rem;
   margin-left: 0;
