@@ -33,7 +33,7 @@
   padding-bottom: 54.5%; /* Ratio 16:9 (hauteur/largeur) */
   height: 0; /* Hauteur initiale à zéro pour le ratio */
   overflow: hidden;
-  margin-bottom: 10rem;
+  filter: drop-shadow(5px 5px 2px #0000001c);
 }
 
 /* iframe responsive */
@@ -45,12 +45,13 @@
   height: 100%;
 }
 
-.show-project-container .link-ligne-rouge-container {
-  margin-bottom: 2rem;
-}
+
 
 .show-project-container .text-lighty {
   margin-top: 0rem !important;
+}
+
+.show-project-container .text-lighty:last-of-type {
   margin-bottom: 4rem;
 }
 
@@ -59,6 +60,31 @@
   color: #111 !important;
 }
 
+.show-project-container .link-ligne-rouge-container {
+  margin-top: 5rem;
+  margin-bottom: 9rem;
+  width: 100%;
+}
+
+
+/* Hide the annoying (i) button on the top-right corner */
+.ytp-chrome-top-buttons {
+  display: none;
+}
+
+/* Display the controls and title only on hover */
+.ytp-chrome-top,
+.ytp-chrome-bottom {
+  opacity: 0;
+  background-color: #30303080;
+  position: absolute;
+  width: 100% !important;
+  left: 0 !important;
+}
+.ytp-chrome-top:hover,
+.ytp-chrome-bottom:hover {
+  opacity: 1;
+}
 
 
 @media screen and (max-width: 570px) {
