@@ -19,6 +19,10 @@
 
 .project-first-div {
   display: flex;
+  padding-top: 5.5rem;
+  min-height: calc(100vh - 6.2rem);
+  padding-bottom: 7.5rem;
+
 }
 
 .project-first-gauche {
@@ -27,26 +31,46 @@
 
 .project-first-droite {
   width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #scene-container {
   // position: absolute;
   // width: 100%;
   // height: 100%;
+
+
 }
 
 #scene-container canvas {
 
   width: 100% !important;
   height: auto !important;
-  width: 200%  !important;
-  transform: translate(-25%, 0%);
+  // width: 100%  !important;
+  // transform: translate(-25%, 0%);
+  animation: floatImageProject 8s 2s ease-in-out infinite;
+  transform: scale(1.5, 1.5);
+}
+
+
+@keyframes floatImageProject {
+  0% {
+    transform: translateY(0rem) scale(1.5, 1.5);
+  }
+  50% {
+    transform: translateY(-2.4rem) scale(1.5, 1.5);
+  }
+  100% {
+    transform: translateY(0rem) scale(1.5, 1.5);
+  }
 }
 
 
 
+
 .projects-div-content .text-main-title {
-  margin-top: 5.5rem;
   margin-left: 0;
   filter: drop-shadow(4px 3px 1px #4545454f);
 
