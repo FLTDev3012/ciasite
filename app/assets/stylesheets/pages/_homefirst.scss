@@ -336,10 +336,23 @@
   height: auto;
 }
 
+@media screen and (max-width: 750px) {
+
+  .test-home-first-title-container h1{
+    font-size: 7vw;
+    text-align: center;
+  }
+
+}
+
 @media screen and (max-width: 500px) {
- .home-content {
-  width: 90%;
- }
+  .home-content {
+    width: 90%;
+  }
+
+  .test-home-first-title-container h1{
+    font-size: 8vw;
+  }
 
 }
 
@@ -347,11 +360,13 @@
 
   .test-home-first-title-container h1{
     padding: 0px 1rem;
+    font-size: 9vw;
   }
 
   .test-home-first-img-container img {
     height: 80%;
     margin-top: 3rem;
   }
+
 
 }
