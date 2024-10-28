@@ -7,37 +7,32 @@
 
     <div class="home-quatre-article-container-master-flex">
       <div class="home-quatre-article-container">
-
         <% @latest_projects.each_with_index do |project, index| %>
-          <%= link_to project_path(project, anchor: 'page-show-project') do %>
-
-            <div class="home-quatre-article <%= "js-home-fourth-article-first" if index == 0 %><%= "js-home-fourth-article-second" if index == 1 %><%= "js-home-fourth-article-third" if index == 2 %>">
-              <div class="home-quatre-picture">
-                <div class="picture">
-                  <% if project.photo.attached? %>
-                    <%= cl_image_tag(project.photo.key, loading: "eager", fetchpriority: "high") %>
-                  <% else %>
-                    <%= image_tag("proj_img/pro_merli.png", loading: "eager", fetchpriority: "high") %>
-                  <% end %>
-                </div>
+          <%= link_to project_path(project, anchor: 'page-show-project'), class: "home-quatre-article #{'js-home-fourth-article-first' if index == 0}#{'js-home-fourth-article-second' if index == 1}#{'js-home-fourth-article-third' if index == 2}" do %>
+            <div class="home-quatre-picture">
+              <div class="picture">
+                <% if project.photo.attached? %>
+                  <%= cl_image_tag(project.photo.key, loading: "eager", fetchpriority: "high") %>
+                <% else %>
+                  <%= image_tag("proj_img/pro_merli.png", loading: "eager", fetchpriority: "high") %>
+                <% end %>
               </div>
+            </div>
 
-              <div class="home-quatre-article-title">
-                <h2 class="text-article-bold"><%= project.title %></h2>
+            <div class="home-quatre-article-title">
+              <h2 class="text-article-bold"><%= project.title %></h2>
+            </div>
+
+            <div class="home-quatre-article-link">
+              <div class="home-quatre-link-text">
+                <p class="text-article-link">Watch Video</p>
               </div>
-
-              <div class="home-quatre-article-link">
-                <div class="home-quatre-link-text">
-                  <p class="text-article-link">Watch Video</p>
-                </div>
-                <div class="home-quatre-link-arrow">
-                  <i class="fa-solid fa-arrow-right"></i>
-                </div>
+              <div class="home-quatre-link-arrow">
+                <i class="fa-solid fa-arrow-right"></i>
               </div>
             </div>
           <% end %>
         <% end %>
-
       </div>
     </div>
 

@@ -56,7 +56,7 @@
   position: relative;
   width: 350px;
   // height: fit-content;
-  background-color: aqua;
+  // background-color: aqua;
   margin: 0 15px;
   border: 1px solid #111;
   margin-bottom: 1.875rem;
@@ -202,7 +202,7 @@
 
 @media screen and (max-width: 1365px) {
   .home-quatre-article-container {
-    // grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Trois colonnes de même taille */
+   // grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Trois colonnes de même taille */
   }
 
   .home-quatre-article {
