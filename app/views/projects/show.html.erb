@@ -6,11 +6,19 @@
       <h2 class="text-title"><%= @project.title %></h2>
     </div>
 
-    <p class="text-lighty">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam eligendi obcaecati voluptatum velit voluptas, error, dolore ratione nihil rerum dolorem enim, optio repellat ipsa laborum suscipit repellendus impedit a esse?</p>
+    <div class="ns-first-gauche-block-border-left-red">
 
-    <p class="text-lighty">
-      This video is directly embedded from <%= @project.title %> site to give you a visual overview of the project. It allows you to better understand the content and features in action.
-    </p>
+      <p class="show-project-category"><%= @project.category %></p>
+
+      <p class="text-lighty"><%= @project.description %></p>
+
+      <p class="text-lighty">
+        This video is directly embedded from <%= @project.title %> site to give you a visual overview of the project. It allows you to better understand the content and features in action.
+      </p>
+
+    </div>
+
+
 
 
     <% if @project.url.present? && @project.url.include?("youtube.com/watch?v=") %>
