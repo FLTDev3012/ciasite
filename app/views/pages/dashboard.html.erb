@@ -1,8 +1,15 @@
 <div class="dash-container">
   <div class="pass-nav-block-noir"></div>
   <div class="dash-first">
+
+    <div class="dash-title-container">
+      <h2 class="text-main-title">Dashboard</h2>
+    </div>
+
     <!-- Bouton pour créer un projet -->
-    <%= link_to "Create New Project", new_project_path, class: "btn-create-project" %>
+    <div class="dash-btn-create-project-container">
+      <%= link_to "Create New Project", new_project_path, class: "btn-create-project" %>
+    </div>
 
 
     <% @projects.each do |proj| %>
@@ -16,6 +23,53 @@
       </div>
 
     <% end %>
+
+    <div class="projects-grid">
+
+
+      <% @projects.each do |project| %>
+
+
+          <div class="home-quatre-article">
+
+            <div class="home-quatre-picture">
+              <div class="picture">
+
+                <% if project.photo.attached? %>
+                  <%= cl_image_tag(project.photo.key, loading: "eager", fetchpriority: "high") %>
+                <% else %>
+                  <%= image_tag("proj_img/pro_merli.png", loading: "eager", fetchpriority: "high") %>
+                <% end %>
+
+              </div>
+            </div>
+
+            <div class="home-quatre-article-title">
+              <h2 class="text-article-bold"><%= project.title %></h2>
+            </div>
+
+            <div class="home-quatre-article-link">
+
+              <div class="home-quatre-link-text">
+                <p class="text-article-link">Watch Video</p>
+              </div>
+              <div class="home-quatre-link-arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+              <div class="home-quatre-link-arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+      <% end %>
+
+    </div>
+
   </div>
 
 </div>
