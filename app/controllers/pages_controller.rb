@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :nosservices, :projects, :estimation, :about, :dashboard]
+  skip_before_action :authenticate_user!, only: [:home, :nosservices, :projects, :estimation, :about]
 
   def home
     @latest_projects = Project.order(created_at: :desc).limit(3)

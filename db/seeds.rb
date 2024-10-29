@@ -5,8 +5,16 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-puts "Deleting existing projects..."
+puts "Deleting existing user and projects..."
+User.destroy_all
 Project.destroy_all
+
+puts "Creating User..."
+user1 = User.new(email: "dorian3012@gmail.com", password: "Motdepasse1*")
+user1.save!
+
+puts "#{User.count} User(s) created successfully!"
+
 
 puts "Creating new projects..."
 
@@ -50,4 +58,4 @@ file4 = File.open(Rails.root.join("app/assets/images/proj_img/prounlock.png"))
 project4.photo.attach(io: file4, filename: "pro_merli.png", content_type: "image/png")
 project4.save!
 
-puts "4 projects created successfully!"
+puts "#{Project.count} projects created successfully!"
