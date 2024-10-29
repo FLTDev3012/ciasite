@@ -1,36 +1,65 @@
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<h1>New Project</h1>
+<div class="dash-new-container">
+  <div class="pass-nav-block-noir"></div>
+  <div class="dash-new-first">
 
-<%= form_with(model: @project, local: true) do |form| %>
-  <% if @project.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
-      <ul>
-        <% @project.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
+    <div class="dash-new-title-container">
+      <h2 class="text-main-title">🔥 New project 🔥</h2>
     </div>
-  <% end %>
 
-  <div>
-    <%= form.label :title %>
-    <%= form.text_field :title, placeholder: "Enter the project title" %>
+    <div class="dash-new-form-container">
+      <%= form_with(model: @project, local: true) do |form| %>
+        <% if @project.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
+            <ul>
+              <% @project.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+        <div>
+          <%= form.label :title, class:"text-bold" %>
+          <%= form.text_field :title, placeholder: "Enter the project title" %>
+        </div>
+
+        <div>
+          <%= form.label :url, class:"text-bold" %>
+          <%= form.text_field :url, placeholder: "Enter the project URL" %>
+        </div>
+
+        <div>
+          <%= form.label :description, class:"text-bold" %>
+          <%= form.text_field :description, placeholder: "Enter the project DESCRIPTION" %>
+        </div>
+
+        <div>
+          <%= form.label :category, class:"text-bold" %>
+          <%= form.text_field :category, placeholder: "Enter the project CATEGORY" %>
+        </div>
+
+        <div class="dash-new-photo-div">
+          <%= form.label :photo, class:"text-bold" %>
+          <%= form.file_field :photo %>
+        </div>
+
+
+
+        <div class="dash-new-submit-div">
+          <%= form.submit "Create Project" %>
+        </div>
+      <% end %>
+
+
+    </div>
+
+    <div class="d-flex justify-content-center">
+      <div class="link-ligne-rouge-container">
+        <div class="link-ligne-rouge-red"></div>
+        <%= link_to 'Back to Projects', projects_path, class: 'text-bold', data: { turbo: false } %>
+      </div>
+    </div>
+
   </div>
-
-  <div>
-    <%= form.label :url %>
-    <%= form.text_field :url, placeholder: "Enter the project URL" %>
-  </div>
-
-  <div>
-    <%= form.label :photo %>
-    <%= form.file_field :photo %>
-  </div>
-
-  <div>
-    <%= form.submit "Create Project" %>
-  </div>
-<% end %>
-
-<%= link_to 'Back to Projects', projects_path %>
+</div>
