@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'projectx', to: 'pages#projectx'
   get 'estimation', to: 'pages#estimation'
   get 'about', to: 'pages#about'
-  get 'test', to: 'pages#test'
+  get 'dashboard', to: 'pages#dashboard'
 
   post 'send_contact', to: 'contacts#create'
   resources :projects

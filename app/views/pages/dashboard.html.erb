@@ -1,0 +1,21 @@
+<div class="dash-container">
+  <div class="pass-nav-block-noir"></div>
+  <div class="dash-first">
+    <!-- Bouton pour créer un projet -->
+    <%= link_to "Create New Project", new_project_path, class: "btn-create-project" %>
+
+
+    <% @projects.each do |proj| %>
+
+      <div class="dash-project-one-only">
+        <p class="dash-project-title"><%= proj.title %></p>
+        <%= link_to "modifier le projet", edit_project_path(proj), class: "dash-project-edit" %>
+        <%= link_to project_path(proj), data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" }, class: "deco-none dash-corbeille" do %>
+          <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
+        <% end %>
+      </div>
+
+    <% end %>
+  </div>
+
+</div>
