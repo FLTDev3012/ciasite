@@ -3,26 +3,20 @@
   <div class="dash-first">
 
     <div class="dash-title-container">
-      <h2 class="text-main-title">Dashboard</h2>
+      <h2 class="text-main-title">🔥 Dashboard 🔥</h2>
     </div>
 
     <!-- Bouton pour créer un projet -->
-    <div class="dash-btn-create-project-container">
-      <%= link_to "Create New Project", new_project_path, class: "btn-create-project" %>
+
+    <div class="d-flex justify-content-center">
+      <div class="link-ligne-rouge-container">
+        <div class="link-ligne-rouge-red"></div>
+        <%= link_to 'Create New Project', new_project_path, class: 'text-bold', data: { turbo: false } %>
+      </div>
     </div>
 
 
-    <% @projects.each do |proj| %>
 
-      <div class="dash-project-one-only">
-        <p class="dash-project-title"><%= proj.title %></p>
-        <%= link_to "modifier le projet", edit_project_path(proj), class: "dash-project-edit" %>
-        <%= link_to project_path(proj), data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" }, class: "deco-none dash-corbeille" do %>
-          <i class="fa-solid fa-trash" style="color: #ffffff;"></i>
-        <% end %>
-      </div>
-
-    <% end %>
 
     <div class="projects-grid">
 
@@ -51,13 +45,19 @@
             <div class="home-quatre-article-link">
 
               <div class="home-quatre-link-text">
-                <p class="text-article-link">Watch Video</p>
+                <%= link_to project_path(project) do %>
+                  <p class="text-article-link">Watch Video</p>
+                <% end %>
               </div>
               <div class="home-quatre-link-arrow">
-                <i class="fa-solid fa-arrow-right"></i>
+                <%= link_to edit_project_path(project), class: "dash-project-edit" do %>
+                  <i class="fa-solid fa-pen-to-square" style="color: #111;"></i>
+                <% end %>
               </div>
               <div class="home-quatre-link-arrow">
-                <i class="fa-solid fa-arrow-right"></i>
+                <%= link_to project_path(project), data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" }, class: "deco-none dash-corbeille" do %>
+                  <i class="fa-solid fa-trash" style="color: #111;"></i>
+                <% end %>
               </div>
 
 

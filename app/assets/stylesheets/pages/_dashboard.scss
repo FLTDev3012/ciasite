@@ -8,6 +8,8 @@
 .dash-first {
   min-height: calc(100vh - 6.2rem);
   width: 80%;
+  position: relative;
+  z-index: 2;
 }
 
 .dash-title-container {
@@ -28,4 +30,40 @@
 
 .dash-container .projects-grid {
   border-top: 1px solid #fff;
+}
+
+.dash-container .link-ligne-rouge-container {
+  width: 50%;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+  background-color: #161618;
+}
+
+.dash-container .link-ligne-rouge-container a {
+  color: #fff;
+}
+
+.dash-container .home-quatre-article i {
+  transform: rotate(0deg) !important;
+}
+.dash-container .home-quatre-article .home-quatre-link-arrow:hover i {
+  transform: rotate(45deg) !important;
+  transition: all .2s linear;
+}
+
+@media (max-width: 880px) {
+  .dash-container .link-ligne-rouge-container {
+    width: 100%;
+  }
+
+  .dash-title-container .text-main-title {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 530px) {
+
+  .dash-title-container .text-main-title {
+    font-size: 8vw;
+  }
 }
