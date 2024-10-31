@@ -104,11 +104,7 @@
   background-color: #fff;
 }
 
-.estimation-choix-result-container label:hover {
-  background-color: #ea5774;
-  color: #fff !important;
-  cursor: pointer;
-}
+
 
 .estimation-choix-result-container label:active {
 
@@ -280,10 +276,21 @@
   box-shadow: 0px 3px 2px #0000004f;
 }
 
-#apply-discount:hover {
-  background-color: #ea5774 !important;
-  color: #fff !important;
-  cursor: pointer;
+
+
+@media screen and (min-width: 1025px) {
+  .estimation-choix-result-container label:hover {
+    background-color: #ea5774;
+    color: #fff !important;
+    cursor: pointer;
+  }
+
+  #apply-discount:hover {
+    background-color: #ea5774 !important;
+    color: #fff !important;
+    cursor: pointer;
+  }
+
 }
 
 @media screen and (max-width: 1025px) {
@@ -299,6 +306,8 @@
   .estimation-result-droite {
     width: 100%;
   }
+
+
 
 
 
