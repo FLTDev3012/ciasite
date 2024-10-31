@@ -301,10 +301,12 @@
 
   .estimation-choix-gauche {
     width: 100%;
+    margin-bottom: 6rem;
   }
 
   .estimation-result-droite {
     width: 100%;
+    margin-bottom: 7.5rem;
   }
 
 
@@ -331,6 +333,10 @@
 
   .ns-first .estimation-title {
     font-size: 15vw;
+  }
+
+  #total-container {
+    margin-top: 1rem !important;
   }
 
 
