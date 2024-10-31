@@ -271,6 +271,21 @@
   padding: 0.5rem 1rem;
 }
 
+#apply-discount {
+  background-color: #fff;
+  margin: 0px 15px 15px 0;
+  padding: 8px 16px;
+  border: solid 1px #bebebf;
+  color: #111;
+  box-shadow: 0px 3px 2px #0000004f;
+}
+
+#apply-discount:hover {
+  background-color: #ea5774 !important;
+  color: #fff !important;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1025px) {
 
   .estimation-choix-result-container {

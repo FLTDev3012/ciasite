@@ -1,54 +1,79 @@
 <!-- estimation -->
 <script>
 
-  document.addEventListener("turbo:load", function() {
-    const totalPriceElement = document.getElementById('total-price');
-    const totalContainer = document.getElementById('total-container'); // Corrected to getElementsByClassName
-    let totalPrice = 0;
+document.addEventListener("turbo:load", function() {
+  const totalPriceElement = document.getElementById('total-price');
+  const totalContainer = document.getElementById('total-container');
+  const discountButton = document.getElementById('apply-discount');
+  let totalPrice = 0;
+  let isDiscountApplied = false; // Pour suivre si la réduction est appliquée
 
-    // Fonction pour mettre à jour le prix total
-    function updateTotalPrice() {
-      totalPrice = 0;
-      const allCheckedCheckboxes = document.querySelectorAll('.price-checkbox:checked');
-      allCheckedCheckboxes.forEach((checkbox) => {
+  // Fonction pour mettre à jour le prix total
+  function updateTotalPrice() {
+    totalPrice = 0;
+    const allCheckedCheckboxes = document.querySelectorAll('.price-checkbox:checked');
+    allCheckedCheckboxes.forEach((checkbox) => {
         totalPrice += parseInt(checkbox.getAttribute('data-price'), 10);
-      });
-      totalPriceElement.textContent = totalPrice.toLocaleString('fr-FR');
+    });
 
-      // Vérifie si le total est 0 et applique les classes de style
-      if (totalPrice === 0) {
-        // mettre display: none à .stimation-result-total-container
-        totalContainer.style.display = 'none';
-      } else {
-        // mettre display: block à .stimation-result-total-container
-        totalContainer.style.display = 'block';
-      }
+    // Applique la réduction si elle est active
+    let displayPrice = totalPrice;
+    if (isDiscountApplied) {
+      displayPrice = totalPrice * 0.8; // Appliquer 20% de réduction
     }
 
-    // Gérer les sélections uniques par catégorie
-    function handleSingleOption(categoryClass) {
-      const checkboxes = document.querySelectorAll(`.${categoryClass}`);
-      checkboxes.forEach((checkbox) => {
-        checkbox.addEventListener('change', function() {
-          if (this.checked) {
-            // Décocher les autres cases dans la même catégorie et réinitialiser le fond
-            checkboxes.forEach((cb) => {
-              if (cb !== this) {
-                cb.checked = false;
-                cb.parentElement.style.backgroundColor = ''; // Réinitialiser le fond
-                cb.parentElement.style.color = '#111'; // Réinitialiser la couleur
-              }
-            });
-            this.parentElement.style.backgroundColor = '#e21a41'; // Appliquer le fond rouge
-            this.parentElement.style.color = '#fff'; // Appliquer la couleur font rouge
-          } else {
-            this.parentElement.style.backgroundColor = ''; // Réinitialiser si décochée
-            this.parentElement.style.color = '#111'; // Réinitialiser si décochée
-          }
-          updateTotalPrice();
-        });
-      });
+    totalPriceElement.textContent = displayPrice.toLocaleString('fr-FR');
+
+    // Vérifie si le total est 0 et applique les classes de style
+    if (totalPrice === 0) {
+      totalContainer.style.display = 'none';
+    } else {
+      totalContainer.style.display = 'block';
     }
+  }
+
+  // Fonction pour gérer le clic sur le bouton de réduction
+  discountButton.addEventListener('click', function() {
+    isDiscountApplied = !isDiscountApplied; // Bascule l’état de la réduction
+
+    // Mettre à jour le texte du bouton en fonction de l'état de réduction
+    if (isDiscountApplied) {
+        discountButton.textContent = "Remove 20% Card Discount";
+        discountButton.style.backgroundColor = '#e21a41';
+        discountButton.style.color = '#fff';
+
+    } else {
+        discountButton.textContent = "Apply 20% Card Discount";
+        discountButton.style.backgroundColor = '#fff';
+        discountButton.style.color = '#111';
+    }
+
+    updateTotalPrice(); // Met à jour le total avec ou sans la réduction
+  });
+
+  // Gérer les sélections uniques par catégorie (même code que vous avez déjà)
+  function handleSingleOption(categoryClass) {
+    const checkboxes = document.querySelectorAll(`.${categoryClass}`);
+    checkboxes.forEach((checkbox) => {
+      checkbox.addEventListener('change', function() {
+        if (this.checked) {
+          checkboxes.forEach((cb) => {
+            if (cb !== this) {
+              cb.checked = false;
+              cb.parentElement.style.backgroundColor = '';
+              cb.parentElement.style.color = '#111';
+            }
+          });
+          this.parentElement.style.backgroundColor = '#e21a41';
+          this.parentElement.style.color = '#fff';
+        } else {
+          this.parentElement.style.backgroundColor = '';
+          this.parentElement.style.color = '#111';
+        }
+        updateTotalPrice();
+      });
+    });
+  }
 
     // Appliquer la gestion aux catégories
     handleSingleOption('category-1');
@@ -61,11 +86,11 @@
     multipleCheckboxes.forEach((checkbox) => {
       checkbox.addEventListener('change', function() {
         if (this.checked) {
-          this.parentElement.style.backgroundColor = '#e21a41'; // Appliquer le fond rouge
-          this.parentElement.style.color = '#fff'; // Appliquer la couleur font rouge
+          this.parentElement.style.backgroundColor = '#e21a41';
+          this.parentElement.style.color = '#fff';
         } else {
-          this.parentElement.style.backgroundColor = ''; // Réinitialiser si décochée
-          this.parentElement.style.color = '#111'; // Réinitialiser si décochée
+          this.parentElement.style.backgroundColor = '';
+          this.parentElement.style.color = '#111';
         }
         updateTotalPrice();
       });
@@ -74,7 +99,6 @@
     // Initialiser le prix total au chargement de la page
     updateTotalPrice();
   });
-
 </script>
 
 
@@ -242,6 +266,12 @@
           </label>
 
         </div>
+
+        <div>
+          <h3 class="text-bold">6 : Exclusive Card Discount</h3>
+          <button id="apply-discount" class="btn-discount">Apply 20% Card Discount</button>
+        </div>
+
 
 
 
