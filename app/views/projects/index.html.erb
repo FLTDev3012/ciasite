@@ -244,22 +244,44 @@
   // Fonction pour créer et ajouter le Sprite de l'image
   function createImageSprite() {
     const textureLoader = new THREE.TextureLoader();
-    const texture = textureLoader.load("<%= asset_path('proj_img/project_main_img.png', loading: "eager", fetchpriority: "high") %>"); // Remplace par le chemin de ton image
+    const texture = textureLoader.load("<%= asset_path('proj_img/project_main_img.png') %>", () => {
+      // Une fois que l'image est chargée, on peut lancer l'animation d'opacité
+      fadeInSprite(spriteMaterial);
+    });
+
 
     const spriteMaterial = new THREE.SpriteMaterial({
       map: texture,
       transparent: true,
-      opacity: 1  // Modifie cette valeur entre 0 (transparent) et 1 (opaque)
+      opacity: 0  // Modifie cette valeur entre 0 (transparent) et 1 (opaque)
     });
 
     const sprite = new THREE.Sprite(spriteMaterial);
-
     sprite.scale.set(80, 80, 1);
     sprite.position.set(0, 0, 0);
 
-
     scene.add(sprite);
   }
+
+  // Fonction pour animer l'opacité du sprite
+  function fadeInSprite(material) {
+    let opacity = 0;
+    const fadeDuration = 700; // durée de l'animation en ms
+    const startTime = Date.now();
+
+    function animateOpacity() {
+      const elapsed = Date.now() - startTime;
+      opacity = Math.min(elapsed / fadeDuration, 1); // Augmente l'opacité jusqu'à 1
+      material.opacity = opacity;
+
+      if (opacity < 1) {
+        requestAnimationFrame(animateOpacity);
+      }
+    }
+
+    animateOpacity();
+  }
+
 
   function animate() {
     requestAnimationFrame(animate);
