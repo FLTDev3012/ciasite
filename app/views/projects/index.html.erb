@@ -244,7 +244,7 @@
   // Fonction pour créer et ajouter le Sprite de l'image
   function createImageSprite() {
     const textureLoader = new THREE.TextureLoader();
-    const texture = textureLoader.load("<%= asset_path('proj_img/project_main_img.png') %>"); // Remplace par le chemin de ton image
+    const texture = textureLoader.load("<%= asset_path('proj_img/project_main_img.png', loading: "eager", fetchpriority: "high") %>"); // Remplace par le chemin de ton image
 
     const spriteMaterial = new THREE.SpriteMaterial({
       map: texture,
