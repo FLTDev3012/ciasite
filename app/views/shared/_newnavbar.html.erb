@@ -24,11 +24,11 @@
     </div>
 
     <div class="newnav-list-center">
-      <%= link_to "Home", root_path, data: { turbo: false } %>
-      <%= link_to "Projects", projects_path, data: { turbo: false } %>
-      <%= link_to "Services", nosservices_path, data: { turbo: false } %>
-      <%= link_to "Estimation", estimation_path, data: { turbo: false } %>
-      <%= link_to "Contact", about_path, data: { turbo: false } %>
+      <%= link_to t('nav.home'), root_path, data: { turbo: false } %>
+      <%= link_to t('nav.projects'), projects_path, data: { turbo: false } %>
+      <%= link_to t('nav.services'), nosservices_path, data: { turbo: false } %>
+      <%= link_to t('nav.estimation'), estimation_path, data: { turbo: false } %>
+      <%= link_to t('nav.contact'), about_path, data: { turbo: false } %>
     </div>
 
     <div class="newnav-list-end-container">
