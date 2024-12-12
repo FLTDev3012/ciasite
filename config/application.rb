@@ -23,5 +23,11 @@ module Testdevise
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    # Ajouter cette ligne pour activer la prise en charge de plusieurs langues
+    config.i18n.available_locales = [:en, :fr] # Les langues disponibles (anglais et français)
+    config.i18n.default_locale = :en           # Langue par défaut (anglais)
+
+    # Cela permet de détecter automatiquement la langue par rapport aux paramètres de l'URL
+    config.i18n.fallbacks = true              # En cas de traduction manquante, il utilisera la langue par défaut
   end
 end
