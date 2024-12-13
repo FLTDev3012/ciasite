@@ -1,7 +1,24 @@
 fr:
+
   nav:
     home: "Accueil"
     projects: "Projets"
     services: "Services"
     estimation: "Estimation"
     contact: "Contact"
+
+  home:
+
+    homefirst:
+      title: "CREATION DE SITES INTERNET"
+
+    homesecond:
+      text1: "Je fournis aux entreprises la visibilité dont elles ont besoin pour assurer leur présence en ligne et élargir leurs horizons."
+      text2: "L'agence Unlock Horizons se spécialise dans la création de diverses solutions en ligne adaptées à vos besoins. Des sites vitrines captivants qui mettent en valeur l'histoire de votre marque, aux plateformes CMS flexibles qui permettent une gestion de contenu sans effort, et des sites e-commerce robustes qui boostent les ventes."
+      link_text: "En savoir plus sur moi"
+
+    homethird:
+      services_title: "Mes Services"
+      text1: "Accomplissez notre mission de créer des solutions web avec ingéniosité et détermination, toujours dédiés à votre succès en ligne."
+      text2: "Je propose une gamme de services, y compris des sites vitrines captivants pour présenter votre marque, des plateformes CMS flexibles pour gérer votre contenu sans effort, et des sites e-commerce robustes pour booster vos ventes."
+      link_text: "Découvrez mes services"
