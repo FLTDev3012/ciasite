@@ -7,6 +7,7 @@ fr:
     estimation: "Estimation"
     contact: "Contact"
 
+
   home:
 
     homefirst:
@@ -31,6 +32,14 @@ fr:
       title: "Mes Services"
       description: "Vous vous demandez quels types de sites web je propose et lequel correspond le mieux à vos besoins ? Découvrez notre gamme de services, allant des designs single-page aux applications web entièrement personnalisées, et trouvez la solution idéale pour votre projet."
       link_text: "Voir les Services"
+
+
+  projects_index:
+    title: "Projets"
+    collection_title: "Collection Unlock Horizons"
+    description: "Découvrez mes dernières créations web, mettant en avant des solutions sur mesure adaptées à divers contextes et besoins spécifiques. Ces exemples vous donneront une idée concrète de ce qui peut être accompli."
+    link_text: "Explorer tous les projets"
+
 
   footer:
     title: "Fiolet Dorian, Développeur Web"
