@@ -41,6 +41,15 @@ fr:
     link_text: "Explorer tous les projets"
 
 
+  services:
+
+    nsfirst:
+      title: "Services"
+      text1: "Page unique, Site vitrine, CMS 'Système de gestion de contenu', Site e-commerce, Application web"
+      text2: "Nous proposons une gamme de services, incluant des sites vitrines captivants pour présenter votre marque, des plateformes CMS flexibles pour gérer votre contenu sans effort, et des sites e-commerce robustes pour augmenter vos ventes."
+      link_text: "Découvrez Nos Services"
+
+
   footer:
     title: "Fiolet Dorian, Développeur Web"
     passion: "Passionné de création web"
