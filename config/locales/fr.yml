@@ -26,3 +26,13 @@ fr:
     homefourth:
       title: "Derniers Projets"
       link_text: "Explorer tous les projets"
+
+    homefifth:
+      title: "Mes Services"
+      description: "Vous vous demandez quels types de sites web je propose et lequel correspond le mieux à vos besoins ? Découvrez notre gamme de services, allant des designs single-page aux applications web entièrement personnalisées, et trouvez la solution idéale pour votre projet."
+      link_text: "Voir les Services"
+
+  footer:
+    title: "Fiolet Dorian, Développeur Web"
+    passion: "Passionné de création web"
+    copyright: "© Copyright 2024 Fltdev"

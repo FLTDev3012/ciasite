@@ -60,3 +60,13 @@ en:
     homefourth:
       title: "Last Projects"
       link_text: "Explore All Projects"
+
+    homefifth:
+      title: "My Services"
+      description: "Curious about the types of websites I offer and which one best suits your needs? Explore our range of services, from single-page designs to fully customized web applications, and discover the ideal solution for your project."
+      link_text: "See the Services"
+
+  footer:
+    title: "Fiolet Dorian, Web Developer"
+    passion: "Passion for Web Creation"
+    copyright: "© Copyright 2024 Fltdev"
