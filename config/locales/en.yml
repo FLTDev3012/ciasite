@@ -82,6 +82,50 @@ en:
       text2: "We offer a range of services, including captivating showcase websites to present your brand, flexible CMS platforms to manage your content effortlessly, and robust e-commerce sites to boost your sales."
       link_text: "Discover Our Services"
 
+    nsseconde:
+
+      title: "Guide to Website Styles"
+
+      case_choice:
+        landing: "Landing Page"
+        showcase: "Showcase Site"
+        cms: "CMS"
+        ecommerce: "E-commerce"
+        webapp: "Web Application"
+
+      title_result:
+        landing: "Landing Page"
+        showcase: "Showcase Site"
+        cms: "Content Management System"
+        ecommerce: "E-commerce"
+        webapp: "Web Application"
+
+      para_result:
+        landing: "A single page specifically designed to capture attention and drive action, often used to showcase company services, advertising campaigns, or special promotions."
+        showcase: "A website that showcases products, services, or projects in a visually appealing way, often used to demonstrate a company's expertise or offerings."
+        cms: "A solution that allows you to easily create, manage, edit, delete, and publish web content from your dashboard, used to showcase a company's services and articles."
+        ecommerce: "A website dedicated to the online sale of products or services, featuring functionalities to add, edit, and delete items, manage orders and payments, and offer delivery options."
+        webapp: "An application accessible via a web browser, offering interactive features and online services, often used for specific tasks, such as a dating site."
+
+      crit_result:
+        information_presentation: "Presentation of information"
+        image gallery: "Image gallery"
+        contact information: "Contact information"
+        multi_screen: "Multi-screen adaptability"
+        article_creation: "Article creation"
+        categories_filters: "Categories and filters"
+        media_management: "Media management"
+        comments_sharing: "Comments and sharing"
+        admin_interface: "Admin interface"
+        user_management: "User management"
+        shopping_cart: "Shopping cart"
+        inventory_management: "Inventory management"
+        payment_processing: "Payment processing"
+        order_management: "Order management"
+        customer_management: "Customer management"
+        management_interface: "Management interface"
+
+
 
   footer:
     title: "Fiolet Dorian, Web Developer"
