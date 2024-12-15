@@ -160,6 +160,10 @@ en:
         para_two: "The first option consists of providing only the visible menu, making it easier for customers to consult. Additionally, it is possible to integrate an ordering feature, allowing customers to place their orders directly from the menu without payment options. This simplifies the ordering process while maintaining direct interaction with the staff."
         para_three: "For an even smoother experience, a comprehensive solution can be added where customers can view the menu, place their orders, and make payments online. This reduces wait times and improves service efficiency."
 
+      prefooter:
+        title: "Your Estimate"
+        para: "Wondering how much it would cost to create the website of your dreams? Use our quick and easy estimation tool to get an instant quote based on your specific needs."
+        button_text: "Do the estimation"
 
   footer:
     title: "Fiolet Dorian, Web Developer"

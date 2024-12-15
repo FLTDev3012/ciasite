@@ -127,6 +127,10 @@ fr:
         para_two: "La première option consiste à fournir uniquement le menu visible, ce qui facilite la consultation par les clients. De plus, il est possible d'intégrer une fonctionnalité de commande, permettant aux clients de passer leurs commandes directement depuis le menu sans options de paiement. Cela simplifie le processus de commande tout en maintenant une interaction directe avec le personnel."
         para_three: "Pour une expérience encore plus fluide, une solution complète peut être ajoutée où les clients peuvent consulter le menu, passer leurs commandes et effectuer leurs paiements en ligne. Cela réduit les temps d'attente et améliore l'efficacité du service."
 
+      prefooter:
+        title: "Votre Estimation"
+        para: "Vous vous demandez combien il en coûterait pour créer le site web de vos rêves ? Utilisez notre outil d'estimation rapide et facile pour obtenir un devis instantané basé sur vos besoins spécifiques."
+        button_text: "Faire l'Estimation"
 
   footer:
     title: "Fiolet Dorian, Développeur Web"
