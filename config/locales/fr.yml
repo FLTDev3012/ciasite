@@ -92,6 +92,40 @@ fr:
         customer_management: "Gestion des clients"
         management_interface: "Interface de gestion"
 
+    nsthird:
+      btn: "Estimation"
+
+      landing:
+        title: "Page Unique"
+        sub_title: "Site d'une seule page"
+        para: "Une page conçue pour capter l'attention et inciter à une action immédiate, souvent utilisée par les entreprises pour mettre en avant un service, un produit ou une offre spécifique. Les sites en page unique sont simplifiées pour se concentrer sur un objectif clair, tel que la collecte de prospects, l'encouragement des demandes ou l'engagement des utilisateurs. Ces pages offrent une expérience ciblée, conçue pour guider les visiteurs vers une action spécifique avec un minimum de distractions."
+
+      showcase:
+        title: "Site Vitrine"
+        sub_title: "Présence en ligne professionnelle"
+        para: "Un site web multi-pages conçu pour présenter les services, les produits ou la marque d'une entreprise de manière complète et professionnelle. Contrairement à un un site a page unique, un site vitrine offre un aperçu global de ce que l'entreprise propose. Il fournit un contenu plus détaillé, comme des informations sur l'entreprise, des descriptions de services et des coordonnées, ce qui en fait une solution idéale pour les entreprises souhaitant établir une présence en ligne forte sans se concentrer sur un seul appel à l'action."
+
+      cms:
+        title: "CMS"
+        sub_title: "Système de gestion de contenu"
+        para: "Un site CMS permet aux entreprises de contrôler pleinement leur contenu sans nécessiter de compétences techniques avancées. Grâce à un système de gestion de contenu, les utilisateurs peuvent facilement ajouter, modifier et supprimer des pages, des articles de blog, des images et d'autres éléments. Cela fait des sites CMS une solution idéale pour les entreprises qui mettent fréquemment à jour leur contenu, comme les sites d'actualités, les prestataires de services ou les organisations qui doivent tenir leur public informé. L'interface intuitive permet à quiconque de gérer le contenu de manière efficace, garantissant ainsi que le site reste à jour et engageant."
+
+      eco:
+        title: "E-commerce"
+        sub_title: "Boutique en ligne performante"
+        para: "Un site e-commerce permet aux entreprises de vendre des produits ou des services directement aux clients en ligne. Avec une plateforme e-commerce pleinement fonctionnelle, vous pouvez gérer les listes de produits, suivre les stocks, traiter les paiements de manière sécurisée et gérer les détails de l'expédition. Les sites e-commerce sont équipés de fonctionnalités telles que les paniers d'achat, les comptes clients et les outils de gestion des commandes. Ce type de site est idéal pour les entreprises cherchant à élargir leur portée sur le marché et offrir une expérience d'achat fluide à leurs clients, avec la possibilité d'ajouter, de modifier ou de supprimer des produits selon les besoins."
+
+      webapp:
+        title: "Application Web"
+        sub_title: "Outils interactifs et personnalisés"
+        para: "Une application web est une plateforme interactive qui permet aux utilisateurs d'effectuer des tâches ou des fonctions spécifiques en ligne. Contrairement aux sites traditionnels, les applications web offrent des fonctionnalités dynamiques et peuvent répondre en temps réel aux actions des utilisateurs. Des exemples d'applications web incluent Uber pour les services de transport, Tinder pour les rencontres en ligne et Slack pour la collaboration en équipe. Ces applications permettent aux entreprises d'offrir des services uniques, d'améliorer l'expérience utilisateur et de rationaliser les opérations. Les applications web sont conçues pour être conviviales et accessibles depuis n'importe quel appareil disposant d'une connexion Internet, garantissant ainsi une expérience fluide pour les utilisateurs tout en permettant des mises à jour et modifications faciles selon les besoins."
+
+      qrcode:
+        title: "Code QR Bar/Restaurant"
+        sub_title: "Commande simplifiée via QR Code"
+        para_one: "Un système de code QR personnalisé pour les bars et restaurants propose plusieurs options adaptées aux besoins de chaque établissement. Ce système permet d'afficher le menu en ligne, permettant aux clients de le consulter facilement en scannant le code QR."
+        para_two: "La première option consiste à fournir uniquement le menu visible, ce qui facilite la consultation par les clients. De plus, il est possible d'intégrer une fonctionnalité de commande, permettant aux clients de passer leurs commandes directement depuis le menu sans options de paiement. Cela simplifie le processus de commande tout en maintenant une interaction directe avec le personnel."
+        para_three: "Pour une expérience encore plus fluide, une solution complète peut être ajoutée où les clients peuvent consulter le menu, passer leurs commandes et effectuer leurs paiements en ligne. Cela réduit les temps d'attente et améliore l'efficacité du service."
 
 
   footer:
