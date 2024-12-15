@@ -2,42 +2,42 @@
   <div class="ns-stimulus-container" data-controller="critere">
     <div class="ns-stimulus-content">
 
-      <h2 class="text-title">Guide to Website Styles</h2>
+      <h2 class="text-title"><%= t('services.nsseconde.title') %></h2>
 
       <div class="ns-stimulus-gauche">
 
         <div class="ns-stimulus-gauche-oneline opacity-one" data-action="click->critere#update1" data-critere-target="premiercrittitle">
           <div class="link-ligne-rouge-container">
             <div class="link-ligne-rouge-red"></div>
-            <div class="text-bold">Landing Page</div>
+            <div class="text-bold"><%= t('services.nsseconde.case_choice.landing') %></div>
           </div>
         </div>
 
         <div class="ns-stimulus-gauche-oneline"  data-action="click->critere#update2" data-critere-target="deuxiemecrittitle">
           <div class="link-ligne-rouge-container">
             <div class="link-ligne-rouge-red"></div>
-            <div class="text-bold">Showcase Site</div>
+            <div class="text-bold"><%= t('services.nsseconde.case_choice.showcase') %></div>
           </div>
         </div>
 
         <div class="ns-stimulus-gauche-oneline" data-action="click->critere#update3" data-critere-target="troisiemecrittitle">
           <div class="link-ligne-rouge-container">
             <div class="link-ligne-rouge-red"></div>
-            <div class="text-bold">CMS</div>
+            <div class="text-bold"><%= t('services.nsseconde.case_choice.cms') %></div>
           </div>
         </div>
 
         <div class="ns-stimulus-gauche-oneline" data-action="click->critere#update4" data-critere-target="quatriemecrittitle">
           <div class="link-ligne-rouge-container">
             <div class="link-ligne-rouge-red"></div>
-            <div class="text-bold">E-Commerce</div>
+            <div class="text-bold"><%= t('services.nsseconde.case_choice.ecommerce') %></div>
           </div>
         </div>
 
         <div class="ns-stimulus-gauche-oneline" data-action="click->critere#update5" data-critere-target="cinquiemecrittitle">
           <div class="link-ligne-rouge-container">
             <div class="link-ligne-rouge-red"></div>
-            <div class="text-bold">Web Application</div>
+            <div class="text-bold"><%= t('services.nsseconde.case_choice.webapp') %></div>
           </div>
         </div>
 
@@ -47,70 +47,69 @@
 
       <div class="ns-stimulus-droite">
 
-        <h3 class="text-title" data-critere-target="premiercritheader">Landing Page</h3>
-        <h3 class="text-title d-none" data-critere-target="deuxiemecritheader">Showcase Site</h3>
-        <h3 class="text-title d-none" data-critere-target="troisiemecritheader">Content Management System</h3>
-        <h3 class="text-title d-none" data-critere-target="quatriemecritheader">E-Commerce</h3>
-        <h3 class="text-title d-none" data-critere-target="cinquiemecritheader">Web Application</h3>
+        <h3 class="text-title" data-critere-target="premiercritheader"><%= t('services.nsseconde.title_result.landing') %></h3>
+        <h3 class="text-title d-none" data-critere-target="deuxiemecritheader"><%= t('services.nsseconde.title_result.showcase') %></h3>
+        <h3 class="text-title d-none" data-critere-target="troisiemecritheader"><%= t('services.nsseconde.title_result.cms') %></h3>
+        <h3 class="text-title d-none" data-critere-target="quatriemecritheader"><%= t('services.nsseconde.title_result.ecommerce') %></h3>
+        <h3 class="text-title d-none" data-critere-target="cinquiemecritheader"><%= t('services.nsseconde.title_result.webapp') %></h3>
 
-
-        <p class="text-lighty" data-critere-target="premiercritheader">A single page specifically designed to capture attention and drive action, often used to showcase company services, advertising campaigns, or special promotions.</p>
-        <p class="text-lighty d-none" data-critere-target="deuxiemecritheader">A website that showcases products, services, or projects in a visually appealing way, often used to demonstrate a company's expertise or offerings.</p>
-        <p class="text-lighty d-none" data-critere-target="troisiemecritheader">A solution that allows you to easily create, manage, edit, delete, and publish web content from your dashboard, used to showcase a company's services and articles.</p>
-        <p class="text-lighty d-none" data-critere-target="quatriemecritheader">A website dedicated to the online sale of products or services, featuring functionalities to add, edit, and delete items, manage orders and payments, and offer delivery options.</p>
-        <p class="text-lighty d-none" data-critere-target="cinquiemecritheader">An application accessible via a web browser, offering interactive features and online services, often used for specific tasks, such as a dating site.</p>
+        <p class="text-lighty" data-critere-target="premiercritheader"><%= t('services.nsseconde.para_result.landing') %></p>
+        <p class="text-lighty d-none" data-critere-target="deuxiemecritheader"><%= t('services.nsseconde.para_result.showcase') %></p>
+        <p class="text-lighty d-none" data-critere-target="troisiemecritheader"><%= t('services.nsseconde.para_result.cms') %></p>
+        <p class="text-lighty d-none" data-critere-target="quatriemecritheader"><%= t('services.nsseconde.para_result.ecommerce') %></p>
+        <p class="text-lighty d-none" data-critere-target="cinquiemecritheader"><%= t('services.nsseconde.para_result.webapp') %></p>
 
 
 
         <div class="ns-stimulus-droite-crit-container">
           <div class="ns-stimulus-droite-crit-grid">
             <div class="ns-stimulus-droite-one-crit">
-              <p class="crit-present" data-critere-target="premiercrit">Presentation of information</p>
+              <p class="crit-present" data-critere-target="premiercrit"><%= t('services.nsseconde.crit_result.information_presentation') %></p>
             </div>
             <div class="ns-stimulus-droite-one-crit">
-              <p class="crit-present" data-critere-target="premiercrit">Image gallery</p>
+              <p class="crit-present" data-critere-target="premiercrit"><%= t('services.nsseconde.crit_result.image_gallery') %></p>
             </div>
             <div class="ns-stimulus-droite-one-crit">
-              <p class="crit-present"data-critere-target="premiercrit">Contact information</p>
+              <p class="crit-present"data-critere-target="premiercrit"><%= t('services.nsseconde.crit_result.contact_information') %></p>
             </div>
             <div class="ns-stimulus-droite-one-crit">
-              <p class="crit-present"data-critere-target="premiercrit">Multi-screen adaptability</p>
+              <p class="crit-present"data-critere-target="premiercrit"><%= t('services.nsseconde.crit_result.multi_screen') %></p>
             </div>
             <div class="ns-stimulus-droite-one-crit">
-              <p data-critere-target="deuxiemecrit">Article creation</p>
+              <p data-critere-target="deuxiemecrit"><%= t('services.nsseconde.crit_result.article_creation') %></p>
             </div>
             <div class="ns-stimulus-droite-one-crit">
-              <p data-critere-target="deuxiemecrit">Categories and filters</p>
+              <p data-critere-target="deuxiemecrit"><%= t('services.nsseconde.crit_result.categories_filters') %></p>
             </div>
             <div class="ns-stimulus-droite-one-crit">
-              <p data-critere-target="deuxiemecrit">Media management</p>
+              <p data-critere-target="deuxiemecrit"><%= t('services.nsseconde.crit_result.media_management') %></p>
             </div>
             <div class="ns-stimulus-droite-one-crit">
-              <p data-critere-target="deuxiemecrit">Comments and sharing</p>
+              <p data-critere-target="deuxiemecrit"><%= t('services.nsseconde.crit_result.comments_sharing') %></p>
             </div>
             <div class="ns-stimulus-droite-one-crit">
-              <p data-critere-target="deuxiemecrit">Admin interface</p>
+              <p data-critere-target="deuxiemecrit"><%= t('services.nsseconde.crit_result.admin_interface') %></p>
             </div>
             <div class="ns-stimulus-droite-one-crit">
-              <p data-critere-target="troisiemecrit">User management</p>
+              <p data-critere-target="troisiemecrit"><%= t('services.nsseconde.crit_result.user_management') %></p>
             </div>
             <div class="ns-stimulus-droite-one-crit">
-              <p data-critere-target="troisiemecrit">Shopping cart</p>
+              <p data-critere-target="troisiemecrit"><%= t('services.nsseconde.crit_result.shopping_cart') %></p>
             </div>
             <div class="ns-stimulus-droite-one-crit">
-              <p data-critere-target="troisiemecrit">Inventory management</p>
+              <p data-critere-target="troisiemecrit"><%= t('services.nsseconde.crit_result.inventory_management') %></p>
             </div>
             <div class="ns-stimulus-droite-one-crit">
-              <p data-critere-target="troisiemecrit">Payment processing</p>
+              <p data-critere-target="troisiemecrit"><%= t('services.nsseconde.crit_result.payment_processing') %></p>
             </div>
             <div class="ns-stimulus-droite-one-crit">
-              <p data-critere-target="troisiemecrit">Order management</p>
+              <p data-critere-target="troisiemecrit"><%= t('services.nsseconde.crit_result.order_management') %></p>
             </div>
             <div class="ns-stimulus-droite-one-crit">
-              <p data-critere-target="troisiemecrit">Customer management</p>
+              <p data-critere-target="troisiemecrit"><%= t('services.nsseconde.crit_result.customer_management') %></p>
             </div>
             <div class="ns-stimulus-droite-one-crit">
-              <p data-critere-target="troisiemecrit">Management interface</p>
+              <p data-critere-target="troisiemecrit"><%= t('services.nsseconde.crit_result.management_interface') %></p>
             </div>
 
 

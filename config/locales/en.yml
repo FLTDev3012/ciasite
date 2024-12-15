@@ -56,3 +56,116 @@ en:
       text1: "Accomplish our mission of creating web solutions with ingenuity and determination, always dedicated to your online success."
       text2: "I offer a range of services, including captivating showcase websites to present your brand, flexible CMS platforms to manage your content effortlessly, and robust e-commerce sites to boost your sales."
       link_text: "Discover My Services"
+
+    homefourth:
+      title: "Last Projects"
+      link_text: "Explore All Projects"
+
+    homefifth:
+      title: "My Services"
+      description: "Curious about the types of websites I offer and which one best suits your needs? Explore our range of services, from single-page designs to fully customized web applications, and discover the ideal solution for your project."
+      link_text: "See the Services"
+
+
+  projects_index:
+    title: "Projects"
+    collection_title: "Unlock Horizons Collection"
+    description: "Explore my latest web creations, showcasing tailored solutions adapted to various contexts and specific needs. These examples will give you a concrete idea of what can be achieved."
+    link_text: "Explore All Projects"
+
+
+  services:
+
+    nsfirst:
+      title: "Services"
+      text1: "Single Page, Showcase Site, CMS 'Content Management System', E-commerce Site, Web Application"
+      text2: "We offer a range of services, including captivating showcase websites to present your brand, flexible CMS platforms to manage your content effortlessly, and robust e-commerce sites to boost your sales."
+      link_text: "Discover Our Services"
+
+    nsseconde:
+
+      title: "Guide to Website Styles"
+
+      case_choice:
+        landing: "Landing Page"
+        showcase: "Showcase Site"
+        cms: "CMS"
+        ecommerce: "E-commerce"
+        webapp: "Web Application"
+
+      title_result:
+        landing: "Landing Page"
+        showcase: "Showcase Site"
+        cms: "Content Management System"
+        ecommerce: "E-commerce"
+        webapp: "Web Application"
+
+      para_result:
+        landing: "A single page specifically designed to capture attention and drive action, often used to showcase company services, advertising campaigns, or special promotions."
+        showcase: "A website that showcases products, services, or projects in a visually appealing way, often used to demonstrate a company's expertise or offerings."
+        cms: "A solution that allows you to easily create, manage, edit, delete, and publish web content from your dashboard, used to showcase a company's services and articles."
+        ecommerce: "A website dedicated to the online sale of products or services, featuring functionalities to add, edit, and delete items, manage orders and payments, and offer delivery options."
+        webapp: "An application accessible via a web browser, offering interactive features and online services, often used for specific tasks, such as a dating site."
+
+      crit_result:
+        information_presentation: "Presentation of information"
+        image gallery: "Image gallery"
+        contact information: "Contact information"
+        multi_screen: "Multi-screen adaptability"
+        article_creation: "Article creation"
+        categories_filters: "Categories and filters"
+        media_management: "Media management"
+        comments_sharing: "Comments and sharing"
+        admin_interface: "Admin interface"
+        user_management: "User management"
+        shopping_cart: "Shopping cart"
+        inventory_management: "Inventory management"
+        payment_processing: "Payment processing"
+        order_management: "Order management"
+        customer_management: "Customer management"
+        management_interface: "Management interface"
+
+    nsthird:
+      btn: "Estimation"
+
+      landing:
+        title: "Landing Page"
+        sub_title: "Single-Page Site"
+        para: "A single page designed to capture attention and prompt immediate action, often used by businesses to highlight a specific service, product, or offering. Landing pages are streamlined to focus on a clear objective, such as collecting leads, encouraging inquiries, or driving engagement. These pages offer a highly targeted experience, designed to guide visitors toward a specific action with minimal distractions."
+
+      showcase:
+        title: "Showcase Website"
+        sub_title: "Professional Online Presence"
+        para: "A multi-page website designed to showcase a company's services, products, or brand in a comprehensive and professional manner. Unlike a landing page, a brochure website offers a broad overview of what the business has to offer. It provides more in-depth content, such as company information, service descriptions, and contact details, making it an ideal solution for businesses that want to establish a strong online presence without focusing on a single call-to-action."
+
+      cms:
+        title: "CMS"
+        sub_title: "Content Management System"
+        para: "A CMS website gives businesses full control over their content without requiring advanced technical skills. With a content management system, users can easily add, edit, and delete pages, blog posts, images, and other elements. This makes CMS websites ideal for companies that frequently update content, such as news sites, service providers, or organizations that need to keep their audience informed. The intuitive interface allows anyone to manage the content efficiently, ensuring the website remains current and engaging."
+
+      eco:
+        title: "E-commerce"
+        sub_title: "High-Performance Online Store"
+        para: "An e-commerce website allows businesses to sell products or services directly to customers online. With a fully functional e-commerce platform, you can manage product listings, track inventory, process payments securely, and handle shipping details. E-commerce websites are equipped with features like shopping carts, customer accounts, and order management tools. This type of website is ideal for businesses looking to expand their market reach and offer a seamless shopping experience to their customers, with the ability to add, edit, or remove products as needed."
+
+      webapp:
+        title: "Web Application"
+        sub_title: "Interactive and Custom Tools"
+        para: "A web application is an interactive platform that allows users to perform specific tasks or functions online. Unlike traditional websites, web applications provide dynamic features and can respond to user input in real time. Examples of web applications include Uber for ride-hailing services, Tinder for online dating, and Slack for team collaboration. These applications enable businesses to offer unique services, enhance user experiences, and streamline operations. Web applications are designed to be user-friendly and accessible from any device with internet connectivity, ensuring a seamless experience for users while allowing for easy updates and modifications as needed."
+
+      qrcode:
+        title: "Qr Code Bar/Restaurant"
+        sub_title: "Simplified Ordering via QR Code"
+        para_one: "A custom QR Code system for bars and restaurants offers several options tailored to the needs of each establishment. This system allows for displaying the menu online, enabling customers to easily view it by scanning the QR code"
+        para_two: "The first option consists of providing only the visible menu, making it easier for customers to consult. Additionally, it is possible to integrate an ordering feature, allowing customers to place their orders directly from the menu without payment options. This simplifies the ordering process while maintaining direct interaction with the staff."
+        para_three: "For an even smoother experience, a comprehensive solution can be added where customers can view the menu, place their orders, and make payments online. This reduces wait times and improves service efficiency."
+
+      prefooter:
+        title: "Your Estimate"
+        para: "Wondering how much it would cost to create the website of your dreams? Use our quick and easy estimation tool to get an instant quote based on your specific needs."
+        button_text: "Do the estimation"
+
+  footer:
+    title: "Fiolet Dorian, Web Developer"
+    passion: "Passion for Web Creation"
+    copyright: "© Copyright 2024 Fltdev"

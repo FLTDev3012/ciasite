@@ -2,7 +2,7 @@
   <div class="home-quatrieme-div-content">
 
     <div class="home-quatre-title">
-      <h2 class="text-title">Last Projects</h2>
+      <h2 class="text-title"><%= t('home.homefourth.title') %></h2>
     </div>
 
     <div class="home-quatre-article-container-master-flex">
@@ -40,7 +40,7 @@
 
     <div class="link-ligne-rouge-container">
       <div class="link-ligne-rouge-red"></div>
-      <%= link_to 'Explore All Projects', projects_path, class: 'text-bold', data: { turbo: false } %>
+      <%= link_to t('home.homefourth.link_text'), projects_path, class: 'text-bold', data: { turbo: false } %>
     </div>
 
 
