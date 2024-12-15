@@ -49,6 +49,50 @@ fr:
       text2: "Nous proposons une gamme de services, incluant des sites vitrines captivants pour présenter votre marque, des plateformes CMS flexibles pour gérer votre contenu sans effort, et des sites e-commerce robustes pour augmenter vos ventes."
       link_text: "Découvrez Nos Services"
 
+    nsseconde:
+
+      title: "Guide des styles de sites Web"
+
+      case_choice:
+        landing: "Page unique"
+        showcase: "Site vitrine"
+        cms: "CMS"
+        ecommerce: "E-commerce"
+        webapp: "Application Web"
+
+      title_result:
+        landing: "Page unique"
+        showcase: "Site vitrine"
+        cms: "Système de gestion de contenu"
+        ecommerce: "E-commerce"
+        webapp: "Application Web"
+
+      para_result:
+        landing: "Une page unique spécifiquement conçue pour capter l'attention et inciter à l'action, souvent utilisée pour présenter des services d'entreprise, des campagnes publicitaires ou des promotions spéciales."
+        showcase: "Un site web qui présente des produits, des services ou des projets de manière visuellement attrayante, souvent utilisé pour démontrer l'expertise ou les offres d'une entreprise."
+        cms: "Une solution qui vous permet de créer, gérer, éditer, supprimer et publier facilement du contenu web depuis votre tableau de bord, utilisé pour présenter les services et articles d'une entreprise."
+        ecommerce: "Un site web dédié à la vente en ligne de produits ou services, avec des fonctionnalités pour ajouter, modifier et supprimer des articles, gérer les commandes et paiements, et offrir des options de livraison."
+        webapp: "Une application accessible via un navigateur web, offrant des fonctionnalités interactives et des services en ligne, souvent utilisée pour des tâches spécifiques, comme un site de rencontre."
+
+      crit_result:
+        information_presentation: "Présentation de l'information"
+        image_gallery: "Galerie d'images"
+        contact_information: "Informations de contact"
+        multi_screen: "Adaptabilité multi-écrans"
+        article_creation: "Création d'articles"
+        categories_filters: "Catégories et filtres"
+        media_management: "Gestion des médias"
+        comments_sharing: "Commentaires et partage"
+        admin_interface: "Interface d'administration"
+        user_management: "Gestion des utilisateurs"
+        shopping_cart: "Panier d'achats"
+        inventory_management: "Gestion des stocks"
+        payment_processing: "Traitement des paiements"
+        order_management: "Gestion des commandes"
+        customer_management: "Gestion des clients"
+        management_interface: "Interface de gestion"
+
+
 
   footer:
     title: "Fiolet Dorian, Développeur Web"
