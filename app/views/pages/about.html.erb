@@ -29,11 +29,11 @@
 
         <div class="ns-first-gauche">
           <div class="ns-first-droite-content">
-            <h2 class="text-main-title">Contact</h2>
+            <h2 class="text-main-title"><%= t('contact.title') %></h2>
 
             <div class="ns-first-gauche-block-border-left-red">
-              <p class="text-bold">Fiolet Dorian - Web Developer 🇫🇷 🇦🇺</p>
-              <p class="text-lighty">Graduated from a French school in web development, I have gained solid expertise in creating websites and web applications. As a freelancer, I split my time between Australia and France, where I bring my passion and skills to help clients develop tailored digital solutions.</p>
+              <p class="text-bold"><%= t('contact.sub_title') %> 🇫🇷 🇦🇺</p>
+              <p class="text-lighty"><%= t('contact.para') %></p>
 
               <div class="ns-first-phone-img">
                 <div class="ns-first-logo"><%= image_tag("pp.jpg", loading: "eager", fetchpriority: "high") %></div>
@@ -85,7 +85,7 @@
     <div class="about-form-content">
 
       <div class="about-form-gauche">
-        <h2 class="text-title">Contact Me</h2>
+        <h2 class="text-title"><%= t('contact.form.title') %></h2>
 
         <% if flash[:alert] %>
           <div class="alert alert-danger">
@@ -106,30 +106,30 @@
 
         <%= form_with url: '/send_contact', local: true do |f| %>
           <div class="form-group">
-            <%= f.label :name, "Full Name", class: "text-light" %>
-            <%= f.text_field :name, placeholder: "Full name", class: "form-control", required: true, id: "form-full-name" %>
+            <%= f.label :name, t('contact.form.name'), class: "text-light" %>
+            <%= f.text_field :name, placeholder: t('contact.form.name_placeholder'), class: "form-control", required: true, id: "form-full-name" %>
           </div>
 
           <div class="form-group">
-            <%= f.label :email, "Email Address", class: "text-light" %>
-            <%= f.email_field :email, placeholder: "your@email.com", class: "form-control", required: true, id: "form-email" %>
+            <%= f.label :email, t('contact.form.email'), class: "text-light" %>
+            <%= f.email_field :email, placeholder: t('contact.form.email_placeholder'), class: "form-control", required: true, id: "form-email" %>
           </div>
 
           <div class="form-group">
-            <%= f.label :phone, "Phone Contact", class: "text-light" %>
-            <%= f.text_field :phone, placeholder: "0412345678", class: "form-control", required: true, id: "form-phone" %>
+            <%= f.label :phone, t('contact.form.phone'), class: "text-light" %>
+            <%= f.text_field :phone, placeholder: t('contact.form.phone_placeholder'), class: "form-control", required: true, id: "form-phone" %>
           </div>
 
           <div class="form-group">
-            <%= f.label :message, "Your Message", class: "text-light" %>
-            <%= f.text_area :message, placeholder: "Enter your message", class: "form-control", required: true, id: "form-message" %>
+            <%= f.label :message, t('contact.form.message'), class: "text-light" %>
+            <%= f.text_area :message, placeholder: t('contact.form.message_placeholder'), class: "form-control", required: true, id: "form-message" %>
           </div>
 
           <div class="form-group">
             <button type="submit" class="btn-rouge js-home-fifth-button">
               <div class="block-rouge"></div>
               <div class="block-noir-fleche"><i class="fa-solid fa-arrow-right" style="color: #fff;"></i></div>
-              <div class="block-text">Send</div>
+              <div class="block-text"><%= t('contact.form.button_text') %></div>
             </button>
           </div>
         <% end %>
@@ -145,7 +145,7 @@
 
         <div class="text-etoile-container">
 
-          <p class="text-lighty">"The best way to predict the future is to create it."</p>
+          <p class="text-lighty">"<%= t('contact.fusee.para') %>"</p>
         </div>
 
       </div>
