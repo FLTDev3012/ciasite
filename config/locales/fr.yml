@@ -139,7 +139,8 @@ fr:
     para: "Diplômé d'une école française en développement web, j'ai acquis une solide expertise dans la création de sites web et d'applications internet. En tant que freelance, je partage mon temps entre l'Australie et la France, où je mets ma passion et mes compétences au service des clients pour développer des solutions numériques sur mesure."
 
     form:
-      name: "Nom Complet"
+      title: "Contactez-moi"
+      name: "Nom Prénom"
       name_placeholder: "Jean Dupont"
       email: "Adresse Email"
       email_placeholder: "votre@email.com"
