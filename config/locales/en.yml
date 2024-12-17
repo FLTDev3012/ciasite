@@ -1,38 +1,8 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   "true": "foo"
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
-# en:
-#  hello: "Hello world"
-
 en:
+
+  #====================#
+  # NAVIGATION         #
+  #====================#
 
   nav:
     home: "Home"
@@ -41,15 +11,25 @@ en:
     estimation: "Estimation"
     contact: "Contact"
 
+  #====================#
+  # HOME PAGE          #
+  #====================#
+
   home:
+
+    # Home First #
 
     homefirst:
       title: "WEB DEVELOPMENT SERVICES"
+
+    # Home Second #
 
     homesecond:
       text1: "I provide businesses with the visibility they need to ensure their online presence and expand your horizons."
       text2: "Unlock horizons agency, is specialize in creating various online solutions tailored to your needs. From captivating showcase websites that highlight your brand's story, to flexible CMS platforms that allow you to manage content seamlessly, and robust e-commerce sites that boost sales."
       link_text: "Learn About Me"
+
+    # Home Third #
 
     homethird:
       services_title: "My Services"
@@ -57,15 +37,22 @@ en:
       text2: "I offer a range of services, including captivating showcase websites to present your brand, flexible CMS platforms to manage your content effortlessly, and robust e-commerce sites to boost your sales."
       link_text: "Discover My Services"
 
+    # Home Fourth #
+
     homefourth:
       title: "Last Projects"
       link_text: "Explore All Projects"
+
+    # Home Fifth #
 
     homefifth:
       title: "My Services"
       description: "Curious about the types of websites I offer and which one best suits your needs? Explore our range of services, from single-page designs to fully customized web applications, and discover the ideal solution for your project."
       link_text: "See the Services"
 
+  #====================#
+  # PROJECTS PAGE      #
+  #====================#
 
   projects_index:
     title: "Projects"
@@ -73,14 +60,21 @@ en:
     description: "Explore my latest web creations, showcasing tailored solutions adapted to various contexts and specific needs. These examples will give you a concrete idea of what can be achieved."
     link_text: "Explore All Projects"
 
+  #====================#
+  # SERVICES PAGE      #
+  #====================#
 
   services:
+
+    # Services First #
 
     nsfirst:
       title: "Services"
       text1: "Single Page, Showcase Site, CMS 'Content Management System', E-commerce Site, Web Application"
       text2: "We offer a range of services, including captivating showcase websites to present your brand, flexible CMS platforms to manage your content effortlessly, and robust e-commerce sites to boost your sales."
       link_text: "Discover Our Services"
+
+    # Services Second #
 
     nsseconde:
 
@@ -125,6 +119,8 @@ en:
         customer_management: "Customer management"
         management_interface: "Management interface"
 
+    # Services Third #
+
     nsthird:
       btn: "Estimation"
 
@@ -165,6 +161,9 @@ en:
         para: "Wondering how much it would cost to create the website of your dreams? Use our quick and easy estimation tool to get an instant quote based on your specific needs."
         button_text: "Do the estimation"
 
+  #====================#
+  # CONTACT PAGE    #
+  #====================#
 
   contact:
 
@@ -187,6 +186,9 @@ en:
     fusee:
       para: "The best way to predict the future is to create it."
 
+  #====================#
+  # FOOTER             #
+  #====================#
 
   footer:
     title: "Fiolet Dorian, Web Developer"

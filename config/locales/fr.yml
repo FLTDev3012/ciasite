@@ -1,5 +1,9 @@
 fr:
 
+  #====================#
+  # NAVIGATION         #
+  #====================#
+
   nav:
     home: "Accueil"
     projects: "Projets"
@@ -7,16 +11,25 @@ fr:
     estimation: "Estimation"
     contact: "Contact"
 
+  #====================#
+  # HOME PAGE          #
+  #====================#
 
   home:
 
+    # Home First #
+
     homefirst:
       title: "CREATION DE SITES INTERNET"
+
+    # Home Second #
 
     homesecond:
       text1: "Je fournis aux entreprises la visibilité dont elles ont besoin pour assurer leur présence en ligne et élargir leurs horizons."
       text2: "L'agence Unlock Horizons se spécialise dans la création de diverses solutions en ligne adaptées à vos besoins. Des sites vitrines captivants qui mettent en valeur l'histoire de votre marque, aux plateformes CMS flexibles qui permettent une gestion de contenu sans effort, et des sites e-commerce robustes qui boostent les ventes."
       link_text: "En savoir plus sur moi"
+
+    # Home Third #
 
     homethird:
       services_title: "Mes Services"
@@ -24,15 +37,22 @@ fr:
       text2: "Je propose une gamme de services, du site vitrine captivant pour présenter votre marque, des plateformes CMS flexibles pour gérer votre contenu sans effort, et des sites e-commerce robustes pour booster vos ventes."
       link_text: "Découvrez mes services"
 
+    # Home Fourth #
+
     homefourth:
       title: "Derniers Projets"
       link_text: "Explorer tous les projets"
+
+    # Home Fifth #
 
     homefifth:
       title: "Mes Services"
       description: "Vous vous demandez quels types de sites web je propose et lequel correspond le mieux à vos besoins ? Découvrez notre gamme de services, allant des designs single-page aux applications web entièrement personnalisées, et trouvez la solution idéale pour votre projet."
       link_text: "Voir les Services"
 
+  #====================#
+  # PROJECTS PAGE      #
+  #====================#
 
   projects_index:
     title: "Projets"
@@ -40,14 +60,21 @@ fr:
     description: "Découvrez mes dernières créations web, mettant en avant des solutions sur mesure adaptées à divers contextes et besoins spécifiques. Ces exemples vous donneront une idée concrète de ce qui peut être accompli."
     link_text: "Explorer tous les projets"
 
+  #====================#
+  # SERVICES PAGE      #
+  #====================#
 
   services:
+
+    # Services First #
 
     nsfirst:
       title: "Services"
       text1: "Page unique, Site vitrine, CMS 'Système de gestion de contenu', Site e-commerce, Application web"
       text2: "Nous proposons une gamme de services, incluant des sites vitrines captivants pour présenter votre marque, des plateformes CMS flexibles pour gérer votre contenu sans effort, et des sites e-commerce robustes pour augmenter vos ventes."
       link_text: "Découvrez Nos Services"
+
+    # Services Second #
 
     nsseconde:
 
@@ -92,6 +119,8 @@ fr:
         customer_management: "Gestion des clients"
         management_interface: "Interface de gestion"
 
+    # Services Third #
+
     nsthird:
       btn: "Estimation"
 
@@ -132,6 +161,10 @@ fr:
         para: "Vous vous demandez combien il en coûterait pour créer le site web de vos rêves ? Utilisez notre outil d'estimation rapide et facile pour obtenir un devis instantané basé sur vos besoins spécifiques."
         button_text: "Faire l'Estimation"
 
+  #====================#
+  # CONTACT PAGE    #
+  #====================#
+
   contact:
 
     title: "Contact"
@@ -153,6 +186,9 @@ fr:
     fusee:
       para: "La meilleure façon de prédire l'avenir est de le créer."
 
+  #====================#
+  # FOOTER             #
+  #====================#
 
   footer:
     title: "Fiolet Dorian, Développeur Web"
