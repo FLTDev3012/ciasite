@@ -166,6 +166,27 @@ en:
         button_text: "Do the estimation"
 
 
+  contact:
+
+    title: "Contact"
+    sub_title: "Fiolet Dorian - Web Developer"
+    para: "Graduated from a French school in web development, I have gained solid expertise in creating websites and web applications. As a freelancer, I split my time between Australia and France, where I bring my passion and skills to help clients develop tailored digital solutions."
+
+    form:
+      name: "Full Name"
+      name_placeholder: "John Doe"
+      email: "Email Address"
+      email_placeholder: "your@email.com"
+      phone: "Your Phone"
+      phone_placeholder: "0412345678"
+      message: "Your Message"
+      message_placeholder: "Enter your message"
+      button_text: "Send"
+
+    fusee:
+      para:"The best way to predict the future is to create it."
+
+
   footer:
     title: "Fiolet Dorian, Web Developer"
     passion: "Passion for Web Creation"
