@@ -132,6 +132,27 @@ fr:
         para: "Vous vous demandez combien il en coûterait pour créer le site web de vos rêves ? Utilisez notre outil d'estimation rapide et facile pour obtenir un devis instantané basé sur vos besoins spécifiques."
         button_text: "Faire l'Estimation"
 
+  contact:
+
+    title: "Contact"
+    sub_title: "Fiolet Dorian - Développeur Web"
+    para: "Diplômé d'une école française en développement web, j'ai acquis une solide expertise dans la création de sites web et d'applications internet. En tant que freelance, je partage mon temps entre l'Australie et la France, où je mets ma passion et mes compétences au service des clients pour développer des solutions numériques sur mesure."
+
+    form:
+      name: "Nom Complet"
+      name_placeholder: "Jean Dupont"
+      email: "Adresse Email"
+      email_placeholder: "votre@email.com"
+      phone: "Votre Téléphone"
+      phone_placeholder: "0612345678"
+      message: "Votre Message"
+      message_placeholder: "Entrez votre message"
+      button_text: "Envoyer"
+
+    fusee:
+      para: "La meilleure façon de prédire l'avenir est de le créer."
+
+
   footer:
     title: "Fiolet Dorian, Développeur Web"
     passion: "Passionné de création web"
