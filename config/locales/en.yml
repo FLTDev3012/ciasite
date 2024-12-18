@@ -162,6 +162,51 @@ en:
         button_text: "Do the estimation"
 
   #====================#
+  # ESTIMATION PAGE    #
+  #====================#
+
+  estimation:
+
+    estimation_first:
+      title: "Estimation"
+      sub_title: "Estimate the cost of your future website in just a few clicks!"
+      para: "In addition to the many features of your site, you have the option to customize it to your liking by adding the following functionalities if you wish."
+      button_text: "Choose My Options"
+
+    estimation_second:
+      title: "Your Website Estimation"
+
+      q_webstyle: ""
+      q_mockup: ""
+      q_animation: ""
+      q_contact: ""
+      q_requested: ""
+      q_card: ""
+
+      c_one_landing: ""
+      c_one_showcase: ""
+      c_one_cms: ""
+      c_one_qrcode: ""
+      c_one_ecommerce: ""
+      c_one_webapp: ""
+
+      c_two_no: ""
+      c_two_yes: ""
+
+      c_three_standard: ""
+      c_three_dynamic: ""
+      c_three_creative: ""
+
+      c_four_display: ""
+      c_four_form: ""
+
+      c_five_map: ""
+      c_five_review: ""
+
+      c_six_discount: ""
+
+
+  #====================#
   # CONTACT PAGE    #
   #====================#
 
