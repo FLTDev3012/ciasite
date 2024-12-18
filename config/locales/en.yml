@@ -10,6 +10,7 @@ en:
     services: "Services"
     estimation: "Estimation"
     contact: "Contact"
+    lets: "Let’s Connect"
 
   #====================#
   # HOME PAGE          #
@@ -160,6 +161,110 @@ en:
         title: "Your Estimate"
         para: "Wondering how much it would cost to create the website of your dreams? Use our quick and easy estimation tool to get an instant quote based on your specific needs."
         button_text: "Do the estimation"
+
+  #====================#
+  # ESTIMATION PAGE    #
+  #====================#
+
+  estimation:
+
+    estimation_first:
+      title: "Estimation"
+      sub_title: "Estimate the cost of your future website in just a few clicks!"
+      para: "In addition to the many features of your site, you have the option to customize it to your liking by adding the following functionalities if you wish."
+      button_text: "Choose My Options"
+
+    estimation_second:
+      title: "Your Website Estimation"
+
+      q_webstyle: "1 : Your website style"
+      q_mockup: "2 : Need a website mockup?"
+      q_animation: "3 : Website animation"
+      q_contact: "4 : Website contact"
+      q_requested: "5 : Most requested additions"
+      q_card: "6 : Exclusive Card Discount"
+
+      c_one_landing: "Landing Page"
+      c_one_showcase: "Showcase Website"
+      c_one_cms: "Content Management System"
+      c_one_qrcode: "QR Code for Bar/Restaurant"
+      c_one_ecommerce: "E-commerce"
+      c_one_webapp: "Web application"
+
+      c_one_landing_value: "1500"
+      c_one_showcase_value: "3000"
+      c_one_cms_value: "4000"
+      c_one_qrcode_value: "10000"
+      c_one_ecommerce_value: "30000"
+      c_one_webapp_value: "30000"
+
+      c_two_no: "No"
+      c_two_yes: "Yes"
+
+      c_two_yes_value: "1000"
+
+      c_three_standard: "Standard"
+      c_three_dynamic: "Dynamic"
+      c_three_creative: "Creative"
+
+      c_three_dynamic_value: "1000"
+      c_three_creative_value: "10000"
+
+      c_four_display: "Displayed as Text on Site"
+      c_four_form: "E-mail Contact Form"
+
+      c_four_form_value: "500"
+
+      c_five_map: "Location Map Display"
+      c_five_review: "Comments and reviews"
+
+      c_five_map_value: "500"
+      c_five_review_value: "500"
+
+      c_six_discount: "Apply 20% Card Discount"
+      c_six_remove_discount: "Remove 20% Card Discount"
+
+      r_title: "Your website"
+
+      r_information_presentation: "- Information presentation"
+      r_image_gallery: "- Image gallery"
+      r_contact_information: "- Contact information"
+      r_multi_screen: "- Multi-screen adaptability"
+
+      r_admin_interface: "- Admin interface"
+      r_article_creation: "- Article creation"
+      r_media_management: "- Media management"
+      r_categories_filters: "- Categories and filters"
+      r_comments_sharing: "- Comments and sharing"
+
+      r_user_management: "- User management"
+      r_inventory_management: "- Inventory management"
+      r_order_management: "- Order management"
+      r_customer_management: "- Customer management"
+      r_shopping_cart: "- Shopping cart"
+      r_payment_processing: "- Payment processing"
+      r_management_interface: "- Management interface"
+
+      r_template_creation: "- Template creation $-1000"
+      r_standard_animation: "- Standard site animation $-0"
+      r_dynamic_animation: "- Dynamic site animation $-1000"
+      r_creative_animation: "- Creative site animation $-10000"
+      r_contact_display: "- Displayed as Text on Site $-0"
+      r_contact_form: "- E-mail Contact Form $-500"
+      r_map: "- Location Map Display $-500"
+      r_review: "- Comments / Reviews $-500"
+
+      r_text_estimation: "Estimation"
+      r_text_devise: "$"
+      r_text_contact: "Contact Me!"
+
+
+    prefooter:
+      title: "Contact"
+      para: "If you're ready to discuss your project or have any questions, feel free to reach out. I'm here to help bring your vision to life and provide personalized guidance along the way."
+      button_text: "Contact Me!"
+
+
 
   #====================#
   # CONTACT PAGE    #

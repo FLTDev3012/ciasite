@@ -38,12 +38,12 @@ document.addEventListener("turbo:load", function() {
 
     // Mettre à jour le texte du bouton en fonction de l'état de réduction
     if (isDiscountApplied) {
-        discountButton.textContent = "Remove 20% Card Discount";
+        discountButton.textContent = "<%= t('estimation.estimation_second.c_six_remove_discount') %>";
         discountButton.style.backgroundColor = '#e21a41';
         discountButton.style.color = '#fff';
 
     } else {
-        discountButton.textContent = "Apply 20% Card Discount";
+        discountButton.textContent = "<%= t('estimation.estimation_second.c_six_discount') %>";
         discountButton.style.backgroundColor = '#fff';
         discountButton.style.color = '#111';
     }
@@ -127,11 +127,11 @@ document.addEventListener("turbo:load", function() {
 
       <div class="ns-first-gauche">
         <div class="ns-first-droite-content">
-          <h2 class="text-main-title estimation-title">Estimation</h2>
+          <h2 class="text-main-title estimation-title"><%= t('estimation.estimation_first.title') %></h2>
 
           <div class="ns-first-gauche-block-border-left-red">
-            <p class="text-bold">Estimate the cost of your future website in just a few clicks!</p>
-            <p class="text-lighty">In addition to the many features of your site, you have the option to customize it to your liking by adding the following functionalities if you wish.</p>
+            <p class="text-bold"><%= t('estimation.estimation_first.sub_title') %></p>
+            <p class="text-lighty"><%= t('estimation.estimation_first.para') %></p>
 
             <div class="ns-first-phone-img">
               <div class="ns-first-logo"><%= image_tag("targetuh.png", loading: "eager", fetchpriority: "high") %></div>
@@ -139,7 +139,7 @@ document.addEventListener("turbo:load", function() {
 
             <div class="link-ligne-rouge-container">
               <div class="link-ligne-rouge-red"></div>
-              <a href="#estimation-stimu" class="text-bold">Choose my options</a>
+              <a href="#estimation-stimu" class="text-bold"><%= t('estimation.estimation_first.button_text') %></a>
             </div>
           </div>
 
@@ -166,7 +166,7 @@ document.addEventListener("turbo:load", function() {
 <div class="estimation-container-white" data-controller="estimation">
   <div class="estimation-seconde-content">
 
-    <h2 class="text-title">Your Website Estimation</h2>
+    <h2 class="text-title"><%= t('estimation.estimation_second.title') %></h2>
 
 
 
@@ -177,30 +177,30 @@ document.addEventListener("turbo:load", function() {
 
         <!-- Première catégorie : une seule option sélectionnable -->
         <div>
-          <h3 class="text-bold">1 : Your website style</h3>
+          <h3 class="text-bold"><%= t('estimation.estimation_second.q_webstyle') %></h3>
 
           <label data-action="click->estimation#first_cat_first_choice">
-            <input type="checkbox" class="price-checkbox single-option category-1" data-price="1500"> Landing Page
+            <input type="checkbox" class="price-checkbox single-option category-1" data-price="<%= t('estimation.estimation_second.c_one_landing_value') %>"> <%= t('estimation.estimation_second.c_one_landing') %>
           </label>
 
           <label data-action="click->estimation#first_cat_first_choice">
-            <input type="checkbox" class="price-checkbox single-option category-1" data-price="3000"> Showcase Website
+            <input type="checkbox" class="price-checkbox single-option category-1" data-price="<%= t('estimation.estimation_second.c_one_showcase_value') %>"> <%= t('estimation.estimation_second.c_one_showcase') %>
           </label>
 
           <label data-action="click->estimation#first_cat_second_choice">
-            <input type="checkbox" class="price-checkbox single-option category-1" data-price="4000"> Content Management System
+            <input type="checkbox" class="price-checkbox single-option category-1" data-price="<%= t('estimation.estimation_second.c_one_cms_value') %>"> <%= t('estimation.estimation_second.c_one_cms') %>
           </label>
 
           <label data-action="click->estimation#first_cat_fourth_choice">
-            <input type="checkbox" class="price-checkbox single-option category-1" data-price="10000"> QR Code for Bar/Restaurant
+            <input type="checkbox" class="price-checkbox single-option category-1" data-price="<%= t('estimation.estimation_second.c_one_qrcode_value') %>"> <%= t('estimation.estimation_second.c_one_qrcode') %>
           </label>
 
           <label data-action="click->estimation#first_cat_third_choice">
-            <input type="checkbox" class="price-checkbox single-option category-1" data-price="30000"> E-commerce
+            <input type="checkbox" class="price-checkbox single-option category-1"  data-price="<%= t('estimation.estimation_second.c_one_ecommerce_value') %>"> <%= t('estimation.estimation_second.c_one_ecommerce') %>
           </label>
 
           <label data-action="click->estimation#first_cat_third_choice">
-            <input type="checkbox" class="price-checkbox single-option category-1" data-price="30000"> Web application
+            <input type="checkbox" class="price-checkbox single-option category-1" data-price="<%= t('estimation.estimation_second.c_one_webapp_value') %>"> <%= t('estimation.estimation_second.c_one_webapp') %>
           </label>
 
 
@@ -209,12 +209,12 @@ document.addEventListener("turbo:load", function() {
 
         <!-- Deuxieme catégorie : une seule option sélectionnable -->
         <div>
-          <h3 class="text-bold">2 : Need a website mockup?</h3>
+          <h3 class="text-bold"><%= t('estimation.estimation_second.q_mockup') %></h3>
           <label data-action="click->estimation#second_cat_first_choice">
-            <input type="checkbox" class="price-checkbox single-option category-2" data-price="0"> No
+            <input type="checkbox" class="price-checkbox single-option category-2" data-price="0"> <%= t('estimation.estimation_second.c_two_no') %>
           </label>
           <label data-action="click->estimation#second_cat_second_choice">
-            <input type="checkbox" class="price-checkbox single-option category-2" data-price="1000"> Yes
+            <input type="checkbox" class="price-checkbox single-option category-2" data-price="<%= t('estimation.estimation_second.c_two_yes_value') %>"> <%= t('estimation.estimation_second.c_two_yes') %>
           </label>
         </div>
 
@@ -223,53 +223,55 @@ document.addEventListener("turbo:load", function() {
 
         <!-- Troisieme catégorie : une seule option sélectionnable -->
         <div>
-          <h3 class="text-bold">3 : Website animation</h3>
+          <h3 class="text-bold"><%= t('estimation.estimation_second.q_animation') %></h3>
 
           <label data-action="click->estimation#third_cat_first_choice">
-            <input type="checkbox" class="price-checkbox single-option category-3" data-price="0"> Standard
+            <input type="checkbox" class="price-checkbox single-option category-3" data-price="0"> <%= t('estimation.estimation_second.c_three_standard') %>
           </label>
 
           <label data-action="click->estimation#third_cat_second_choice">
-            <input type="checkbox" class="price-checkbox single-option category-3" data-price="1000"> Dynamic
+            <input type="checkbox" class="price-checkbox single-option category-3" data-price="<%= t('estimation.estimation_second.c_three_dynamic_value') %>"> <%= t('estimation.estimation_second.c_three_dynamic') %>
           </label>
 
           <label data-action="click->estimation#third_cat_third_choice">
-            <input type="checkbox" class="price-checkbox single-option category-3" data-price="10000"> Creative
+            <input type="checkbox" class="price-checkbox single-option category-3" data-price="<%= t('estimation.estimation_second.c_three_creative_value') %>"> <%= t('estimation.estimation_second.c_three_creative') %>
           </label>
         </div>
 
         <!-- Quatrieme catégorie : une seule option sélectionnable -->
         <div>
-          <h3 class="text-bold">4 : Website contact</h3>
+          <h3 class="text-bold"><%= t('estimation.estimation_second.q_contact') %></h3>
 
           <label data-action="click->estimation#fourth_cat_first_choice">
-            <input type="checkbox" class="price-checkbox single-option category-4" data-price="0"> Displayed as Text on Site
+            <input type="checkbox" class="price-checkbox single-option category-4" data-price="0"> <%= t('estimation.estimation_second.c_four_display') %>
           </label>
 
 
           <label data-action="click->estimation#fourth_cat_third_choice">
-            <input type="checkbox" class="price-checkbox single-option category-4" data-price="500"> E-mail Contact Form
+            <input type="checkbox" class="price-checkbox single-option category-4" data-price="<%= t('estimation.estimation_second.c_four_form_value') %>"> <%= t('estimation.estimation_second.c_four_form') %>
           </label>
 
         </div>
+
 
         <!-- Cinquieme catégorie : plusieurs options sélectionnables -->
         <div>
-          <h3 class="text-bold">5 : Most requested additions</h3>
+          <h3 class="text-bold"><%= t('estimation.estimation_second.q_requested') %></h3>
 
           <label data-action="click->estimation#fifth_cat_first_choice">
-            <input type="checkbox" class="price-checkbox multiple-option" data-price="500"> Location Map Display
+            <input type="checkbox" class="price-checkbox multiple-option" data-price="<%= t('estimation.estimation_second.c_five_map_value') %>"> <%= t('estimation.estimation_second.c_five_map') %>
           </label>
 
           <label data-action="click->estimation#fifth_cat_second_choice">
-            <input type="checkbox" class="price-checkbox multiple-option" data-price="500"> Comments and reviews
+            <input type="checkbox" class="price-checkbox multiple-option" data-price="<%= t('estimation.estimation_second.c_five_review_value') %>"> <%= t('estimation.estimation_second.c_five_review') %>
           </label>
 
         </div>
 
+        <!-- Sixième catégorie -->
         <div>
-          <h3 class="text-bold">6 : Exclusive Card Discount</h3>
-          <button id="apply-discount" class="btn-discount">Apply 20% Card Discount</button>
+          <h3 class="text-bold"><%= t('estimation.estimation_second.q_card') %></h3>
+          <button id="apply-discount" class="btn-discount"><%= t('estimation.estimation_second.c_six_discount') %></button>
         </div>
 
 
@@ -286,54 +288,54 @@ document.addEventListener("turbo:load", function() {
 
         <span>
           <div class="estimation-result-title-container">
-            <h3 class="estimation-result-title">Your website</h3>
+            <h3 class="estimation-result-title"><%= t('estimation.estimation_second.r_title') %></h3>
           </div>
         </span>
 
         <div class="estimation-result-target-container">
-          <div data-estimation-target="firstCatFirstType" class="esti-target-div"><p>- Information presentation</p></div>
-          <div data-estimation-target="firstCatFirstType" class="esti-target-div"><p>- Image gallery</p></div>
-          <div data-estimation-target="firstCatFirstType firstCatFourthType" class="esti-target-div"><p>- Contact information</p></div>
-          <div data-estimation-target="firstCatFirstType" class="esti-target-div"><p>- Multi-screen adaptability</p></div>
+          <div data-estimation-target="firstCatFirstType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_information_presentation') %></p></div>
+          <div data-estimation-target="firstCatFirstType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_image_gallery') %></p></div>
+          <div data-estimation-target="firstCatFirstType firstCatFourthType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_contact_information') %></p></div>
+          <div data-estimation-target="firstCatFirstType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_multi_screen') %></p></div>
           <p data-estimation-target="firstCatFirstType"><br></p>
 
-          <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p>- Admin interface</p></div>
-          <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p>- Article creation</p></div>
-          <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p>- Media management</p></div>
-          <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p>- Categories and filters</p></div>
-          <div data-estimation-target="firstCatSecondType firstCatFourthType" class="esti-target-div"><p>- Comments and sharing</p></div>
+          <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_admin_interface') %></p></div>
+          <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_article_creation') %></p></div>
+          <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_media_management') %></p></div>
+          <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_categories_filters') %></p></div>
+          <div data-estimation-target="firstCatSecondType firstCatFourthType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_comments_sharing') %></p></div>
           <p data-estimation-target="firstCatSecondType"><br></p>
 
-          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- User management</p></div>
-          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Inventory management</p></div>
-          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Order management</p></div>
-          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Customer management</p></div>
-          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Shopping cart</p></div>
-          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Payment processing</p></div>
-          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Management interface</p></div>
+          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_user_management') %></p></div>
+          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_inventory_management') %></p></div>
+          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_order_management') %></p></div>
+          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_customer_management') %></p></div>
+          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_shopping_cart') %></p></div>
+          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_payment_processing') %></p></div>
+          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_management_interface') %></p></div>
           <p data-estimation-target="firstCatThirdType"><br></p>
 
-          <div data-estimation-target="secondCatSecondType" class="esti-target-div"><p>- Template creation $-1000</p></div>
-          <div data-estimation-target="thirdCatFirstType" class="esti-target-div"><p>- Standard site animation $-0</p></div>
-          <div data-estimation-target="thirdCatSecondType" class="esti-target-div"><p class="gold">- Dynamic site animation $-1000</p></div>
-          <div data-estimation-target="thirdCatThirdType" class="esti-target-div"><p class="gold">- Creative site animation $-10000</p></div>
-          <div data-estimation-target="fourthCatFirstType" class="esti-target-div"><p>- Displayed as Text on Site $-0</p></div>
-          <div data-estimation-target="fourthCatSecondType" class="esti-target-div"><p>- E-mail Contact Form $-500</p></div>
-          <div data-estimation-target="fourthCatThirdType" class="esti-target-div"><p class="gold">- E-mail Contact Form $-500</p></div>
-          <div data-estimation-target="fifthCatFirstType" class="esti-target-div"><p class="gold">- Location Map Display $-500</p></div>
-          <div data-estimation-target="fifthCatSecondType" class="esti-target-div"><p class="gold">- Comments / Reviews $-500</p></div>
+          <div data-estimation-target="secondCatSecondType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_template_creation') %></p></div>
+          <div data-estimation-target="thirdCatFirstType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_standard_animation') %></p></div>
+          <div data-estimation-target="thirdCatSecondType" class="esti-target-div"><p class="gold"><%= t('estimation.estimation_second.r_dynamic_animation') %></p></div>
+          <div data-estimation-target="thirdCatThirdType" class="esti-target-div"><p class="gold"><%= t('estimation.estimation_second.r_creative_animation') %></p></div>
+          <div data-estimation-target="fourthCatFirstType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_contact_display') %></p></div>
+          <div data-estimation-target="fourthCatSecondType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_contact_form') %></p></div>
+          <div data-estimation-target="fourthCatThirdType" class="esti-target-div"><p class="gold"><%= t('estimation.estimation_second.r_contact_form') %></p></div>
+          <div data-estimation-target="fifthCatFirstType" class="esti-target-div"><p class="gold"><%= t('estimation.estimation_second.r_map') %></p></div>
+          <div data-estimation-target="fifthCatSecondType" class="esti-target-div"><p class="gold"><%= t('estimation.estimation_second.r_review') %></p></div>
 
 
         </div>
 
         <div class="estimation-result-total-container">
-          <p id="total-container" class="estimation-result-total">Estimation ≈&nbsp;<span id="total-price"> 0 </span>$</p>
+          <p id="total-container" class="estimation-result-total"><%= t('estimation.estimation_second.r_text_estimation') %> ≈&nbsp;<span id="total-price"> 0 </span>$</p>
         </div>
 
         <%= link_to about_path, class: "btn-rouge js-home-fifth-button", data: { turbo: false } do %>
           <div class="block-rouge"></div>
           <div class="block-noir-fleche"><i class="fa-solid fa-arrow-right" style="color: #fff;"></i></div>
-          <div class="block-text">Contact Me!</div>
+          <div class="block-text"><%= t('estimation.estimation_second.r_text_contact') %></div>
         <% end %>
 
 
@@ -358,14 +360,14 @@ document.addEventListener("turbo:load", function() {
         <div class="home-cinq-gauche-grand">
           <div class="home-cinq-gauche-petit">
             <div class="home-cinq-gauche-text">
-              <h2>Contact</h2>
-              <p>If you're ready to discuss your project or have any questions, feel free to reach out. I'm here to help bring your vision to life and provide personalized guidance along the way.</p>
+              <h2><%= t('estimation.prefooter.title') %></h2>
+              <p><%= t('estimation.prefooter.para') %></p>
 
 
               <%= link_to about_path, class: "btn-rouge js-home-fifth-button", data: { turbo: false } do %>
                 <div class="block-rouge"></div>
                 <div class="block-noir-fleche"><i class="fa-solid fa-arrow-right" style="color: #fff;"></i></div>
-                <div class="block-text">Contact Me!</div>
+                <div class="block-text"><%= t('estimation.prefooter.button_text') %></div>
               <% end %>
 
             </div>
