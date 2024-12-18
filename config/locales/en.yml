@@ -190,20 +190,72 @@ en:
       c_one_ecommerce: ""
       c_one_webapp: ""
 
+      c_one_landing_value: ""
+      c_one_showcase_value: ""
+      c_one_cms_value: ""
+      c_one_qrcode_value: ""
+      c_one_ecommerce_value: ""
+      c_one_webapp_value: ""
+
       c_two_no: ""
       c_two_yes: ""
+
+      c_two_yes_value: ""
 
       c_three_standard: ""
       c_three_dynamic: ""
       c_three_creative: ""
 
+      c_three_standard_value: ""
+      c_three_dynamic_value: ""
+      c_three_creative_value: ""
+
       c_four_display: ""
       c_four_form: ""
+
+      c_four_form_value: ""
 
       c_five_map: ""
       c_five_review: ""
 
+      c_five_map_value: ""
+      c_five_review_value: ""
+
       c_six_discount: ""
+
+      r_title: ""
+
+      r_information_presentation: ""
+      r_image_gallery: ""
+      r_contact_information: ""
+      r_multi_screen: ""
+
+      r_admin_interface: ""
+      r_article_creation: ""
+      r_media_management: ""
+      r_categories_filters: ""
+      r_comments_sharing: ""
+
+      r_user_management: ""
+      r_inventory_management: ""
+      r_order_management: ""
+      r_customer_management: ""
+      r_shopping_cart: ""
+      r_payment_processing: ""
+      r_management_interface: ""
+
+      r_template_creation: ""
+      r_standard_animation: ""
+      r_dynamic_animation: ""
+      r_creative_animation: ""
+      r_contact_display: ""
+      r_contact_form: ""
+      r_map: ""
+      r_review: ""
+
+      r_text_estimation: ""
+      r_text_contact: ""
+
 
 
   #====================#
