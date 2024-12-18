@@ -253,7 +253,9 @@ en:
       r_review: "- Comments / Reviews $-500"
 
       r_text_estimation: "Estimation"
+      r_text_devise: "$"
       r_text_contact: "Contact Me!"
+
 
     prefooter:
       title: "Contact"
