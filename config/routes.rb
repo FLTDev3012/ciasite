@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     get 'estimation', to: 'pages#estimation'
     get 'about', to: 'pages#about'
     get 'dashboard', to: 'pages#dashboard'
+    get 'legal', to: 'pages#legal'
 
     post 'send_contact', to: 'contacts#create'
     resources :projects
