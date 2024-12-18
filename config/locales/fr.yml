@@ -162,6 +162,133 @@ fr:
         button_text: "Faire l'Estimation"
 
   #====================#
+  # ESTIMATION PAGE    #
+  #====================#
+
+  estimation:
+
+    # Estimation First #
+    estimation_first:
+      title: "Estimation"
+      sub_title: "Estimez le coût de votre futur site web en quelques clics !"
+      para: "En plus des nombreuses fonctionnalités de votre site, vous avez la possibilité de le personnaliser à votre guise en ajoutant les fonctionnalités suivantes si vous le souhaitez."
+      button_text: "Choisir mes options"
+
+    # Estimation Second #
+    estimation_second:
+      title: "Votre estimation de site web"
+
+
+      #                   #
+      # Left part choice  #
+      #                   #
+
+
+      # Questions #
+      q_webstyle: "1 : Le style de votre site web"
+      q_mockup: "2 : Besoin d'une maquette de site web ?"
+      q_animation: "3 : Animation du site web"
+      q_contact: "4 : Contact pour le site web"
+      q_requested: "5 : Ajouts les plus demandés"
+      q_card: "6 : Remise exclusive avec carte"
+
+      # Choices first #
+      c_one_landing: "Page d’atterrissage (Landing Page)"
+      c_one_showcase: "Site vitrine"
+      c_one_cms: "Système de gestion de contenu"
+      c_one_qrcode: "QR Code pour Bar/Restaurant"
+      c_one_ecommerce: "E-commerce"
+      c_one_webapp: "Application web"
+
+      # Value first #
+      c_one_landing_value: "1500"
+      c_one_showcase_value: "3000"
+      c_one_cms_value: "4000"
+      c_one_qrcode_value: "10000"
+      c_one_ecommerce_value: "30000"
+      c_one_webapp_value: "30000"
+
+      # Choices second #
+      c_two_no: "Non"
+      c_two_yes: "Oui"
+
+      # Value second #
+      c_two_yes_value: "1000"
+
+      # Choices third #
+      c_three_standard: "Standard"
+      c_three_dynamic: "Dynamique"
+      c_three_creative: "Créatif"
+
+      # Value third #
+      c_three_dynamic_value: "1000"
+      c_three_creative_value: "10000"
+
+      # Choices fourth #
+      c_four_display: "Affiché sous forme de texte sur le site"
+      c_four_form: "Formulaire de contact par e-mail"
+
+      # Value fourth #
+      c_four_form_value: "500"
+
+      # Choices fifth #
+      c_five_map: "Affichage de la carte de localisation"
+      c_five_review: "Commentaires et avis"
+
+      # Value fifth #
+      c_five_map_value: "500"
+      c_five_review_value: "500"
+
+      # Choices sixth #
+      c_six_discount: "Appliquer une remise de 20 % avec carte"
+      c_six_remove_discount: "Supprimer la remise de 20 %"
+
+      #                   #
+      # Right part result #
+      #                   #
+
+      r_title: "Votre site web"
+
+      r_information_presentation: "- Présentation des informations"
+      r_image_gallery: "- Galerie d'images"
+      r_contact_information: "- Informations de contact"
+      r_multi_screen: "- Adaptabilité multi-écrans"
+
+      r_admin_interface: "- Interface d'administration"
+      r_article_creation: "- Création d'articles"
+      r_media_management: "- Gestion des médias"
+      r_categories_filters: "- Catégories et filtres"
+      r_comments_sharing: "- Commentaires et partages"
+
+      r_user_management: "- Gestion des utilisateurs"
+      r_inventory_management: "- Gestion des stocks"
+      r_order_management: "- Gestion des commandes"
+      r_customer_management: "- Gestion des clients"
+      r_shopping_cart: "- Panier d'achat"
+      r_payment_processing: "- Traitement des paiements"
+      r_management_interface: "- Interface de gestion"
+
+      r_template_creation: "- Création de modèles -1000 €"
+      r_standard_animation: "- Animation standard du site -0 €"
+      r_dynamic_animation: "- Animation dynamique du site -1000 €"
+      r_creative_animation: "- Animation créative du site -10000 €"
+      r_contact_display: "- Affiché sous forme de texte sur le site -0 €"
+      r_contact_form: "- Formulaire de contact par e-mail -500 €"
+      r_map: "- Affichage de la carte de localisation -500 €"
+      r_review: "- Commentaires/Avis -500 €"
+
+      r_text_estimation: "Estimation"
+      r_text_devise: "€"
+      r_text_contact: "Contactez-moi !"
+
+    # Estimation Third #
+    prefooter:
+      title: "Contact"
+      para: "Si vous êtes prêt à discuter de votre projet ou si vous avez des questions, n'hésitez pas à me contacter. Je suis là pour donner vie à votre vision et vous accompagner avec des conseils personnalisés."
+      button_text: "Contactez-moi !"
+
+
+  #====================#
   # CONTACT PAGE    #
   #====================#
 

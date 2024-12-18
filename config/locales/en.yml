@@ -221,6 +221,7 @@ en:
       c_five_review_value: "500"
 
       c_six_discount: "Apply 20% Card Discount"
+      c_six_remove_discount: "Remove 20% Card Discount"
 
       r_title: "Your website"
 
