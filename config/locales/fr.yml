@@ -27,14 +27,14 @@ fr:
 
     homesecond:
       text1: "Je fournis aux entreprises la visibilité dont elles ont besoin pour assurer leur présence en ligne et élargir leurs horizons."
-      text2: "L'agence Unlock Horizons se spécialise dans la création de diverses solutions en ligne adaptées à vos besoins. Des sites vitrines captivants qui mettent en valeur l'histoire de votre marque, aux plateformes CMS flexibles qui permettent une gestion de contenu sans effort, et des sites e-commerce robustes qui boostent les ventes."
+      text2: "L'agence Unlock Horizons est spécialisée dans la création de diverses solutions en ligne adaptées à vos besoins. Des sites vitrines captivants qui mettent en valeur l'histoire de votre marque, aux plateformes CMS flexibles qui permettent une gestion de contenu sans effort, et des sites e-commerce robustes qui boostent les ventes."
       link_text: "En savoir plus sur moi"
 
     # Home Third #
 
     homethird:
       services_title: "Mes Services"
-      text1: "Répondre à votre besoin de créer des solutions web avec créativité et détermination, toujours engagés pour votre succès en ligne."
+      text1: "Répondre à votre besoin de créer des solutions web avec créativité et finesse, toujours engagés pour votre succès en ligne."
       text2: "Je propose une gamme de services, du site vitrine captivant pour présenter votre marque, des plateformes CMS flexibles pour gérer votre contenu sans effort, et des sites e-commerce robustes pour booster vos ventes."
       link_text: "Découvrez mes services"
 
@@ -100,18 +100,20 @@ fr:
         showcase: "Un site web qui présente des produits, des services ou des projets de manière visuellement attrayante, souvent utilisé pour démontrer l'expertise ou les offres d'une entreprise."
         cms: "Une solution qui vous permet de créer, gérer, éditer, supprimer et publier facilement du contenu web depuis votre tableau de bord, utilisé pour présenter les services et articles d'une entreprise."
         ecommerce: "Un site web dédié à la vente en ligne de produits ou services, avec des fonctionnalités pour ajouter, modifier et supprimer des articles, gérer les commandes et paiements, et offrir des options de livraison."
-        webapp: "Une application accessible via un navigateur web, offrant des fonctionnalités interactives et des services en ligne, souvent utilisée pour des tâches spécifiques, comme un site de rencontre."
+        webapp: "Une application accessible via un navigateur web, offrant des fonctionnalités interactives et des services en ligne, souvent utilisée pour des tâches spécifiques, comme une application sportive ou de rencontre."
 
       crit_result:
         information_presentation: "Présentation de l'information"
         image_gallery: "Galerie d'images"
         contact_information: "Informations de contact"
         multi_screen: "Adaptabilité multi-écrans"
+
         article_creation: "Création d'articles"
         categories_filters: "Catégories et filtres"
         media_management: "Gestion des médias"
         comments_sharing: "Commentaires et partage"
         admin_interface: "Interface d'administration"
+
         user_management: "Gestion des utilisateurs"
         shopping_cart: "Panier d'achats"
         inventory_management: "Gestion des stocks"
@@ -194,7 +196,7 @@ fr:
       q_card: "6 : Remise exclusive avec carte"
 
       # Choices first #
-      c_one_landing: "Page d’atterrissage (Landing Page)"
+      c_one_landing: "Page unique"
       c_one_showcase: "Site vitrine"
       c_one_cms: "Système de gestion de contenu"
       c_one_qrcode: "QR Code pour Bar/Restaurant"
@@ -202,19 +204,19 @@ fr:
       c_one_webapp: "Application web"
 
       # Value first #
-      c_one_landing_value: "1500"
-      c_one_showcase_value: "3000"
-      c_one_cms_value: "4000"
-      c_one_qrcode_value: "10000"
-      c_one_ecommerce_value: "30000"
-      c_one_webapp_value: "30000"
+      c_one_landing_value: "600"
+      c_one_showcase_value: "1000"
+      c_one_cms_value: "2000"
+      c_one_qrcode_value: "5000"
+      c_one_ecommerce_value: "8000"
+      c_one_webapp_value: "10000"
 
       # Choices second #
       c_two_no: "Non"
       c_two_yes: "Oui"
 
       # Value second #
-      c_two_yes_value: "1000"
+      c_two_yes_value: "600"
 
       # Choices third #
       c_three_standard: "Standard"
@@ -222,7 +224,7 @@ fr:
       c_three_creative: "Créatif"
 
       # Value third #
-      c_three_dynamic_value: "1000"
+      c_three_dynamic_value: "600"
       c_three_creative_value: "10000"
 
       # Choices fourth #
@@ -230,15 +232,15 @@ fr:
       c_four_form: "Formulaire de contact par e-mail"
 
       # Value fourth #
-      c_four_form_value: "500"
+      c_four_form_value: "300"
 
       # Choices fifth #
       c_five_map: "Affichage de la carte de localisation"
       c_five_review: "Commentaires et avis"
 
       # Value fifth #
-      c_five_map_value: "500"
-      c_five_review_value: "500"
+      c_five_map_value: "300"
+      c_five_review_value: "300"
 
       # Choices sixth #
       c_six_discount: "Appliquer une remise de 20 % avec carte"
@@ -269,14 +271,14 @@ fr:
       r_payment_processing: "- Traitement des paiements"
       r_management_interface: "- Interface de gestion"
 
-      r_template_creation: "- Création de modèles -1000 €"
-      r_standard_animation: "- Animation standard du site -0 €"
-      r_dynamic_animation: "- Animation dynamique du site -1000 €"
-      r_creative_animation: "- Animation créative du site -10000 €"
-      r_contact_display: "- Affiché sous forme de texte sur le site -0 €"
-      r_contact_form: "- Formulaire de contact par e-mail -500 €"
-      r_map: "- Affichage de la carte de localisation -500 €"
-      r_review: "- Commentaires/Avis -500 €"
+      r_template_creation: "- Création de modèles"
+      r_standard_animation: "- Animation standard du site"
+      r_dynamic_animation: "- Animation dynamique du site"
+      r_creative_animation: "- Animation créative du site"
+      r_contact_display: "- Affiché sous forme de texte sur le site"
+      r_contact_form: "- Formulaire de contact par e-mail"
+      r_map: "- Affichage de la carte de localisation"
+      r_review: "- Commentaires/Avis"
 
       r_text_estimation: "Estimation"
       r_text_devise: "€"

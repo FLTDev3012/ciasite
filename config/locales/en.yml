@@ -245,17 +245,17 @@ en:
       r_payment_processing: "- Payment processing"
       r_management_interface: "- Management interface"
 
-      r_template_creation: "- Template creation $-1000"
-      r_standard_animation: "- Standard site animation $-0"
-      r_dynamic_animation: "- Dynamic site animation $-1000"
-      r_creative_animation: "- Creative site animation $-10000"
-      r_contact_display: "- Displayed as Text on Site $-0"
-      r_contact_form: "- E-mail Contact Form $-500"
-      r_map: "- Location Map Display $-500"
-      r_review: "- Comments / Reviews $-500"
+      r_template_creation: "- Template creation"
+      r_standard_animation: "- Standard site animation"
+      r_dynamic_animation: "- Dynamic site animation"
+      r_creative_animation: "- Creative site animation"
+      r_contact_display: "- Displayed as Text on Site"
+      r_contact_form: "- E-mail Contact Form"
+      r_map: "- Location Map Display"
+      r_review: "- Comments / Reviews"
 
       r_text_estimation: "Estimation"
-      r_text_devise: "$"
+      r_text_devise: "$AUD"
       r_text_contact: "Contact Me!"
 
 

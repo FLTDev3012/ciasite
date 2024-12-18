@@ -329,7 +329,7 @@ document.addEventListener("turbo:load", function() {
         </div>
 
         <div class="estimation-result-total-container">
-          <p id="total-container" class="estimation-result-total"><%= t('estimation.estimation_second.r_text_estimation') %> ≈&nbsp;<span id="total-price"> 0 </span>$</p>
+          <p id="total-container" class="estimation-result-total"><%= t('estimation.estimation_second.r_text_estimation') %> ≈&nbsp;<span id="total-price"> 0 </span><%= t('estimation.estimation_second.r_text_devise') %></p>
         </div>
 
         <%= link_to about_path, class: "btn-rouge js-home-fifth-button", data: { turbo: false } do %>
