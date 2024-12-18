@@ -253,6 +253,8 @@ document.addEventListener("turbo:load", function() {
 
         </div>
 
+
+
         <!-- Cinquieme catégorie : plusieurs options sélectionnables -->
         <div>
           <h3 class="text-bold"><%= t('estimation.estimation_second.q_requested') %></h3>
@@ -287,53 +289,53 @@ document.addEventListener("turbo:load", function() {
 
         <span>
           <div class="estimation-result-title-container">
-            <h3 class="estimation-result-title">Your website</h3>
+            <h3 class="estimation-result-title"><%= t('estimation.estimation_second.r_title') %></h3>
           </div>
         </span>
 
         <div class="estimation-result-target-container">
-          <div data-estimation-target="firstCatFirstType" class="esti-target-div"><p>- Information presentation</p></div>
-          <div data-estimation-target="firstCatFirstType" class="esti-target-div"><p>- Image gallery</p></div>
-          <div data-estimation-target="firstCatFirstType firstCatFourthType" class="esti-target-div"><p>- Contact information</p></div>
-          <div data-estimation-target="firstCatFirstType" class="esti-target-div"><p>- Multi-screen adaptability</p></div>
+          <div data-estimation-target="firstCatFirstType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_information_presentation') %></p></div>
+          <div data-estimation-target="firstCatFirstType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_image_gallery') %></p></div>
+          <div data-estimation-target="firstCatFirstType firstCatFourthType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_contact_information') %></p></div>
+          <div data-estimation-target="firstCatFirstType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_multi_screen') %></p></div>
           <p data-estimation-target="firstCatFirstType"><br></p>
 
-          <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p>- Admin interface</p></div>
-          <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p>- Article creation</p></div>
-          <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p>- Media management</p></div>
-          <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p>- Categories and filters</p></div>
-          <div data-estimation-target="firstCatSecondType firstCatFourthType" class="esti-target-div"><p>- Comments and sharing</p></div>
+          <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_admin_interface') %></p></div>
+          <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_article_creation') %></p></div>
+          <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_media_management') %></p></div>
+          <div data-estimation-target="firstCatSecondType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_categories_filters') %></p></div>
+          <div data-estimation-target="firstCatSecondType firstCatFourthType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_comments_sharing') %></p></div>
           <p data-estimation-target="firstCatSecondType"><br></p>
 
-          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- User management</p></div>
-          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Inventory management</p></div>
-          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Order management</p></div>
-          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Customer management</p></div>
-          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Shopping cart</p></div>
-          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Payment processing</p></div>
-          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p>- Management interface</p></div>
+          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_user_management') %></p></div>
+          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_inventory_management') %></p></div>
+          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_order_management') %></p></div>
+          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_customer_management') %></p></div>
+          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_shopping_cart') %></p></div>
+          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_payment_processing') %></p></div>
+          <div data-estimation-target="firstCatThirdType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_management_interface') %></p></div>
           <p data-estimation-target="firstCatThirdType"><br></p>
 
-          <div data-estimation-target="secondCatSecondType" class="esti-target-div"><p>- Template creation $-1000</p></div>
-          <div data-estimation-target="thirdCatFirstType" class="esti-target-div"><p>- Standard site animation $-0</p></div>
-          <div data-estimation-target="thirdCatSecondType" class="esti-target-div"><p class="gold">- Dynamic site animation $-1000</p></div>
-          <div data-estimation-target="thirdCatThirdType" class="esti-target-div"><p class="gold">- Creative site animation $-10000</p></div>
-          <div data-estimation-target="fourthCatFirstType" class="esti-target-div"><p>- Displayed as Text on Site $-0</p></div>
-          <div data-estimation-target="fourthCatThirdType" class="esti-target-div"><p class="gold">- E-mail Contact Form $-500</p></div>
-          <div data-estimation-target="fifthCatFirstType" class="esti-target-div"><p class="gold">- Location Map Display $-500</p></div>
-          <div data-estimation-target="fifthCatSecondType" class="esti-target-div"><p class="gold">- Comments / Reviews $-500</p></div>
+          <div data-estimation-target="secondCatSecondType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_template_creation') %></p></div>
+          <div data-estimation-target="thirdCatFirstType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_standard_animation') %></p></div>
+          <div data-estimation-target="thirdCatSecondType" class="esti-target-div"><p class="gold"><%= t('estimation.estimation_second.r_dynamic_animation') %></p></div>
+          <div data-estimation-target="thirdCatThirdType" class="esti-target-div"><p class="gold"><%= t('estimation.estimation_second.r_creative_animation') %></p></div>
+          <div data-estimation-target="fourthCatFirstType" class="esti-target-div"><p><%= t('estimation.estimation_second.r_contact_display') %></p></div>
+          <div data-estimation-target="fourthCatThirdType" class="esti-target-div"><p class="gold"><%= t('estimation.estimation_second.r_contact_form') %></p></div>
+          <div data-estimation-target="fifthCatFirstType" class="esti-target-div"><p class="gold"><%= t('estimation.estimation_second.r_map') %></p></div>
+          <div data-estimation-target="fifthCatSecondType" class="esti-target-div"><p class="gold"><%= t('estimation.estimation_second.r_review') %></p></div>
 
 
         </div>
 
         <div class="estimation-result-total-container">
-          <p id="total-container" class="estimation-result-total">Estimation ≈&nbsp;<span id="total-price"> 0 </span>$</p>
+          <p id="total-container" class="estimation-result-total"><%= t('estimation.estimation_second.r_text_estimation') %> ≈&nbsp;<span id="total-price"> 0 </span>$</p>
         </div>
 
         <%= link_to about_path, class: "btn-rouge js-home-fifth-button", data: { turbo: false } do %>
           <div class="block-rouge"></div>
           <div class="block-noir-fleche"><i class="fa-solid fa-arrow-right" style="color: #fff;"></i></div>
-          <div class="block-text">Contact Me!</div>
+          <div class="block-text"><%= t('estimation.estimation_second.r_text_contact') %></div>
         <% end %>
 
 
