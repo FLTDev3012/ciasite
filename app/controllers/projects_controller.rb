@@ -1,7 +1,7 @@
 class ProjectsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
   def index
-    @projects = Project.order(created_at: :desc)
+    @projects = Project.order(created_at: :asc)
   end
 
   def show
