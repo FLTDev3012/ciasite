@@ -49,16 +49,19 @@
                   <p class="text-article-link">Watch Video</p>
                 <% end %>
               </div>
+
               <div class="home-quatre-link-arrow">
                 <%= link_to edit_project_path(project), class: "dash-project-edit" do %>
                   <i class="fa-solid fa-pen-to-square" style="color: #111;"></i>
                 <% end %>
               </div>
+
               <div class="home-quatre-link-arrow">
                 <%= link_to project_path(project), data: { turbo_method: :delete, turbo_confirm: "Êtes-vous sûr de vouloir supprimer ?" }, class: "deco-none dash-corbeille" do %>
                   <i class="fa-solid fa-trash" style="color: #111;"></i>
                 <% end %>
               </div>
+
 
 
             </div>
